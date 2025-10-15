@@ -3,6 +3,7 @@
 
 
 def add_arrays(arr1, arr2):
+    """ A function that adds two arrays element-wise """
     if len(arr1) != len(arr2):
         return None
 
@@ -11,5 +12,4 @@ def add_arrays(arr1, arr2):
     for i in range(len(arr1)):
         sum_elem = arr1[i]+arr2[i]
         result.append(sum_elem)
-        
     return result
