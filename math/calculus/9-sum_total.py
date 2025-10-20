@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""A script that calculates the sum"""
+"""A script that calculates the sum of squares"""
 
 
 def summation_i_squared(n):
-    """A function that calculates the sum"""
-    if type(n) is not int:
+    """ A function that calculates the sum of squares"""
+    if type(n) is not int or n < 1:
         return None
-    return int((n**3)/3 + (n**2)/2 + n/6)
+    result = (n * (n + 1) * (2 * n + 1)) / 6
+    return int(result)
