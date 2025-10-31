@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import numpy as np
 '''
 A script that select the last 10 rows of
