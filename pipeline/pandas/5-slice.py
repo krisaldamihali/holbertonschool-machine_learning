@@ -4,6 +4,7 @@ A script that takes every 60th row
 of the important columns from a DataFrame
 '''
 
+
 def slice_df(df):
     '''
     A function that takes every 60th row
