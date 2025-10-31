@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import numpy as np
 '''
 A script that select the last 10 rows of
 'High' and 'Close' columns and return them as a numpy array
