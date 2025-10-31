@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 '''
-A script that takes every 60th row
+A script that take every 60th row
 of the important columns from a DataFrame
 '''
 
 
-def slice_df(df):
+def slice(df):
     '''
-    A function that takes every 60th row
+    A function that take every 60th row
     of the important columns from a DataFrame
     '''
     df = df[['High', 'Low', 'Close', 'Volume_(BTC)']]
