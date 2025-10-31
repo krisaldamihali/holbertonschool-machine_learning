@@ -7,8 +7,7 @@ and then transposes it
 
 def flip_switch(df):
     """
-    A function that sorts the DataFrame in reverse chronological order
-    and then transposes it.
+    A function that .
     """
     df_reversed = df.sort_index(ascending=False)
     df_transposed = df_reversed.T
