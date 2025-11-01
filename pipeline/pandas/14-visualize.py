@@ -10,8 +10,7 @@ from_file = __import__('2-from_file').from_file
 
 def visualize():
     """
-    A function that transforms and visualizes Bitcoin price data
-    Returns the transformed DataFrame
+    A function that visualizes and returns the transformed DataFrame
     """
     df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')
     df = df.drop(columns=['Weighted_Price'])
