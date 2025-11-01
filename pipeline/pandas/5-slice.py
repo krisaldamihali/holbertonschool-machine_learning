@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-A script that take every 60th row
-of the important columns from a DataFrame
+A script that take every 60th row of the important columns from a DataFrame
 """
 
 
