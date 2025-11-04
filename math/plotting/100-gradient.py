@@ -18,7 +18,7 @@ def gradient():
     plt.figure(figsize=(6.4, 4.8))
 
     # your code here
-    mountain = plt.scatter(x, y, color=z)
+    mountain = plt.scatter(x, y, c=z)
     plt.title("Mountain Elevation")
     plt.xlabel("x coordinate (m)")
     plt.ylabel("y coordinate (m)")
