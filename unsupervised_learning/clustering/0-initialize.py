@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """A script that initializes cluster centroids for K-means."""
-
 import numpy as np
 
 
@@ -9,14 +8,15 @@ def initialize(X, k):
     A function that initializes cluster centroids for K-means.
     """
 
-    if (not isinstance(X, np.ndarray) or X.ndim != 2 or
-            not isinstance(k, int) or k <= 0):
+    if not isinstance(X, np.ndarray) or len(X.shape) != 2:
         return None
 
-    low = np.min(X, axis=0)
-    high = np.max(X, axis=0)
-    size = (k, X.shape[1])
+    _, d = X.shape
 
-    centroids = np.random.uniform(low, high, size)
+    if not isinstance(k, int) or k <= 0:
+        return None
+
+    centroids = np.random.uniform(low=np.min(
+        X, axis=0), high=np.max(X, axis=0), size=(k, d))
 
     return centroids
