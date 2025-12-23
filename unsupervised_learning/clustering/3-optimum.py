@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Optimum K method aka inversed elbow"""
+"""A script that determines the optimum number of clusters for K-means."""
 
 import numpy as np
 kmeans = __import__('1-kmeans').kmeans
@@ -7,7 +7,7 @@ variance = __import__('2-variance').variance
 
 
 def optimum_k(X, kmin=1, kmax=None, iterations=1000):
-    """Optimun K method with variance"""
+    """A function that determines the optimum number of clusters"""
     try:
         if not isinstance(X, np.ndarray) or len(X.shape) != 2:
             return None, None
