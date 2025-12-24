@@ -20,4 +20,4 @@ Performs dimensionality reduction to a fixed number of dimensions.
 - NumPy (`pip install numpy`)
 
 ## Author
-Krisalda Mihali
+© Krisalda Mihali
