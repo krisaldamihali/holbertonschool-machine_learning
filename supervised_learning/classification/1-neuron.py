@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-A script with a class Neuron and a function that initializes weights, bias, 
+A script with a class Neuron and a function that initializes weights, bias,
 and output for binary classification.
 """
 import numpy as np
