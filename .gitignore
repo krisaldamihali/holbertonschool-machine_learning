@@ -1,7 +1,7 @@
 # Virtual environments
-ml-env/
 venv/
 .env/
+supervised_learning/classification/data/
 
 # Python cache
 __pycache__/
@@ -13,3 +13,5 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+
