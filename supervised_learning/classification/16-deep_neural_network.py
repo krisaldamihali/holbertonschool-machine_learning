@@ -42,26 +42,3 @@ class DeepNeuralNetwork:
             )
             self.weights["b{}".format(layer)] = np.zeros((nodes, 1))
             prev = nodes
-
-        @property
-        def L(self):
-            """
-            A function that gets the number of layers in the neural network.
-            """
-            return self.__L
-
-        @property
-        def cache(self):
-            """
-            A function that gets a dictionary holding all
-            intermediary values of the network.
-            """
-            return self.__cache
-
-        @property
-        def weights(self):
-            """
-            A function that gets a dictionary holding
-            all weights and biases of the network.
-            """
-            return self.__weights
