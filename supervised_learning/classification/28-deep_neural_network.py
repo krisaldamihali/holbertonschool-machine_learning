@@ -15,7 +15,7 @@ class DeepNeuralNetwork:
     A class that implements a deep neural network for binary classification.
     """
 
-    def __init__(self, nx, layers):
+    def __init__(self, nx, layers, activation='sig'):
         """
         A constructor that takes number of input as nx and
         layers is a list representing the number of nodes
@@ -28,6 +28,9 @@ class DeepNeuralNetwork:
 
         if type(layers) is not list or len(layers) == 0:
             raise TypeError("layers must be a list of positive integers")
+
+        if activation not in ['sig', 'tanh']:
+            raise ValueError("activation must be 'sig' or 'tanh'")
 
         self.__L = len(layers)
         self.__cache = {}
