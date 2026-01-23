@@ -65,23 +65,3 @@ class DeepNeuralNetwork:
         all weights and biases of the network.
         """
         return self.__weights
-
-    def forward_prop(self, X):
-        """
-        A function that calculates the forward propagation
-        of the neural network
-        """
-        self.__cache["A0"] = X
-
-        for layer in range(1, self.__L + 1):
-            W = self.__weights[f"W{layer}"]
-            b = self.__weights[f"b{layer}"]
-
-            A_prev = self.__cache[f"A{layer-1}"]
-
-            Z = np.matmul(W, A_prev) + b
-            A = 1 / (1 + np.exp(-Z))
-
-            self.__cache[f"A{layer}"] = A
-
-        return self.__cache[f"A{self.__L}"], self.__cache
