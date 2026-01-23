@@ -1,0 +1,3362 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "Axes3D",
+        "importPath": "mpl_toolkits.mplot3d",
+        "description": "mpl_toolkits.mplot3d",
+        "isExtraImport": true,
+        "detail": "mpl_toolkits.mplot3d",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "sklearn.cluster",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "sklearn.mixture",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sklearn.mixture",
+        "description": "sklearn.mixture",
+        "detail": "sklearn.mixture",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.cluster.hierarchy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "poly_derivative",
+        "kind": 5,
+        "importPath": "math.calculus.10-main",
+        "description": "math.calculus.10-main",
+        "peekOfCode": "poly_derivative = __import__('10-matisse').poly_derivative\npoly = [5, 3, 0, 1]\nprint(poly_derivative(poly))",
+        "detail": "math.calculus.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "poly",
+        "kind": 5,
+        "importPath": "math.calculus.10-main",
+        "description": "math.calculus.10-main",
+        "peekOfCode": "poly = [5, 3, 0, 1]\nprint(poly_derivative(poly))",
+        "detail": "math.calculus.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "poly_derivative",
+        "kind": 2,
+        "importPath": "math.calculus.10-matisse",
+        "description": "math.calculus.10-matisse",
+        "peekOfCode": "def poly_derivative(poly):\n    \"\"\"A function that calculates the derivative of a polynomial\"\"\"\n    if type(poly) is not list or len(poly) == 0:\n        return None\n    for coeff in poly:\n        if type(coeff) not in (int, float):\n            return None\n    if len(poly) == 1:\n        return [0]\n    derivative = []",
+        "detail": "math.calculus.10-matisse",
+        "documentation": {}
+    },
+    {
+        "label": "poly_integral",
+        "kind": 2,
+        "importPath": "math.calculus.17-integrate",
+        "description": "math.calculus.17-integrate",
+        "peekOfCode": "def poly_integral(poly, C=0):\n    \"\"\"A function that calculates the integral of a polynomial\"\"\"\n    if type(poly) is not list or len(poly) == 0:\n        return None\n    if type(C) not in (int, float):\n        return None\n    for coeff in poly:\n        if type(coeff) not in (int, float):\n            return None\n    result = [C]",
+        "detail": "math.calculus.17-integrate",
+        "documentation": {}
+    },
+    {
+        "label": "poly_integral",
+        "kind": 5,
+        "importPath": "math.calculus.17-main",
+        "description": "math.calculus.17-main",
+        "peekOfCode": "poly_integral = __import__('17-integrate').poly_integral\npoly = [5, 3, 0, 1]\nprint(poly_integral(poly))",
+        "detail": "math.calculus.17-main",
+        "documentation": {}
+    },
+    {
+        "label": "poly",
+        "kind": 5,
+        "importPath": "math.calculus.17-main",
+        "description": "math.calculus.17-main",
+        "peekOfCode": "poly = [5, 3, 0, 1]\nprint(poly_integral(poly))",
+        "detail": "math.calculus.17-main",
+        "documentation": {}
+    },
+    {
+        "label": "summation_i_squared",
+        "kind": 5,
+        "importPath": "math.calculus.9-main",
+        "description": "math.calculus.9-main",
+        "peekOfCode": "summation_i_squared = __import__('9-sum_total').summation_i_squared\nn = 5\nprint(summation_i_squared(n))",
+        "detail": "math.calculus.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "math.calculus.9-main",
+        "description": "math.calculus.9-main",
+        "peekOfCode": "n = 5\nprint(summation_i_squared(n))",
+        "detail": "math.calculus.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "summation_i_squared",
+        "kind": 2,
+        "importPath": "math.calculus.9-sum_total",
+        "description": "math.calculus.9-sum_total",
+        "peekOfCode": "def summation_i_squared(n):\n    \"\"\" A function that calculates the sum of squares\"\"\"\n    if type(n) is not int or n < 1:\n        return None\n    result = (n * (n + 1) * (2 * n + 1)) / 6\n    return int(result)",
+        "detail": "math.calculus.9-sum_total",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr = [9, 8, 2, 3, 9, 4, 1, 0, 3]\narr1 = arr[:2]\narr2 = arr[-5:]\narr3 = arr[1:6]\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr1 = arr[:2]\narr2 = arr[-5:]\narr3 = arr[1:6]\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr2 = arr[-5:]\narr3 = arr[1:6]\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr3 = arr[1:6]\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "math.linear_algebra.1-trim_me_down",
+        "description": "math.linear_algebra.1-trim_me_down",
+        "peekOfCode": "matrix = [[1, 3, 9, 4, 5, 8], [2, 4, 7, 3, 4, 0], [0, 3, 4, 6, 1, 5]]\nthe_middle = []\nfor row in matrix:\n    the_middle.append(row[2:4])\nprint(\"The middle columns of the matrix are: {}\".format(the_middle))",
+        "detail": "math.linear_algebra.1-trim_me_down",
+        "documentation": {}
+    },
+    {
+        "label": "the_middle",
+        "kind": 5,
+        "importPath": "math.linear_algebra.1-trim_me_down",
+        "description": "math.linear_algebra.1-trim_me_down",
+        "peekOfCode": "the_middle = []\nfor row in matrix:\n    the_middle.append(row[2:4])\nprint(\"The middle columns of the matrix are: {}\".format(the_middle))",
+        "detail": "math.linear_algebra.1-trim_me_down",
+        "documentation": {}
+    },
+    {
+        "label": "np_shape",
+        "kind": 2,
+        "importPath": "math.linear_algebra.10-ill_use_my_scale",
+        "description": "math.linear_algebra.10-ill_use_my_scale",
+        "peekOfCode": "def np_shape(matrix):\n    \"\"\"A function that calculates the shape of a numpy.ndarray\"\"\"\n    return matrix.shape",
+        "detail": "math.linear_algebra.10-ill_use_my_scale",
+        "documentation": {}
+    },
+    {
+        "label": "np_shape",
+        "kind": 5,
+        "importPath": "math.linear_algebra.10-main",
+        "description": "math.linear_algebra.10-main",
+        "peekOfCode": "np_shape = __import__('10-ill_use_my_scale').np_shape\nmat1 = np.array([1, 2, 3, 4, 5, 6])\nmat2 = np.array([])\nmat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_shape(mat1))\nprint(np_shape(mat2))\nprint(np_shape(mat3))",
+        "detail": "math.linear_algebra.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.10-main",
+        "description": "math.linear_algebra.10-main",
+        "peekOfCode": "mat1 = np.array([1, 2, 3, 4, 5, 6])\nmat2 = np.array([])\nmat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_shape(mat1))\nprint(np_shape(mat2))\nprint(np_shape(mat3))",
+        "detail": "math.linear_algebra.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.10-main",
+        "description": "math.linear_algebra.10-main",
+        "peekOfCode": "mat2 = np.array([])\nmat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_shape(mat1))\nprint(np_shape(mat2))\nprint(np_shape(mat3))",
+        "detail": "math.linear_algebra.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.10-main",
+        "description": "math.linear_algebra.10-main",
+        "peekOfCode": "mat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_shape(mat1))\nprint(np_shape(mat2))\nprint(np_shape(mat3))",
+        "detail": "math.linear_algebra.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_slice",
+        "kind": 5,
+        "importPath": "math.linear_algebra.100-main",
+        "description": "math.linear_algebra.100-main",
+        "peekOfCode": "np_slice = __import__('100-slice_like_a_ninja').np_slice\nmat1 = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\nprint(np_slice(mat1, axes={1: (1, 3)}))\nprint(mat1)\nmat2 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]],\n                 [[21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]])\nprint(np_slice(mat2, axes={0: (2,), 2: (None, None, -2)}))\nprint(mat2)",
+        "detail": "math.linear_algebra.100-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.100-main",
+        "description": "math.linear_algebra.100-main",
+        "peekOfCode": "mat1 = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\nprint(np_slice(mat1, axes={1: (1, 3)}))\nprint(mat1)\nmat2 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]],\n                 [[21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]])\nprint(np_slice(mat2, axes={0: (2,), 2: (None, None, -2)}))\nprint(mat2)",
+        "detail": "math.linear_algebra.100-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.100-main",
+        "description": "math.linear_algebra.100-main",
+        "peekOfCode": "mat2 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]],\n                 [[21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]])\nprint(np_slice(mat2, axes={0: (2,), 2: (None, None, -2)}))\nprint(mat2)",
+        "detail": "math.linear_algebra.100-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_slice",
+        "kind": 2,
+        "importPath": "math.linear_algebra.100-slice_like_a_ninja",
+        "description": "math.linear_algebra.100-slice_like_a_ninja",
+        "peekOfCode": "def np_slice(matrix, axes={}):\n    \"\"\"A function that slices a matrix along specific axes\"\"\"\n    slices = [slice(None)] * matrix.ndim\n    for axis in axes:\n        slices[axis] = slice(*axes[axis])\n    return matrix[tuple(slices)]",
+        "detail": "math.linear_algebra.100-slice_like_a_ninja",
+        "documentation": {}
+    },
+    {
+        "label": "add_matrices",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "add_matrices = __import__('101-the_whole_barn').add_matrices\nmat1 = [1, 2, 3]\nmat2 = [4, 5, 6]\nprint(add_matrices(mat1, mat2))\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nprint(add_matrices(mat1, mat2))\nmat1 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "mat1 = [1, 2, 3]\nmat2 = [4, 5, 6]\nprint(add_matrices(mat1, mat2))\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nprint(add_matrices(mat1, mat2))\nmat1 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "mat2 = [4, 5, 6]\nprint(add_matrices(mat1, mat2))\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nprint(add_matrices(mat1, mat2))\nmat1 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],\n         [[33, 34, 35, 36], [37, 38, 39, 40]],",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "mat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nprint(add_matrices(mat1, mat2))\nmat1 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],\n         [[33, 34, 35, 36], [37, 38, 39, 40]],\n         [[41, 42, 43, 44], [45, 46, 47, 48]]]]\nmat2 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "mat2 = [[5, 6], [7, 8]]\nprint(add_matrices(mat1, mat2))\nmat1 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],\n         [[33, 34, 35, 36], [37, 38, 39, 40]],\n         [[41, 42, 43, 44], [45, 46, 47, 48]]]]\nmat2 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[19, 110, 111, 112], [113, 114 ,115, 116]],",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "mat1 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],\n         [[33, 34, 35, 36], [37, 38, 39, 40]],\n         [[41, 42, 43, 44], [45, 46, 47, 48]]]]\nmat2 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[19, 110, 111, 112], [113, 114 ,115, 116]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "mat2 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[19, 110, 111, 112], [113, 114 ,115, 116]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],\n         [[133, 134, 135, 136], [137, 138, 139, 140]],\n         [[141, 142, 143, 144], [145, 146, 147, 148]]]]\nmat3 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],\n         [[141, 142, 143, 144], [145, 146, 147, 148]]]]",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.101-main",
+        "description": "math.linear_algebra.101-main",
+        "peekOfCode": "mat3 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],\n         [[141, 142, 143, 144], [145, 146, 147, 148]]]]\nprint(add_matrices(mat1, mat2))\nprint(add_matrices(mat1, mat3))",
+        "detail": "math.linear_algebra.101-main",
+        "documentation": {}
+    },
+    {
+        "label": "add_matrices",
+        "kind": 2,
+        "importPath": "math.linear_algebra.101-the_whole_barn",
+        "description": "math.linear_algebra.101-the_whole_barn",
+        "peekOfCode": "def add_matrices(mat1, mat2):\n    \"\"\"A function that adds two matrices\"\"\"\n    if type(mat1) is list and type(mat2) is list:\n        if len(mat1) != len(mat2):\n            return None\n        result = []\n        for i in range(len(mat1)):\n            temp = add_matrices(mat1[i], mat2[i])\n            if temp is None:\n                return None",
+        "detail": "math.linear_algebra.101-the_whole_barn",
+        "documentation": {}
+    },
+    {
+        "label": "cat_matrices",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "cat_matrices = __import__('102-squashed_like_sardines').cat_matrices\nmat1 = [1, 2, 3]\nmat2 = [4, 5, 6]\nnp_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "mat1 = [1, 2, 3]\nmat2 = [4, 5, 6]\nnp_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "mat2 = [4, 5, 6]\nnp_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "np_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "np_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat1 = [[1, 2], [3, 4]]",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "m = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nnp_mat1 = np.array(mat1)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nnp_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nnp_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "mat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nnp_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "mat2 = [[5, 6], [7, 8]]\nnp_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "np_mat1 = np.array(mat1)\nnp_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "np_mat2 = np.array(mat2)\nt0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nm = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "m = cat_matrices(mat1, mat2)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat1, mat2, axis=1)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat1, mat2, axis=1)\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nnp.concatenate((np_mat1, np_mat2))\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat1, mat2, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat1, mat2, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((mat1, mat2), axis=1)\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nm = cat_matrices(mat1, mat2, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((mat1, mat2), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat3 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "m = cat_matrices(mat1, mat2, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((mat1, mat2), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat3 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((mat1, mat2), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat3 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nnp.concatenate((mat1, mat2), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat3 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],\n         [[33, 34, 35, 36], [37, 38, 39, 40]],\n         [[41, 42, 43, 44], [45, 46, 47, 48]]]]",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0, \"\\n\")\nmat3 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],\n         [[33, 34, 35, 36], [37, 38, 39, 40]],\n         [[41, 42, 43, 44], [45, 46, 47, 48]]]]\nmat4 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[19, 110, 111, 112], [113, 114 ,115, 116]],",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "mat3 = [[[[1, 2, 3, 4], [5, 6, 7, 8]],\n         [[9, 10, 11, 12], [13, 14 ,15, 16]],\n         [[17, 18, 19, 20], [21, 22, 23, 24]]],\n        [[[25, 26, 27, 28], [29, 30, 31, 32]],\n         [[33, 34, 35, 36], [37, 38, 39, 40]],\n         [[41, 42, 43, 44], [45, 46, 47, 48]]]]\nmat4 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[19, 110, 111, 112], [113, 114 ,115, 116]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat4",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "mat4 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[19, 110, 111, 112], [113, 114 ,115, 116]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],\n         [[133, 134, 135, 136], [137, 138, 139, 140]],\n         [[141, 142, 143, 144], [145, 146, 147, 148]]]]\nmat5 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],\n         [[141, 142, 143, 144], [145, 146, 147, 148]]]]",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat5",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "mat5 = [[[[11, 12, 13, 14], [15, 16, 17, 18]],\n         [[117, 118, 119, 120], [121, 122, 123, 124]]],\n        [[[125, 126, 127, 128], [129, 130, 131, 132]],\n         [[141, 142, 143, 144], [145, 146, 147, 148]]]]\nnp_mat3 = np.array(mat3)\nnp_mat4 = np.array(mat4)\nnp_mat5 = np.array(mat5)\nt0 = time.time()\nm = cat_matrices(mat3, mat4, axis=3)\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "np_mat3 = np.array(mat3)\nnp_mat4 = np.array(mat4)\nnp_mat5 = np.array(mat5)\nt0 = time.time()\nm = cat_matrices(mat3, mat4, axis=3)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat4), axis=3)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_mat4",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "np_mat4 = np.array(mat4)\nnp_mat5 = np.array(mat5)\nt0 = time.time()\nm = cat_matrices(mat3, mat4, axis=3)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat4), axis=3)\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_mat5",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "np_mat5 = np.array(mat5)\nt0 = time.time()\nm = cat_matrices(mat3, mat4, axis=3)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat4), axis=3)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nm = cat_matrices(mat3, mat4, axis=3)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat4), axis=3)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "m = cat_matrices(mat3, mat4, axis=3)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat4), axis=3)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat3, mat5, axis=1)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat4), axis=3)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat3, mat5, axis=1)\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nnp.concatenate((np_mat3, np_mat4), axis=3)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat3, mat5, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0, \"\\n\")\nt0 = time.time()\nm = cat_matrices(mat3, mat5, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat5), axis=1)\nt1 = time.time()",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nm = cat_matrices(mat3, mat5, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat5), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nm = cat_matrices(mat2, mat5)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "m = cat_matrices(mat3, mat5, axis=1)\nt1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat5), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nm = cat_matrices(mat2, mat5)\nprint(m)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0)\nprint(m)\nt0 = time.time()\nnp.concatenate((np_mat3, np_mat5), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nm = cat_matrices(mat2, mat5)\nprint(m)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t0",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t0 = time.time()\nnp.concatenate((np_mat3, np_mat5), axis=1)\nt1 = time.time()\nprint(t1 - t0, \"\\n\")\nm = cat_matrices(mat2, mat5)\nprint(m)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "t1 = time.time()\nprint(t1 - t0, \"\\n\")\nm = cat_matrices(mat2, mat5)\nprint(m)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "math.linear_algebra.102-main",
+        "description": "math.linear_algebra.102-main",
+        "peekOfCode": "m = cat_matrices(mat2, mat5)\nprint(m)",
+        "detail": "math.linear_algebra.102-main",
+        "documentation": {}
+    },
+    {
+        "label": "cat_matrices",
+        "kind": 2,
+        "importPath": "math.linear_algebra.102-squashed_like_sardines",
+        "description": "math.linear_algebra.102-squashed_like_sardines",
+        "peekOfCode": "def cat_matrices(mat1, mat2, axis=0):\n    \"\"\"A function that concatenates two matrices along a specific axis\"\"\"\n    if axis == 0:\n        if not same_shape(mat1[0], mat2[0]):\n            return None\n        return mat1 + mat2\n    if len(mat1) != len(mat2):\n        return None\n    new_matrix = []\n    for i in range(len(mat1)):",
+        "detail": "math.linear_algebra.102-squashed_like_sardines",
+        "documentation": {}
+    },
+    {
+        "label": "same_shape",
+        "kind": 2,
+        "importPath": "math.linear_algebra.102-squashed_like_sardines",
+        "description": "math.linear_algebra.102-squashed_like_sardines",
+        "peekOfCode": "def same_shape(a, b):\n    \"\"\" Check if two matrices have the same shape (recursively).\"\"\"\n    if type(a) is list and type(b) is list:\n        if len(a) != len(b):\n            return False\n        for i in range(len(a)):\n            if not same_shape(a[i], b[i]):\n                return False\n        return True\n    if type(a) is not list and type(b) is not list:",
+        "detail": "math.linear_algebra.102-squashed_like_sardines",
+        "documentation": {}
+    },
+    {
+        "label": "np_transpose",
+        "kind": 5,
+        "importPath": "math.linear_algebra.11-main",
+        "description": "math.linear_algebra.11-main",
+        "peekOfCode": "np_transpose = __import__('11-the_western_exchange').np_transpose\nmat1 = np.array([1, 2, 3, 4, 5, 6])\nmat2 = np.array([])\nmat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_transpose(mat1))\nprint(mat1)\nprint(np_transpose(mat2))\nprint(mat2)\nprint(np_transpose(mat3))",
+        "detail": "math.linear_algebra.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.11-main",
+        "description": "math.linear_algebra.11-main",
+        "peekOfCode": "mat1 = np.array([1, 2, 3, 4, 5, 6])\nmat2 = np.array([])\nmat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_transpose(mat1))\nprint(mat1)\nprint(np_transpose(mat2))\nprint(mat2)\nprint(np_transpose(mat3))\nprint(mat3)",
+        "detail": "math.linear_algebra.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.11-main",
+        "description": "math.linear_algebra.11-main",
+        "peekOfCode": "mat2 = np.array([])\nmat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_transpose(mat1))\nprint(mat1)\nprint(np_transpose(mat2))\nprint(mat2)\nprint(np_transpose(mat3))\nprint(mat3)",
+        "detail": "math.linear_algebra.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.11-main",
+        "description": "math.linear_algebra.11-main",
+        "peekOfCode": "mat3 = np.array([[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],\n                 [[11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]])\nprint(np_transpose(mat1))\nprint(mat1)\nprint(np_transpose(mat2))\nprint(mat2)\nprint(np_transpose(mat3))\nprint(mat3)",
+        "detail": "math.linear_algebra.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_transpose",
+        "kind": 2,
+        "importPath": "math.linear_algebra.11-the_western_exchange",
+        "description": "math.linear_algebra.11-the_western_exchange",
+        "peekOfCode": "def np_transpose(matrix):\n    \"\"\"A function that transposes matrix\"\"\"\n    return matrix.T",
+        "detail": "math.linear_algebra.11-the_western_exchange",
+        "documentation": {}
+    },
+    {
+        "label": "np_elementwise",
+        "kind": 2,
+        "importPath": "math.linear_algebra.12-bracin_the_elements",
+        "description": "math.linear_algebra.12-bracin_the_elements",
+        "peekOfCode": "def np_elementwise(mat1, mat2):\n    \"\"\" A function that performs element-wise add., sub., multi., and div.\"\"\"\n    return mat1 + mat2, mat1 - mat2, mat1 * mat2, mat1 / mat2",
+        "detail": "math.linear_algebra.12-bracin_the_elements",
+        "documentation": {}
+    },
+    {
+        "label": "np_elementwise",
+        "kind": 5,
+        "importPath": "math.linear_algebra.12-main",
+        "description": "math.linear_algebra.12-main",
+        "peekOfCode": "np_elementwise = __import__('12-bracin_the_elements').np_elementwise\nmat1 = np.array([[11, 22, 33], [44, 55, 66]])\nmat2 = np.array([[1, 2, 3], [4, 5, 6]])\nprint(mat1)\nprint(mat2)\nadd, sub, mul, div = np_elementwise(mat1, mat2)\nprint(\"Add:\\n\", add, \"\\nSub:\\n\", sub, \"\\nMul:\\n\", mul, \"\\nDiv:\\n\", div)\nadd, sub, mul, div = np_elementwise(mat1, 2)\nprint(\"Add:\\n\", add, \"\\nSub:\\n\", sub, \"\\nMul:\\n\", mul, \"\\nDiv:\\n\", div)",
+        "detail": "math.linear_algebra.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.12-main",
+        "description": "math.linear_algebra.12-main",
+        "peekOfCode": "mat1 = np.array([[11, 22, 33], [44, 55, 66]])\nmat2 = np.array([[1, 2, 3], [4, 5, 6]])\nprint(mat1)\nprint(mat2)\nadd, sub, mul, div = np_elementwise(mat1, mat2)\nprint(\"Add:\\n\", add, \"\\nSub:\\n\", sub, \"\\nMul:\\n\", mul, \"\\nDiv:\\n\", div)\nadd, sub, mul, div = np_elementwise(mat1, 2)\nprint(\"Add:\\n\", add, \"\\nSub:\\n\", sub, \"\\nMul:\\n\", mul, \"\\nDiv:\\n\", div)",
+        "detail": "math.linear_algebra.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.12-main",
+        "description": "math.linear_algebra.12-main",
+        "peekOfCode": "mat2 = np.array([[1, 2, 3], [4, 5, 6]])\nprint(mat1)\nprint(mat2)\nadd, sub, mul, div = np_elementwise(mat1, mat2)\nprint(\"Add:\\n\", add, \"\\nSub:\\n\", sub, \"\\nMul:\\n\", mul, \"\\nDiv:\\n\", div)\nadd, sub, mul, div = np_elementwise(mat1, 2)\nprint(\"Add:\\n\", add, \"\\nSub:\\n\", sub, \"\\nMul:\\n\", mul, \"\\nDiv:\\n\", div)",
+        "detail": "math.linear_algebra.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_cat",
+        "kind": 2,
+        "importPath": "math.linear_algebra.13-cats_got_your_tongue",
+        "description": "math.linear_algebra.13-cats_got_your_tongue",
+        "peekOfCode": "def np_cat(mat1, mat2, axis=0):\n    \"\"\"A function that concatenates two matrices along a specific axis\"\"\"\n    return np.concatenate((mat1, mat2), axis)",
+        "detail": "math.linear_algebra.13-cats_got_your_tongue",
+        "documentation": {}
+    },
+    {
+        "label": "np_cat",
+        "kind": 5,
+        "importPath": "math.linear_algebra.13-main",
+        "description": "math.linear_algebra.13-main",
+        "peekOfCode": "np_cat = __import__('13-cats_got_your_tongue').np_cat\nmat1 = np.array([[11, 22, 33], [44, 55, 66]])\nmat2 = np.array([[1, 2, 3], [4, 5, 6]])\nmat3 = np.array([[7], [8]])\nprint(np_cat(mat1, mat2))\nprint(np_cat(mat1, mat2, axis=1))\nprint(np_cat(mat1, mat3, axis=1))",
+        "detail": "math.linear_algebra.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.13-main",
+        "description": "math.linear_algebra.13-main",
+        "peekOfCode": "mat1 = np.array([[11, 22, 33], [44, 55, 66]])\nmat2 = np.array([[1, 2, 3], [4, 5, 6]])\nmat3 = np.array([[7], [8]])\nprint(np_cat(mat1, mat2))\nprint(np_cat(mat1, mat2, axis=1))\nprint(np_cat(mat1, mat3, axis=1))",
+        "detail": "math.linear_algebra.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.13-main",
+        "description": "math.linear_algebra.13-main",
+        "peekOfCode": "mat2 = np.array([[1, 2, 3], [4, 5, 6]])\nmat3 = np.array([[7], [8]])\nprint(np_cat(mat1, mat2))\nprint(np_cat(mat1, mat2, axis=1))\nprint(np_cat(mat1, mat3, axis=1))",
+        "detail": "math.linear_algebra.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.13-main",
+        "description": "math.linear_algebra.13-main",
+        "peekOfCode": "mat3 = np.array([[7], [8]])\nprint(np_cat(mat1, mat2))\nprint(np_cat(mat1, mat2, axis=1))\nprint(np_cat(mat1, mat3, axis=1))",
+        "detail": "math.linear_algebra.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_matmul",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-main",
+        "description": "math.linear_algebra.14-main",
+        "peekOfCode": "np_matmul = __import__('14-saddle_up').np_matmul\nmat1 = np.array([[11, 22, 33], [44, 55, 66]])\nmat2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nmat3 = np.array([[7], [8], [9]])\nprint(np_matmul(mat1, mat2))\nprint(np_matmul(mat1, mat3))",
+        "detail": "math.linear_algebra.14-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-main",
+        "description": "math.linear_algebra.14-main",
+        "peekOfCode": "mat1 = np.array([[11, 22, 33], [44, 55, 66]])\nmat2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nmat3 = np.array([[7], [8], [9]])\nprint(np_matmul(mat1, mat2))\nprint(np_matmul(mat1, mat3))",
+        "detail": "math.linear_algebra.14-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-main",
+        "description": "math.linear_algebra.14-main",
+        "peekOfCode": "mat2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nmat3 = np.array([[7], [8], [9]])\nprint(np_matmul(mat1, mat2))\nprint(np_matmul(mat1, mat3))",
+        "detail": "math.linear_algebra.14-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-main",
+        "description": "math.linear_algebra.14-main",
+        "peekOfCode": "mat3 = np.array([[7], [8], [9]])\nprint(np_matmul(mat1, mat2))\nprint(np_matmul(mat1, mat3))",
+        "detail": "math.linear_algebra.14-main",
+        "documentation": {}
+    },
+    {
+        "label": "np_matmul",
+        "kind": 2,
+        "importPath": "math.linear_algebra.14-saddle_up",
+        "description": "math.linear_algebra.14-saddle_up",
+        "peekOfCode": "def np_matmul(mat1, mat2):\n    \"\"\" A function that performs matrix multiplication \"\"\"\n    return (np.matmul(mat1, mat2))",
+        "detail": "math.linear_algebra.14-saddle_up",
+        "documentation": {}
+    },
+    {
+        "label": "matrix_shape",
+        "kind": 5,
+        "importPath": "math.linear_algebra.2-main",
+        "description": "math.linear_algebra.2-main",
+        "peekOfCode": "matrix_shape = __import__('2-size_me_please').matrix_shape\nmat1 = [[1, 2], [3, 4]]\nprint(matrix_shape(mat1))\nmat2 = [[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]],\n        [[16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]]\nprint(matrix_shape(mat2))",
+        "detail": "math.linear_algebra.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.2-main",
+        "description": "math.linear_algebra.2-main",
+        "peekOfCode": "mat1 = [[1, 2], [3, 4]]\nprint(matrix_shape(mat1))\nmat2 = [[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]],\n        [[16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]]\nprint(matrix_shape(mat2))",
+        "detail": "math.linear_algebra.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.2-main",
+        "description": "math.linear_algebra.2-main",
+        "peekOfCode": "mat2 = [[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]],\n        [[16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]]\nprint(matrix_shape(mat2))",
+        "detail": "math.linear_algebra.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "matrix_shape",
+        "kind": 2,
+        "importPath": "math.linear_algebra.2-size_me_please",
+        "description": "math.linear_algebra.2-size_me_please",
+        "peekOfCode": "def matrix_shape(matrix):\n    \"\"\"Function that calculates the shape of a matrix\"\"\"\n    matrix_shape = []\n    while type(matrix) is list:\n        matrix_shape.append(len(matrix))\n        matrix = matrix[0]\n    return matrix_shape",
+        "detail": "math.linear_algebra.2-size_me_please",
+        "documentation": {}
+    },
+    {
+        "label": "matrix_transpose",
+        "kind": 2,
+        "importPath": "math.linear_algebra.3-flip_me_over",
+        "description": "math.linear_algebra.3-flip_me_over",
+        "peekOfCode": "def matrix_transpose(matrix):\n    \"\"\"A function that returns the transpose of a 2D matrix\"\"\"\n    rows = len(matrix)\n    cols = len(matrix[0])\n    transposed = []\n    for i in range(cols):\n        new_row = []\n        for j in range(rows):\n            new_row.append(matrix[j][i])\n        transposed.append(new_row)",
+        "detail": "math.linear_algebra.3-flip_me_over",
+        "documentation": {}
+    },
+    {
+        "label": "matrix_transpose",
+        "kind": 5,
+        "importPath": "math.linear_algebra.3-main",
+        "description": "math.linear_algebra.3-main",
+        "peekOfCode": "matrix_transpose = __import__('3-flip_me_over').matrix_transpose\nmat1 = [[1, 2], [3, 4]]\nprint(mat1)\nprint(matrix_transpose(mat1))\nmat2 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15],\n        [16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]\nprint(mat2)\nprint(matrix_transpose(mat2))",
+        "detail": "math.linear_algebra.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.3-main",
+        "description": "math.linear_algebra.3-main",
+        "peekOfCode": "mat1 = [[1, 2], [3, 4]]\nprint(mat1)\nprint(matrix_transpose(mat1))\nmat2 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15],\n        [16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]\nprint(mat2)\nprint(matrix_transpose(mat2))",
+        "detail": "math.linear_algebra.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.3-main",
+        "description": "math.linear_algebra.3-main",
+        "peekOfCode": "mat2 = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15],\n        [16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]\nprint(mat2)\nprint(matrix_transpose(mat2))",
+        "detail": "math.linear_algebra.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "add_arrays",
+        "kind": 2,
+        "importPath": "math.linear_algebra.4-line_up",
+        "description": "math.linear_algebra.4-line_up",
+        "peekOfCode": "def add_arrays(arr1, arr2):\n    \"\"\" A function that adds two arrays element-wise \"\"\"\n    if len(arr1) != len(arr2):\n        return None\n    result = []\n    for i in range(len(arr1)):\n        sum_elem = arr1[i]+arr2[i]\n        result.append(sum_elem)\n    return result",
+        "detail": "math.linear_algebra.4-line_up",
+        "documentation": {}
+    },
+    {
+        "label": "add_arrays",
+        "kind": 5,
+        "importPath": "math.linear_algebra.4-main",
+        "description": "math.linear_algebra.4-main",
+        "peekOfCode": "add_arrays = __import__('4-line_up').add_arrays\narr1 = [1, 2, 3, 4]\narr2 = [5, 6, 7, 8]\nprint(add_arrays(arr1, arr2))\nprint(arr1)\nprint(arr2)\nprint(add_arrays(arr1, [1, 2, 3]))",
+        "detail": "math.linear_algebra.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.4-main",
+        "description": "math.linear_algebra.4-main",
+        "peekOfCode": "arr1 = [1, 2, 3, 4]\narr2 = [5, 6, 7, 8]\nprint(add_arrays(arr1, arr2))\nprint(arr1)\nprint(arr2)\nprint(add_arrays(arr1, [1, 2, 3]))",
+        "detail": "math.linear_algebra.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.4-main",
+        "description": "math.linear_algebra.4-main",
+        "peekOfCode": "arr2 = [5, 6, 7, 8]\nprint(add_arrays(arr1, arr2))\nprint(arr1)\nprint(arr2)\nprint(add_arrays(arr1, [1, 2, 3]))",
+        "detail": "math.linear_algebra.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "add_matrices2D",
+        "kind": 2,
+        "importPath": "math.linear_algebra.5-across_the_planes",
+        "description": "math.linear_algebra.5-across_the_planes",
+        "peekOfCode": "def add_matrices2D(mat1, mat2):\n    \"\"\"A function that adds two matrices element-wise\"\"\"\n    if (len(mat1) != len(mat2)):\n        return None\n    result = []\n    for i in range(len(mat1)):\n        row1 = mat1[i]\n        row2 = mat2[i]\n        if len(row1) != len(row2):\n            return None",
+        "detail": "math.linear_algebra.5-across_the_planes",
+        "documentation": {}
+    },
+    {
+        "label": "add_matrices2D",
+        "kind": 5,
+        "importPath": "math.linear_algebra.5-main",
+        "description": "math.linear_algebra.5-main",
+        "peekOfCode": "add_matrices2D = __import__('5-across_the_planes').add_matrices2D\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nprint(add_matrices2D(mat1, mat2))\nprint(mat1)\nprint(mat2)\nprint(add_matrices2D(mat1, [[1, 2, 3], [4, 5, 6]]))",
+        "detail": "math.linear_algebra.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.5-main",
+        "description": "math.linear_algebra.5-main",
+        "peekOfCode": "mat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6], [7, 8]]\nprint(add_matrices2D(mat1, mat2))\nprint(mat1)\nprint(mat2)\nprint(add_matrices2D(mat1, [[1, 2, 3], [4, 5, 6]]))",
+        "detail": "math.linear_algebra.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.5-main",
+        "description": "math.linear_algebra.5-main",
+        "peekOfCode": "mat2 = [[5, 6], [7, 8]]\nprint(add_matrices2D(mat1, mat2))\nprint(mat1)\nprint(mat2)\nprint(add_matrices2D(mat1, [[1, 2, 3], [4, 5, 6]]))",
+        "detail": "math.linear_algebra.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "cat_arrays",
+        "kind": 2,
+        "importPath": "math.linear_algebra.6-howdy_partner",
+        "description": "math.linear_algebra.6-howdy_partner",
+        "peekOfCode": "def cat_arrays(arr1, arr2):\n    \"\"\"A function that concatenates two arrays\"\"\"\n    return arr1 + arr2",
+        "detail": "math.linear_algebra.6-howdy_partner",
+        "documentation": {}
+    },
+    {
+        "label": "cat_arrays",
+        "kind": 5,
+        "importPath": "math.linear_algebra.6-main",
+        "description": "math.linear_algebra.6-main",
+        "peekOfCode": "cat_arrays = __import__('6-howdy_partner').cat_arrays\narr1 = [1, 2, 3, 4, 5]\narr2 = [6, 7, 8]\nprint(cat_arrays(arr1, arr2))\nprint(arr1)\nprint(arr2)",
+        "detail": "math.linear_algebra.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.6-main",
+        "description": "math.linear_algebra.6-main",
+        "peekOfCode": "arr1 = [1, 2, 3, 4, 5]\narr2 = [6, 7, 8]\nprint(cat_arrays(arr1, arr2))\nprint(arr1)\nprint(arr2)",
+        "detail": "math.linear_algebra.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.6-main",
+        "description": "math.linear_algebra.6-main",
+        "peekOfCode": "arr2 = [6, 7, 8]\nprint(cat_arrays(arr1, arr2))\nprint(arr1)\nprint(arr2)",
+        "detail": "math.linear_algebra.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "cat_matrices2D",
+        "kind": 2,
+        "importPath": "math.linear_algebra.7-gettin_cozy",
+        "description": "math.linear_algebra.7-gettin_cozy",
+        "peekOfCode": "def cat_matrices2D(mat1, mat2, axis=0):\n    \"\"\" A function that concatenates two matrices along a specific axis\"\"\"\n    if not mat1 or not mat2:\n        return None\n    if axis == 0:\n        for row in mat1:\n            if len(row) != len(mat1[0]):\n                return None\n        for row in mat2:\n            if len(row) != len(mat2[0]):",
+        "detail": "math.linear_algebra.7-gettin_cozy",
+        "documentation": {}
+    },
+    {
+        "label": "cat_matrices2D",
+        "kind": 5,
+        "importPath": "math.linear_algebra.7-main",
+        "description": "math.linear_algebra.7-main",
+        "peekOfCode": "cat_matrices2D = __import__('7-gettin_cozy').cat_matrices2D\nmat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6]]\nmat3 = [[7], [8]]\nmat4 = cat_matrices2D(mat1, mat2)\nmat5 = cat_matrices2D(mat1, mat3, axis=1)\nprint(mat4)\nprint(mat5)\nmat1[0] = [9, 10]\nmat1[1].append(5)",
+        "detail": "math.linear_algebra.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.7-main",
+        "description": "math.linear_algebra.7-main",
+        "peekOfCode": "mat1 = [[1, 2], [3, 4]]\nmat2 = [[5, 6]]\nmat3 = [[7], [8]]\nmat4 = cat_matrices2D(mat1, mat2)\nmat5 = cat_matrices2D(mat1, mat3, axis=1)\nprint(mat4)\nprint(mat5)\nmat1[0] = [9, 10]\nmat1[1].append(5)\nprint(mat1)",
+        "detail": "math.linear_algebra.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.7-main",
+        "description": "math.linear_algebra.7-main",
+        "peekOfCode": "mat2 = [[5, 6]]\nmat3 = [[7], [8]]\nmat4 = cat_matrices2D(mat1, mat2)\nmat5 = cat_matrices2D(mat1, mat3, axis=1)\nprint(mat4)\nprint(mat5)\nmat1[0] = [9, 10]\nmat1[1].append(5)\nprint(mat1)\nprint(mat4)",
+        "detail": "math.linear_algebra.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.7-main",
+        "description": "math.linear_algebra.7-main",
+        "peekOfCode": "mat3 = [[7], [8]]\nmat4 = cat_matrices2D(mat1, mat2)\nmat5 = cat_matrices2D(mat1, mat3, axis=1)\nprint(mat4)\nprint(mat5)\nmat1[0] = [9, 10]\nmat1[1].append(5)\nprint(mat1)\nprint(mat4)\nprint(mat5)",
+        "detail": "math.linear_algebra.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat4",
+        "kind": 5,
+        "importPath": "math.linear_algebra.7-main",
+        "description": "math.linear_algebra.7-main",
+        "peekOfCode": "mat4 = cat_matrices2D(mat1, mat2)\nmat5 = cat_matrices2D(mat1, mat3, axis=1)\nprint(mat4)\nprint(mat5)\nmat1[0] = [9, 10]\nmat1[1].append(5)\nprint(mat1)\nprint(mat4)\nprint(mat5)",
+        "detail": "math.linear_algebra.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat5",
+        "kind": 5,
+        "importPath": "math.linear_algebra.7-main",
+        "description": "math.linear_algebra.7-main",
+        "peekOfCode": "mat5 = cat_matrices2D(mat1, mat3, axis=1)\nprint(mat4)\nprint(mat5)\nmat1[0] = [9, 10]\nmat1[1].append(5)\nprint(mat1)\nprint(mat4)\nprint(mat5)",
+        "detail": "math.linear_algebra.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1[0]",
+        "kind": 5,
+        "importPath": "math.linear_algebra.7-main",
+        "description": "math.linear_algebra.7-main",
+        "peekOfCode": "mat1[0] = [9, 10]\nmat1[1].append(5)\nprint(mat1)\nprint(mat4)\nprint(mat5)",
+        "detail": "math.linear_algebra.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat_mul",
+        "kind": 5,
+        "importPath": "math.linear_algebra.8-main",
+        "description": "math.linear_algebra.8-main",
+        "peekOfCode": "mat_mul = __import__('8-ridin_bareback').mat_mul\nmat1 = [[1, 2],\n        [3, 4],\n        [5, 6]]\nmat2 = [[1, 2, 3, 4],\n        [5, 6, 7, 8]]\nprint(mat_mul(mat1, mat2))",
+        "detail": "math.linear_algebra.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.8-main",
+        "description": "math.linear_algebra.8-main",
+        "peekOfCode": "mat1 = [[1, 2],\n        [3, 4],\n        [5, 6]]\nmat2 = [[1, 2, 3, 4],\n        [5, 6, 7, 8]]\nprint(mat_mul(mat1, mat2))",
+        "detail": "math.linear_algebra.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.8-main",
+        "description": "math.linear_algebra.8-main",
+        "peekOfCode": "mat2 = [[1, 2, 3, 4],\n        [5, 6, 7, 8]]\nprint(mat_mul(mat1, mat2))",
+        "detail": "math.linear_algebra.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "mat_mul",
+        "kind": 2,
+        "importPath": "math.linear_algebra.8-ridin_bareback",
+        "description": "math.linear_algebra.8-ridin_bareback",
+        "peekOfCode": "def mat_mul(mat1, mat2):\n    \"\"\"A function that performs matrix multiplication\"\"\"\n    if len(mat1[0]) != len(mat2):\n        return None\n    result = []\n    for i in range(len(mat1)):\n        row = []\n        for j in range(len(mat2[0])):\n            row.append(0)\n        result.append(row)",
+        "detail": "math.linear_algebra.8-ridin_bareback",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "description": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "peekOfCode": "matrix = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12],\n                   [13, 14, 15, 16, 17, 18], [19, 20, 21, 22, 23, 24]])\nmat1 = matrix[1:3, :]\nmat2 = matrix[:, 2:4]\nmat3 = matrix[1:, 3:]\nprint(\"The middle two rows of the matrix are:\\n{}\".format(mat1))\nprint(\"The middle two columns of the matrix are:\\n{}\".format(mat2))\nprint(\"The bottom-right, square, 3x3 matrix is:\\n{}\".format(mat3))",
+        "detail": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "documentation": {}
+    },
+    {
+        "label": "mat1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "description": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "peekOfCode": "mat1 = matrix[1:3, :]\nmat2 = matrix[:, 2:4]\nmat3 = matrix[1:, 3:]\nprint(\"The middle two rows of the matrix are:\\n{}\".format(mat1))\nprint(\"The middle two columns of the matrix are:\\n{}\".format(mat2))\nprint(\"The bottom-right, square, 3x3 matrix is:\\n{}\".format(mat3))",
+        "detail": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "documentation": {}
+    },
+    {
+        "label": "mat2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "description": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "peekOfCode": "mat2 = matrix[:, 2:4]\nmat3 = matrix[1:, 3:]\nprint(\"The middle two rows of the matrix are:\\n{}\".format(mat1))\nprint(\"The middle two columns of the matrix are:\\n{}\".format(mat2))\nprint(\"The bottom-right, square, 3x3 matrix is:\\n{}\".format(mat3))",
+        "detail": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "documentation": {}
+    },
+    {
+        "label": "mat3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "description": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "peekOfCode": "mat3 = matrix[1:, 3:]\nprint(\"The middle two rows of the matrix are:\\n{}\".format(mat1))\nprint(\"The middle two columns of the matrix are:\\n{}\".format(mat2))\nprint(\"The bottom-right, square, 3x3 matrix is:\\n{}\".format(mat3))",
+        "detail": "math.linear_algebra.9-let_the_butcher_slice_it",
+        "documentation": {}
+    },
+    {
+        "label": "line",
+        "kind": 2,
+        "importPath": "math.plotting.0-line",
+        "description": "math.plotting.0-line",
+        "peekOfCode": "def line():\n    \"\"\" A function that plot y as a line graph\"\"\"\n    y = np.arange(0, 11) ** 3\n    plt.figure(figsize=(6.4, 4.8))\n    # your code here\n    plt.plot(y, color='red')\n    plt.xlim(0, 10)\n    plt.show()",
+        "detail": "math.plotting.0-line",
+        "documentation": {}
+    },
+    {
+        "label": "scatter",
+        "kind": 2,
+        "importPath": "math.plotting.1-scatter",
+        "description": "math.plotting.1-scatter",
+        "peekOfCode": "def scatter():\n    \"\"\" A function that plot x ↦ y as a scatter plot\"\"\"\n    mean = [69, 0]\n    cov = [[15, 8], [8, 15]]\n    np.random.seed(5)\n    x, y = np.random.multivariate_normal(mean, cov, 2000).T\n    y += 180\n    plt.figure(figsize=(6.4, 4.8))\n    # your code here\n    plt.scatter(x, y, color='magenta')",
+        "detail": "math.plotting.1-scatter",
+        "documentation": {}
+    },
+    {
+        "label": "gradient",
+        "kind": 2,
+        "importPath": "math.plotting.100-gradient",
+        "description": "math.plotting.100-gradient",
+        "peekOfCode": "def gradient():\n    \"\"\"\n    A function that create a scatter plot\n    of sampled elevations on a mountain\n    \"\"\"\n    np.random.seed(5)\n    x = np.random.randn(2000) * 10\n    y = np.random.randn(2000) * 10\n    z = np.random.rand(2000) + 40 - np.sqrt(np.square(x) + np.square(y))\n    plt.figure(figsize=(6.4, 4.8))",
+        "detail": "math.plotting.100-gradient",
+        "documentation": {}
+    },
+    {
+        "label": "lib",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "lib = np.load(\"pca.npz\")\ndata = lib[\"data\"]\nlabels = lib[\"labels\"]\ndata_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# your code here\nfig = plt.figure(figsize=(8, 6))\nax = fig.add_subplot(111, projection=\"3d\")",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "data = lib[\"data\"]\nlabels = lib[\"labels\"]\ndata_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# your code here\nfig = plt.figure(figsize=(8, 6))\nax = fig.add_subplot(111, projection=\"3d\")\nsc = ax.scatter(",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "labels = lib[\"labels\"]\ndata_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# your code here\nfig = plt.figure(figsize=(8, 6))\nax = fig.add_subplot(111, projection=\"3d\")\nsc = ax.scatter(\n    pca_data[:, 0],",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "data_means",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "data_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# your code here\nfig = plt.figure(figsize=(8, 6))\nax = fig.add_subplot(111, projection=\"3d\")\nsc = ax.scatter(\n    pca_data[:, 0],\n    pca_data[:, 1],",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "norm_data",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "norm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# your code here\nfig = plt.figure(figsize=(8, 6))\nax = fig.add_subplot(111, projection=\"3d\")\nsc = ax.scatter(\n    pca_data[:, 0],\n    pca_data[:, 1],\n    pca_data[:, 2],",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "pca_data",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "pca_data = np.matmul(norm_data, Vh[:3].T)\n# your code here\nfig = plt.figure(figsize=(8, 6))\nax = fig.add_subplot(111, projection=\"3d\")\nsc = ax.scatter(\n    pca_data[:, 0],\n    pca_data[:, 1],\n    pca_data[:, 2],\n    c=labels,\n    cmap=\"plasma\",",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "fig = plt.figure(figsize=(8, 6))\nax = fig.add_subplot(111, projection=\"3d\")\nsc = ax.scatter(\n    pca_data[:, 0],\n    pca_data[:, 1],\n    pca_data[:, 2],\n    c=labels,\n    cmap=\"plasma\",\n    s=50,\n    edgecolor=\"k\"",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "ax = fig.add_subplot(111, projection=\"3d\")\nsc = ax.scatter(\n    pca_data[:, 0],\n    pca_data[:, 1],\n    pca_data[:, 2],\n    c=labels,\n    cmap=\"plasma\",\n    s=50,\n    edgecolor=\"k\"\n)",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "sc",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "sc = ax.scatter(\n    pca_data[:, 0],\n    pca_data[:, 1],\n    pca_data[:, 2],\n    c=labels,\n    cmap=\"plasma\",\n    s=50,\n    edgecolor=\"k\"\n)\nax.set_xlabel(\"U1\", fontsize=10)",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "change_scale",
+        "kind": 2,
+        "importPath": "math.plotting.2-change_scale",
+        "description": "math.plotting.2-change_scale",
+        "peekOfCode": "def change_scale():\n    \"\"\" A function that plot x ↦ y as a line graph\"\"\"\n    x = np.arange(0, 28651, 5730)\n    r = np.log(0.5)\n    t = 5730\n    y = np.exp((r / t) * x)\n    plt.figure(figsize=(6.4, 4.8))\n    # your code here\n    plt.plot(x, y)\n    plt.yscale(\"log\")",
+        "detail": "math.plotting.2-change_scale",
+        "documentation": {}
+    },
+    {
+        "label": "two",
+        "kind": 2,
+        "importPath": "math.plotting.3-two",
+        "description": "math.plotting.3-two",
+        "peekOfCode": "def two():\n    \"\"\" A function that plot x ↦ y1 and x ↦ y2 as line graphs\"\"\"\n    x = np.arange(0, 21000, 1000)\n    r = np.log(0.5)\n    t1 = 5730\n    t2 = 1600\n    y1 = np.exp((r / t1) * x)\n    y2 = np.exp((r / t2) * x)\n    plt.figure(figsize=(6.4, 4.8))\n    # your code here",
+        "detail": "math.plotting.3-two",
+        "documentation": {}
+    },
+    {
+        "label": "frequency",
+        "kind": 2,
+        "importPath": "math.plotting.4-frequency",
+        "description": "math.plotting.4-frequency",
+        "peekOfCode": "def frequency():\n    \"\"\" A function that plot a histogram of student scores for a project\"\"\"\n    np.random.seed(5)\n    student_grades = np.random.normal(68, 15, 50)\n    plt.figure(figsize=(6.4, 4.8))\n    # your code here\n    plt.hist(student_grades, bins=10, range=(0, 100), edgecolor='black')\n    plt.title('Project A')\n    plt.xlabel('Grades')\n    plt.ylabel('Number of Students')",
+        "detail": "math.plotting.4-frequency",
+        "documentation": {}
+    },
+    {
+        "label": "all_in_one",
+        "kind": 2,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "def all_in_one():\n    \"\"\" A function that plot all 5 sub graphs in one figure\"\"\"\n    y0 = np.arange(0, 11) ** 3\n    mean = [69, 0]\n    cov = [[15, 8], [8, 15]]\n    np.random.seed(5)\n    x1, y1 = np.random.multivariate_normal(mean, cov, 2000).T\n    y1 += 180\n    x2 = np.arange(0, 28651, 5730)\n    r2 = np.log(0.5)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "bars",
+        "kind": 2,
+        "importPath": "math.plotting.6-bars",
+        "description": "math.plotting.6-bars",
+        "peekOfCode": "def bars():\n    \"\"\" A function plot a stacked bar graph\"\"\"\n    np.random.seed(5)\n    fruit = np.random.randint(0, 20, (4, 3))\n    plt.figure(figsize=(6.4, 4.8))\n    # your code here\n    x = ['Farrah', 'Fred', 'Felicia']\n    plt.bar(x, fruit[0], color='red', label='apples', width=0.5)\n    plt.bar(x, fruit[1], bottom=fruit[0], color='yellow', label='bananas',\n            width=0.5)",
+        "detail": "math.plotting.6-bars",
+        "documentation": {}
+    },
+    {
+        "label": "Poisson",
+        "kind": 5,
+        "importPath": "math.probability.0-main",
+        "description": "math.probability.0-main",
+        "peekOfCode": "Poisson = __import__('poisson').Poisson\nnp.random.seed(0)\ndata = np.random.poisson(5., 100).tolist()\np1 = Poisson(data)\nprint('Lambtha:', p1.lambtha)\np2 = Poisson(lambtha=5)\nprint('Lambtha:', p2.lambtha)",
+        "detail": "math.probability.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.0-main",
+        "description": "math.probability.0-main",
+        "peekOfCode": "data = np.random.poisson(5., 100).tolist()\np1 = Poisson(data)\nprint('Lambtha:', p1.lambtha)\np2 = Poisson(lambtha=5)\nprint('Lambtha:', p2.lambtha)",
+        "detail": "math.probability.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "math.probability.0-main",
+        "description": "math.probability.0-main",
+        "peekOfCode": "p1 = Poisson(data)\nprint('Lambtha:', p1.lambtha)\np2 = Poisson(lambtha=5)\nprint('Lambtha:', p2.lambtha)",
+        "detail": "math.probability.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "math.probability.0-main",
+        "description": "math.probability.0-main",
+        "peekOfCode": "p2 = Poisson(lambtha=5)\nprint('Lambtha:', p2.lambtha)",
+        "detail": "math.probability.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "Poisson",
+        "kind": 5,
+        "importPath": "math.probability.1-main",
+        "description": "math.probability.1-main",
+        "peekOfCode": "Poisson = __import__('poisson').Poisson\nnp.random.seed(0)\ndata = np.random.poisson(5., 100).tolist()\np1 = Poisson(data)\nprint('P(9):', p1.pmf(9))\np2 = Poisson(lambtha=5)\nprint('P(9):', p2.pmf(9))",
+        "detail": "math.probability.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.1-main",
+        "description": "math.probability.1-main",
+        "peekOfCode": "data = np.random.poisson(5., 100).tolist()\np1 = Poisson(data)\nprint('P(9):', p1.pmf(9))\np2 = Poisson(lambtha=5)\nprint('P(9):', p2.pmf(9))",
+        "detail": "math.probability.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "math.probability.1-main",
+        "description": "math.probability.1-main",
+        "peekOfCode": "p1 = Poisson(data)\nprint('P(9):', p1.pmf(9))\np2 = Poisson(lambtha=5)\nprint('P(9):', p2.pmf(9))",
+        "detail": "math.probability.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "math.probability.1-main",
+        "description": "math.probability.1-main",
+        "peekOfCode": "p2 = Poisson(lambtha=5)\nprint('P(9):', p2.pmf(9))",
+        "detail": "math.probability.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "Binomial",
+        "kind": 5,
+        "importPath": "math.probability.10-main",
+        "description": "math.probability.10-main",
+        "peekOfCode": "Binomial = __import__('binomial').Binomial\nnp.random.seed(0)\ndata = np.random.binomial(50, 0.6, 100).tolist()\nb1 = Binomial(data)\nprint('n:', b1.n, \"p:\", b1.p)\nb2 = Binomial(n=50, p=0.6)\nprint('n:', b2.n, \"p:\", b2.p)",
+        "detail": "math.probability.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.10-main",
+        "description": "math.probability.10-main",
+        "peekOfCode": "data = np.random.binomial(50, 0.6, 100).tolist()\nb1 = Binomial(data)\nprint('n:', b1.n, \"p:\", b1.p)\nb2 = Binomial(n=50, p=0.6)\nprint('n:', b2.n, \"p:\", b2.p)",
+        "detail": "math.probability.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "b1",
+        "kind": 5,
+        "importPath": "math.probability.10-main",
+        "description": "math.probability.10-main",
+        "peekOfCode": "b1 = Binomial(data)\nprint('n:', b1.n, \"p:\", b1.p)\nb2 = Binomial(n=50, p=0.6)\nprint('n:', b2.n, \"p:\", b2.p)",
+        "detail": "math.probability.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "b2",
+        "kind": 5,
+        "importPath": "math.probability.10-main",
+        "description": "math.probability.10-main",
+        "peekOfCode": "b2 = Binomial(n=50, p=0.6)\nprint('n:', b2.n, \"p:\", b2.p)",
+        "detail": "math.probability.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "Binomial",
+        "kind": 5,
+        "importPath": "math.probability.11-main",
+        "description": "math.probability.11-main",
+        "peekOfCode": "Binomial = __import__('binomial').Binomial\nnp.random.seed(0)\ndata = np.random.binomial(50, 0.6, 100).tolist()\nb1 = Binomial(data)\nprint('P(30):', b1.pmf(30))\nb2 = Binomial(n=50, p=0.6)\nprint('P(30):', b2.pmf(30))",
+        "detail": "math.probability.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.11-main",
+        "description": "math.probability.11-main",
+        "peekOfCode": "data = np.random.binomial(50, 0.6, 100).tolist()\nb1 = Binomial(data)\nprint('P(30):', b1.pmf(30))\nb2 = Binomial(n=50, p=0.6)\nprint('P(30):', b2.pmf(30))",
+        "detail": "math.probability.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "b1",
+        "kind": 5,
+        "importPath": "math.probability.11-main",
+        "description": "math.probability.11-main",
+        "peekOfCode": "b1 = Binomial(data)\nprint('P(30):', b1.pmf(30))\nb2 = Binomial(n=50, p=0.6)\nprint('P(30):', b2.pmf(30))",
+        "detail": "math.probability.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "b2",
+        "kind": 5,
+        "importPath": "math.probability.11-main",
+        "description": "math.probability.11-main",
+        "peekOfCode": "b2 = Binomial(n=50, p=0.6)\nprint('P(30):', b2.pmf(30))",
+        "detail": "math.probability.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "Binomial",
+        "kind": 5,
+        "importPath": "math.probability.12-main",
+        "description": "math.probability.12-main",
+        "peekOfCode": "Binomial = __import__('binomial').Binomial\nnp.random.seed(0)\ndata = np.random.binomial(50, 0.6, 100).tolist()\nb1 = Binomial(data)\nprint('F(30):', b1.cdf(30))\nb2 = Binomial(n=50, p=0.6)\nprint('F(30):', b2.cdf(30))",
+        "detail": "math.probability.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.12-main",
+        "description": "math.probability.12-main",
+        "peekOfCode": "data = np.random.binomial(50, 0.6, 100).tolist()\nb1 = Binomial(data)\nprint('F(30):', b1.cdf(30))\nb2 = Binomial(n=50, p=0.6)\nprint('F(30):', b2.cdf(30))",
+        "detail": "math.probability.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "b1",
+        "kind": 5,
+        "importPath": "math.probability.12-main",
+        "description": "math.probability.12-main",
+        "peekOfCode": "b1 = Binomial(data)\nprint('F(30):', b1.cdf(30))\nb2 = Binomial(n=50, p=0.6)\nprint('F(30):', b2.cdf(30))",
+        "detail": "math.probability.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "b2",
+        "kind": 5,
+        "importPath": "math.probability.12-main",
+        "description": "math.probability.12-main",
+        "peekOfCode": "b2 = Binomial(n=50, p=0.6)\nprint('F(30):', b2.cdf(30))",
+        "detail": "math.probability.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "Poisson",
+        "kind": 5,
+        "importPath": "math.probability.2-main",
+        "description": "math.probability.2-main",
+        "peekOfCode": "Poisson = __import__('poisson').Poisson\nnp.random.seed(0)\ndata = np.random.poisson(5., 100).tolist()\np1 = Poisson(data)\nprint('F(9):', p1.cdf(9))\np2 = Poisson(lambtha=5)\nprint('F(9):', p2.cdf(9))",
+        "detail": "math.probability.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.2-main",
+        "description": "math.probability.2-main",
+        "peekOfCode": "data = np.random.poisson(5., 100).tolist()\np1 = Poisson(data)\nprint('F(9):', p1.cdf(9))\np2 = Poisson(lambtha=5)\nprint('F(9):', p2.cdf(9))",
+        "detail": "math.probability.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "math.probability.2-main",
+        "description": "math.probability.2-main",
+        "peekOfCode": "p1 = Poisson(data)\nprint('F(9):', p1.cdf(9))\np2 = Poisson(lambtha=5)\nprint('F(9):', p2.cdf(9))",
+        "detail": "math.probability.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "math.probability.2-main",
+        "description": "math.probability.2-main",
+        "peekOfCode": "p2 = Poisson(lambtha=5)\nprint('F(9):', p2.cdf(9))",
+        "detail": "math.probability.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "Exponential",
+        "kind": 5,
+        "importPath": "math.probability.3-main",
+        "description": "math.probability.3-main",
+        "peekOfCode": "Exponential = __import__('exponential').Exponential\nnp.random.seed(0)\ndata = np.random.exponential(0.5, 100).tolist()\ne1 = Exponential(data)\nprint('Lambtha:', e1.lambtha)\ne2 = Exponential(lambtha=2)\nprint('Lambtha:', e2.lambtha)",
+        "detail": "math.probability.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.3-main",
+        "description": "math.probability.3-main",
+        "peekOfCode": "data = np.random.exponential(0.5, 100).tolist()\ne1 = Exponential(data)\nprint('Lambtha:', e1.lambtha)\ne2 = Exponential(lambtha=2)\nprint('Lambtha:', e2.lambtha)",
+        "detail": "math.probability.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "e1",
+        "kind": 5,
+        "importPath": "math.probability.3-main",
+        "description": "math.probability.3-main",
+        "peekOfCode": "e1 = Exponential(data)\nprint('Lambtha:', e1.lambtha)\ne2 = Exponential(lambtha=2)\nprint('Lambtha:', e2.lambtha)",
+        "detail": "math.probability.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "e2",
+        "kind": 5,
+        "importPath": "math.probability.3-main",
+        "description": "math.probability.3-main",
+        "peekOfCode": "e2 = Exponential(lambtha=2)\nprint('Lambtha:', e2.lambtha)",
+        "detail": "math.probability.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "Exponential",
+        "kind": 5,
+        "importPath": "math.probability.4-main",
+        "description": "math.probability.4-main",
+        "peekOfCode": "Exponential = __import__('exponential').Exponential\nnp.random.seed(0)\ndata = np.random.exponential(0.5, 100).tolist()\ne1 = Exponential(data)\nprint('f(1):', e1.pdf(1))\ne2 = Exponential(lambtha=2)\nprint('f(1):', e2.pdf(1))",
+        "detail": "math.probability.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.4-main",
+        "description": "math.probability.4-main",
+        "peekOfCode": "data = np.random.exponential(0.5, 100).tolist()\ne1 = Exponential(data)\nprint('f(1):', e1.pdf(1))\ne2 = Exponential(lambtha=2)\nprint('f(1):', e2.pdf(1))",
+        "detail": "math.probability.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "e1",
+        "kind": 5,
+        "importPath": "math.probability.4-main",
+        "description": "math.probability.4-main",
+        "peekOfCode": "e1 = Exponential(data)\nprint('f(1):', e1.pdf(1))\ne2 = Exponential(lambtha=2)\nprint('f(1):', e2.pdf(1))",
+        "detail": "math.probability.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "e2",
+        "kind": 5,
+        "importPath": "math.probability.4-main",
+        "description": "math.probability.4-main",
+        "peekOfCode": "e2 = Exponential(lambtha=2)\nprint('f(1):', e2.pdf(1))",
+        "detail": "math.probability.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "Exponential",
+        "kind": 5,
+        "importPath": "math.probability.5-main",
+        "description": "math.probability.5-main",
+        "peekOfCode": "Exponential = __import__('exponential').Exponential\nnp.random.seed(0)\ndata = np.random.exponential(0.5, 100).tolist()\ne1 = Exponential(data)\nprint('F(1):', e1.cdf(1))\ne2 = Exponential(lambtha=2)\nprint('F(1):', e2.cdf(1))",
+        "detail": "math.probability.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.5-main",
+        "description": "math.probability.5-main",
+        "peekOfCode": "data = np.random.exponential(0.5, 100).tolist()\ne1 = Exponential(data)\nprint('F(1):', e1.cdf(1))\ne2 = Exponential(lambtha=2)\nprint('F(1):', e2.cdf(1))",
+        "detail": "math.probability.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "e1",
+        "kind": 5,
+        "importPath": "math.probability.5-main",
+        "description": "math.probability.5-main",
+        "peekOfCode": "e1 = Exponential(data)\nprint('F(1):', e1.cdf(1))\ne2 = Exponential(lambtha=2)\nprint('F(1):', e2.cdf(1))",
+        "detail": "math.probability.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "e2",
+        "kind": 5,
+        "importPath": "math.probability.5-main",
+        "description": "math.probability.5-main",
+        "peekOfCode": "e2 = Exponential(lambtha=2)\nprint('F(1):', e2.cdf(1))",
+        "detail": "math.probability.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "Normal",
+        "kind": 5,
+        "importPath": "math.probability.6-main",
+        "description": "math.probability.6-main",
+        "peekOfCode": "Normal = __import__('normal').Normal\nnp.random.seed(0)\ndata = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('Mean:', n1.mean, ', Stddev:', n1.stddev)\nn2 = Normal(mean=70, stddev=10)\nprint('Mean:', n2.mean, ', Stddev:', n2.stddev)",
+        "detail": "math.probability.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.6-main",
+        "description": "math.probability.6-main",
+        "peekOfCode": "data = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('Mean:', n1.mean, ', Stddev:', n1.stddev)\nn2 = Normal(mean=70, stddev=10)\nprint('Mean:', n2.mean, ', Stddev:', n2.stddev)",
+        "detail": "math.probability.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "math.probability.6-main",
+        "description": "math.probability.6-main",
+        "peekOfCode": "n1 = Normal(data)\nprint('Mean:', n1.mean, ', Stddev:', n1.stddev)\nn2 = Normal(mean=70, stddev=10)\nprint('Mean:', n2.mean, ', Stddev:', n2.stddev)",
+        "detail": "math.probability.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "math.probability.6-main",
+        "description": "math.probability.6-main",
+        "peekOfCode": "n2 = Normal(mean=70, stddev=10)\nprint('Mean:', n2.mean, ', Stddev:', n2.stddev)",
+        "detail": "math.probability.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "Normal",
+        "kind": 5,
+        "importPath": "math.probability.7-main",
+        "description": "math.probability.7-main",
+        "peekOfCode": "Normal = __import__('normal').Normal\nnp.random.seed(0)\ndata = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('Z(90):', n1.z_score(90))\nprint('X(2):', n1.x_value(2))\nn2 = Normal(mean=70, stddev=10)\nprint()\nprint('Z(90):', n2.z_score(90))\nprint('X(2):', n2.x_value(2))",
+        "detail": "math.probability.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.7-main",
+        "description": "math.probability.7-main",
+        "peekOfCode": "data = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('Z(90):', n1.z_score(90))\nprint('X(2):', n1.x_value(2))\nn2 = Normal(mean=70, stddev=10)\nprint()\nprint('Z(90):', n2.z_score(90))\nprint('X(2):', n2.x_value(2))",
+        "detail": "math.probability.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "math.probability.7-main",
+        "description": "math.probability.7-main",
+        "peekOfCode": "n1 = Normal(data)\nprint('Z(90):', n1.z_score(90))\nprint('X(2):', n1.x_value(2))\nn2 = Normal(mean=70, stddev=10)\nprint()\nprint('Z(90):', n2.z_score(90))\nprint('X(2):', n2.x_value(2))",
+        "detail": "math.probability.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "math.probability.7-main",
+        "description": "math.probability.7-main",
+        "peekOfCode": "n2 = Normal(mean=70, stddev=10)\nprint()\nprint('Z(90):', n2.z_score(90))\nprint('X(2):', n2.x_value(2))",
+        "detail": "math.probability.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "Normal",
+        "kind": 5,
+        "importPath": "math.probability.8-main",
+        "description": "math.probability.8-main",
+        "peekOfCode": "Normal = __import__('normal').Normal\nnp.random.seed(0)\ndata = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('PSI(90):', n1.pdf(90))\nn2 = Normal(mean=70, stddev=10)\nprint('PSI(90):', n2.pdf(90))",
+        "detail": "math.probability.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.8-main",
+        "description": "math.probability.8-main",
+        "peekOfCode": "data = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('PSI(90):', n1.pdf(90))\nn2 = Normal(mean=70, stddev=10)\nprint('PSI(90):', n2.pdf(90))",
+        "detail": "math.probability.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "math.probability.8-main",
+        "description": "math.probability.8-main",
+        "peekOfCode": "n1 = Normal(data)\nprint('PSI(90):', n1.pdf(90))\nn2 = Normal(mean=70, stddev=10)\nprint('PSI(90):', n2.pdf(90))",
+        "detail": "math.probability.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "math.probability.8-main",
+        "description": "math.probability.8-main",
+        "peekOfCode": "n2 = Normal(mean=70, stddev=10)\nprint('PSI(90):', n2.pdf(90))",
+        "detail": "math.probability.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "Normal",
+        "kind": 5,
+        "importPath": "math.probability.9-main",
+        "description": "math.probability.9-main",
+        "peekOfCode": "Normal = __import__('normal').Normal\nnp.random.seed(0)\ndata = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('PHI(90):', n1.cdf(90))\nn2 = Normal(mean=70, stddev=10)\nprint('PHI(90):', n2.cdf(90))",
+        "detail": "math.probability.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.probability.9-main",
+        "description": "math.probability.9-main",
+        "peekOfCode": "data = np.random.normal(70, 10, 100).tolist()\nn1 = Normal(data)\nprint('PHI(90):', n1.cdf(90))\nn2 = Normal(mean=70, stddev=10)\nprint('PHI(90):', n2.cdf(90))",
+        "detail": "math.probability.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "math.probability.9-main",
+        "description": "math.probability.9-main",
+        "peekOfCode": "n1 = Normal(data)\nprint('PHI(90):', n1.cdf(90))\nn2 = Normal(mean=70, stddev=10)\nprint('PHI(90):', n2.cdf(90))",
+        "detail": "math.probability.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "math.probability.9-main",
+        "description": "math.probability.9-main",
+        "peekOfCode": "n2 = Normal(mean=70, stddev=10)\nprint('PHI(90):', n2.cdf(90))",
+        "detail": "math.probability.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "Binomial",
+        "kind": 6,
+        "importPath": "math.probability.binomial",
+        "description": "math.probability.binomial",
+        "peekOfCode": "class Binomial:\n    \"\"\" Class with constructor for a Binomial distribution\"\"\"\n    def __init__(self, data=None, n=1, p=0.5):\n        \"\"\"\n        A class that represents a Binomial distribution\n        \"\"\"\n        if data is None:\n            if n <= 0:\n                raise ValueError(\"n must be a positive value\")\n            if p <= 0 or p >= 1:",
+        "detail": "math.probability.binomial",
+        "documentation": {}
+    },
+    {
+        "label": "Exponential",
+        "kind": 6,
+        "importPath": "math.probability.exponential",
+        "description": "math.probability.exponential",
+        "peekOfCode": "class Exponential:\n    \"\"\"A class that represents an exponential distribution:\"\"\"\n    def __init__(self, data=None, lambtha=1.):\n        \"\"\"Class constructor\"\"\"\n        if data is None:\n            if lambtha <= 0:\n                raise ValueError(\"lambtha must be a positive value\")\n            self.lambtha = float(lambtha)\n        else:\n            if type(data) is not list:",
+        "detail": "math.probability.exponential",
+        "documentation": {}
+    },
+    {
+        "label": "Normal",
+        "kind": 6,
+        "importPath": "math.probability.normal",
+        "description": "math.probability.normal",
+        "peekOfCode": "class Normal:\n    \"\"\"A class that represents a Normal distribution\"\"\"\n    def __init__(self, data=None, mean=0., stddev=1.):\n        \"\"\"A function that initializes a Normal distribution instance\"\"\"\n        if data is None:\n            if stddev <= 0:\n                raise ValueError(\"stddev must be a positive value\")\n            self.mean = float(mean)\n            self.stddev = float(stddev)\n        else:",
+        "detail": "math.probability.normal",
+        "documentation": {}
+    },
+    {
+        "label": "Poisson",
+        "kind": 6,
+        "importPath": "math.probability.poisson",
+        "description": "math.probability.poisson",
+        "peekOfCode": "class Poisson:\n    \"\"\"class that represents Poisson distribution\"\"\"\n    def __init__(self, data=None, lambtha=1.):\n        \"\"\"class constructor\"\"\"\n        if data is None:\n            if lambtha < 1:\n                raise ValueError(\"lambtha must be a positive value\")\n            else:\n                self.lambtha = float(lambtha)\n        else:",
+        "detail": "math.probability.poisson",
+        "documentation": {}
+    },
+    {
+        "label": "availableShips",
+        "kind": 5,
+        "importPath": "pipeline.apis.0-main",
+        "description": "pipeline.apis.0-main",
+        "peekOfCode": "availableShips = __import__('0-passengers').availableShips\nships = availableShips(4)\nfor ship in ships:\n    print(ship)",
+        "detail": "pipeline.apis.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "ships",
+        "kind": 5,
+        "importPath": "pipeline.apis.0-main",
+        "description": "pipeline.apis.0-main",
+        "peekOfCode": "ships = availableShips(4)\nfor ship in ships:\n    print(ship)",
+        "detail": "pipeline.apis.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "availableShips",
+        "kind": 2,
+        "importPath": "pipeline.apis.0-passengers",
+        "description": "pipeline.apis.0-passengers",
+        "peekOfCode": "def availableShips(passengerCount):\n    \"\"\"\n    A function that returns the list of ships that can hold\n    a given number of passengers\n    \"\"\"\n    data = requests.get(\"https://swapi-api.hbtn.io/api/starships\").json()\n    availableShips = []\n    while data.get(\"next\") is not None:\n        starships = data.get(\"results\")\n        for starship in starships:",
+        "detail": "pipeline.apis.0-passengers",
+        "documentation": {}
+    },
+    {
+        "label": "sentientPlanets",
+        "kind": 5,
+        "importPath": "pipeline.apis.1-main",
+        "description": "pipeline.apis.1-main",
+        "peekOfCode": "sentientPlanets = __import__('1-sentience').sentientPlanets\nplanets = sentientPlanets()\nfor planet in planets:\n    print(planet)",
+        "detail": "pipeline.apis.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "planets",
+        "kind": 5,
+        "importPath": "pipeline.apis.1-main",
+        "description": "pipeline.apis.1-main",
+        "peekOfCode": "planets = sentientPlanets()\nfor planet in planets:\n    print(planet)",
+        "detail": "pipeline.apis.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "sentientPlanets",
+        "kind": 2,
+        "importPath": "pipeline.apis.1-sentience",
+        "description": "pipeline.apis.1-sentience",
+        "peekOfCode": "def sentientPlanets():\n    \"\"\"\n    A function that returns the list of names of the\n    home planets of all sentient species\n    \"\"\"\n    url = \"https://swapi-api.hbtn.io/api/species\"\n    sentient_planets = []\n    while url is not None:\n        data = requests.get(url).json()\n        species = data.get(\"results\")",
+        "detail": "pipeline.apis.1-sentience",
+        "documentation": {}
+    },
+    {
+        "label": "from_numpy",
+        "kind": 2,
+        "importPath": "pipeline.pandas.0-from_numpy",
+        "description": "pipeline.pandas.0-from_numpy",
+        "peekOfCode": "def from_numpy(array):\n    '''A function that creates a pd.DataFrame from a np.ndarray'''\n    letters = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n    num_columns = array.shape[1]\n    column_names = list(letters[:num_columns])\n    df = pd.DataFrame(array, columns=column_names)\n    return df",
+        "detail": "pipeline.pandas.0-from_numpy",
+        "documentation": {}
+    },
+    {
+        "label": "from_numpy",
+        "kind": 5,
+        "importPath": "pipeline.pandas.0-main",
+        "description": "pipeline.pandas.0-main",
+        "peekOfCode": "from_numpy = __import__('0-from_numpy').from_numpy\nnp.random.seed(0)\nA = np.random.randn(5, 8)\nprint(from_numpy(A))\nB = np.random.randn(9, 3)\nprint(from_numpy(B))",
+        "detail": "pipeline.pandas.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 5,
+        "importPath": "pipeline.pandas.0-main",
+        "description": "pipeline.pandas.0-main",
+        "peekOfCode": "A = np.random.randn(5, 8)\nprint(from_numpy(A))\nB = np.random.randn(9, 3)\nprint(from_numpy(B))",
+        "detail": "pipeline.pandas.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "kind": 5,
+        "importPath": "pipeline.pandas.0-main",
+        "description": "pipeline.pandas.0-main",
+        "peekOfCode": "B = np.random.randn(9, 3)\nprint(from_numpy(B))",
+        "detail": "pipeline.pandas.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "pipeline.pandas.1-from_dictionary",
+        "description": "pipeline.pandas.1-from_dictionary",
+        "peekOfCode": "data = {\n    'First':  [0.0, 0.5, 1.0, 1.5],\n    'Second': [\"one\", \"two\", \"three\", \"four\"],\n}\ndf = pd.DataFrame(data, index=[\"A\", \"B\", \"C\", \"D\"])",
+        "detail": "pipeline.pandas.1-from_dictionary",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.1-from_dictionary",
+        "description": "pipeline.pandas.1-from_dictionary",
+        "peekOfCode": "df = pd.DataFrame(data, index=[\"A\", \"B\", \"C\", \"D\"])",
+        "detail": "pipeline.pandas.1-from_dictionary",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.1-main",
+        "description": "pipeline.pandas.1-main",
+        "peekOfCode": "df = __import__('1-from_dictionary').df\nprint(df)",
+        "detail": "pipeline.pandas.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "pipeline.pandas.10-index",
+        "description": "pipeline.pandas.10-index",
+        "peekOfCode": "def index(df):\n    '''\n    A function that sets the Timestamp column of a DataFrame as its index.\n    '''\n    df = df.set_index('Timestamp')\n    return df",
+        "detail": "pipeline.pandas.10-index",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.10-main",
+        "description": "pipeline.pandas.10-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nindex = __import__('10-index').index\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = index(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 5,
+        "importPath": "pipeline.pandas.10-main",
+        "description": "pipeline.pandas.10-main",
+        "peekOfCode": "index = __import__('10-index').index\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = index(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.10-main",
+        "description": "pipeline.pandas.10-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = index(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.10-main",
+        "description": "pipeline.pandas.10-main",
+        "peekOfCode": "df = index(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "concat",
+        "kind": 2,
+        "importPath": "pipeline.pandas.11-concat",
+        "description": "pipeline.pandas.11-concat",
+        "peekOfCode": "def concat(df1, df2):\n    \"\"\"A function that concatenates DataFrames\"\"\"\n    df1 = index(df1)\n    df2 = index(df2)\n    df2 = df2.loc[:1417411920]\n    combined = pd.concat([df2, df1], keys=['bitstamp', 'coinbase'])\n    return combined",
+        "detail": "pipeline.pandas.11-concat",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 5,
+        "importPath": "pipeline.pandas.11-concat",
+        "description": "pipeline.pandas.11-concat",
+        "peekOfCode": "index = __import__('10-index').index\ndef concat(df1, df2):\n    \"\"\"A function that concatenates DataFrames\"\"\"\n    df1 = index(df1)\n    df2 = index(df2)\n    df2 = df2.loc[:1417411920]\n    combined = pd.concat([df2, df1], keys=['bitstamp', 'coinbase'])\n    return combined",
+        "detail": "pipeline.pandas.11-concat",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.11-main",
+        "description": "pipeline.pandas.11-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nconcat = __import__('11-concat').concat\ndf1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = concat(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "concat",
+        "kind": 5,
+        "importPath": "pipeline.pandas.11-main",
+        "description": "pipeline.pandas.11-main",
+        "peekOfCode": "concat = __import__('11-concat').concat\ndf1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = concat(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "df1",
+        "kind": 5,
+        "importPath": "pipeline.pandas.11-main",
+        "description": "pipeline.pandas.11-main",
+        "peekOfCode": "df1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = concat(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "pipeline.pandas.11-main",
+        "description": "pipeline.pandas.11-main",
+        "peekOfCode": "df2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = concat(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.11-main",
+        "description": "pipeline.pandas.11-main",
+        "peekOfCode": "df = concat(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "hierarchy",
+        "kind": 2,
+        "importPath": "pipeline.pandas.12-hierarchy",
+        "description": "pipeline.pandas.12-hierarchy",
+        "peekOfCode": "def hierarchy(df1, df2):\n    \"\"\"A function that combines two tables by timestamp \"\"\"\n    df1 = index(df1)\n    df2 = index(df2)\n    df1_range = df1.loc[1417411980:1417417980]\n    df2_range = df2.loc[1417411980:1417417980]\n    combined = pd.concat([df2_range, df1_range], keys=['bitstamp', 'coinbase'])\n    combined = combined.swaplevel()\n    combined = combined.sort_index(level='Timestamp')\n    return combined",
+        "detail": "pipeline.pandas.12-hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 5,
+        "importPath": "pipeline.pandas.12-hierarchy",
+        "description": "pipeline.pandas.12-hierarchy",
+        "peekOfCode": "index = __import__('10-index').index\ndef hierarchy(df1, df2):\n    \"\"\"A function that combines two tables by timestamp \"\"\"\n    df1 = index(df1)\n    df2 = index(df2)\n    df1_range = df1.loc[1417411980:1417417980]\n    df2_range = df2.loc[1417411980:1417417980]\n    combined = pd.concat([df2_range, df1_range], keys=['bitstamp', 'coinbase'])\n    combined = combined.swaplevel()\n    combined = combined.sort_index(level='Timestamp')",
+        "detail": "pipeline.pandas.12-hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.12-main",
+        "description": "pipeline.pandas.12-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nhierarchy = __import__('12-hierarchy').hierarchy\ndf1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = hierarchy(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "hierarchy",
+        "kind": 5,
+        "importPath": "pipeline.pandas.12-main",
+        "description": "pipeline.pandas.12-main",
+        "peekOfCode": "hierarchy = __import__('12-hierarchy').hierarchy\ndf1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = hierarchy(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "df1",
+        "kind": 5,
+        "importPath": "pipeline.pandas.12-main",
+        "description": "pipeline.pandas.12-main",
+        "peekOfCode": "df1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = hierarchy(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "pipeline.pandas.12-main",
+        "description": "pipeline.pandas.12-main",
+        "peekOfCode": "df2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\ndf = hierarchy(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.12-main",
+        "description": "pipeline.pandas.12-main",
+        "peekOfCode": "df = hierarchy(df1, df2)\nprint(df)",
+        "detail": "pipeline.pandas.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "analyze",
+        "kind": 2,
+        "importPath": "pipeline.pandas.13-analyze",
+        "description": "pipeline.pandas.13-analyze",
+        "peekOfCode": "def analyze(df):\n    \"\"\"A function that computes statistics for a DataFrame\"\"\"\n    df = df.drop(columns=['Timestamp']).describe()\n    return df",
+        "detail": "pipeline.pandas.13-analyze",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.13-main",
+        "description": "pipeline.pandas.13-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nanalyze = __import__('13-analyze').analyze\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nstats = analyze(df)\nprint(stats)",
+        "detail": "pipeline.pandas.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "analyze",
+        "kind": 5,
+        "importPath": "pipeline.pandas.13-main",
+        "description": "pipeline.pandas.13-main",
+        "peekOfCode": "analyze = __import__('13-analyze').analyze\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nstats = analyze(df)\nprint(stats)",
+        "detail": "pipeline.pandas.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.13-main",
+        "description": "pipeline.pandas.13-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nstats = analyze(df)\nprint(stats)",
+        "detail": "pipeline.pandas.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "kind": 5,
+        "importPath": "pipeline.pandas.13-main",
+        "description": "pipeline.pandas.13-main",
+        "peekOfCode": "stats = analyze(df)\nprint(stats)",
+        "detail": "pipeline.pandas.13-main",
+        "documentation": {}
+    },
+    {
+        "label": "visualize",
+        "kind": 2,
+        "importPath": "pipeline.pandas.14-visualize",
+        "description": "pipeline.pandas.14-visualize",
+        "peekOfCode": "def visualize():\n    \"\"\"\n    A function that visualizes and returns the transformed DataFrame\n    \"\"\"\n    df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\n    df = df.drop(columns=['Weighted_Price'])\n    df = df.rename(columns={'Timestamp': 'Date'})\n    df['Date'] = pd.to_datetime(df['Date'], unit='s')\n    df = df.set_index('Date')\n    df['Close'] = df['Close'].ffill()",
+        "detail": "pipeline.pandas.14-visualize",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.14-visualize",
+        "description": "pipeline.pandas.14-visualize",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\ndef visualize():\n    \"\"\"\n    A function that visualizes and returns the transformed DataFrame\n    \"\"\"\n    df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\n    df = df.drop(columns=['Weighted_Price'])\n    df = df.rename(columns={'Timestamp': 'Date'})\n    df['Date'] = pd.to_datetime(df['Date'], unit='s')\n    df = df.set_index('Date')",
+        "detail": "pipeline.pandas.14-visualize",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 2,
+        "importPath": "pipeline.pandas.2-from_file",
+        "description": "pipeline.pandas.2-from_file",
+        "peekOfCode": "def from_file(filename, delimiter):\n    \"\"\"A function that loads data from a file as a pandas DataFrame\"\"\"\n    return pd.read_csv(filename, delimiter=delimiter)",
+        "detail": "pipeline.pandas.2-from_file",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.2-main",
+        "description": "pipeline.pandas.2-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\ndf1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nprint(df1.head())\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\nprint(df2.tail())",
+        "detail": "pipeline.pandas.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "df1",
+        "kind": 5,
+        "importPath": "pipeline.pandas.2-main",
+        "description": "pipeline.pandas.2-main",
+        "peekOfCode": "df1 = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nprint(df1.head())\ndf2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\nprint(df2.tail())",
+        "detail": "pipeline.pandas.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "pipeline.pandas.2-main",
+        "description": "pipeline.pandas.2-main",
+        "peekOfCode": "df2 = from_file('bitstampUSD_1-min_data_2012-01-01_to_2020-04-22.csv', ',')\nprint(df2.tail())",
+        "detail": "pipeline.pandas.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.3-main",
+        "description": "pipeline.pandas.3-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nrename = __import__('3-rename').rename\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = rename(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "rename",
+        "kind": 5,
+        "importPath": "pipeline.pandas.3-main",
+        "description": "pipeline.pandas.3-main",
+        "peekOfCode": "rename = __import__('3-rename').rename\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = rename(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.3-main",
+        "description": "pipeline.pandas.3-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = rename(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.3-main",
+        "description": "pipeline.pandas.3-main",
+        "peekOfCode": "df = rename(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "rename",
+        "kind": 2,
+        "importPath": "pipeline.pandas.3-rename",
+        "description": "pipeline.pandas.3-rename",
+        "peekOfCode": "def rename(df):\n    '''A function that renames 'Timestamp' to 'Datetime',\n    converts it to datetime format, and keeps only 'Datetime'\n    and 'Close' columns '''\n    df = df.rename(columns={'Timestamp': 'Datetime'})\n    df['Datetime'] = pd.to_datetime(df['Datetime'], unit='s')\n    df = df[['Datetime', 'Close']]\n    return df",
+        "detail": "pipeline.pandas.3-rename",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "kind": 2,
+        "importPath": "pipeline.pandas.4-array",
+        "description": "pipeline.pandas.4-array",
+        "peekOfCode": "def array(df):\n    '''\n    A function that select the last 10 rows of\n    'High' and 'Close' columns and return them as a numpy array\n    '''\n    last_10 = df[['High', 'Close']].tail(10)\n    return last_10.to_numpy()",
+        "detail": "pipeline.pandas.4-array",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.4-main",
+        "description": "pipeline.pandas.4-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\narray = __import__('4-array').array\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nA = array(df)\nprint(A)",
+        "detail": "pipeline.pandas.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "kind": 5,
+        "importPath": "pipeline.pandas.4-main",
+        "description": "pipeline.pandas.4-main",
+        "peekOfCode": "array = __import__('4-array').array\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nA = array(df)\nprint(A)",
+        "detail": "pipeline.pandas.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.4-main",
+        "description": "pipeline.pandas.4-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\nA = array(df)\nprint(A)",
+        "detail": "pipeline.pandas.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 5,
+        "importPath": "pipeline.pandas.4-main",
+        "description": "pipeline.pandas.4-main",
+        "peekOfCode": "A = array(df)\nprint(A)",
+        "detail": "pipeline.pandas.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.5-main",
+        "description": "pipeline.pandas.5-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nslice = __import__('5-slice').slice\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = slice(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "slice",
+        "kind": 5,
+        "importPath": "pipeline.pandas.5-main",
+        "description": "pipeline.pandas.5-main",
+        "peekOfCode": "slice = __import__('5-slice').slice\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = slice(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.5-main",
+        "description": "pipeline.pandas.5-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = slice(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.5-main",
+        "description": "pipeline.pandas.5-main",
+        "peekOfCode": "df = slice(df)\nprint(df.tail())",
+        "detail": "pipeline.pandas.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "slice",
+        "kind": 2,
+        "importPath": "pipeline.pandas.5-slice",
+        "description": "pipeline.pandas.5-slice",
+        "peekOfCode": "def slice(df):\n    \"\"\"A function that returns a sliced DataFrame\"\"\"\n    selected_columns = df[['High', 'Low', 'Close', 'Volume_(BTC)']]\n    sliced_df = selected_columns[::60]\n    return sliced_df",
+        "detail": "pipeline.pandas.5-slice",
+        "documentation": {}
+    },
+    {
+        "label": "flip_switch",
+        "kind": 2,
+        "importPath": "pipeline.pandas.6-flip_switch",
+        "description": "pipeline.pandas.6-flip_switch",
+        "peekOfCode": "def flip_switch(df):\n    \"\"\"\n    A function that .\n    \"\"\"\n    df_reversed = df.sort_index(ascending=False)\n    df_transposed = df_reversed.T\n    return df_transposed",
+        "detail": "pipeline.pandas.6-flip_switch",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.6-main",
+        "description": "pipeline.pandas.6-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nflip_switch = __import__('6-flip_switch').flip_switch\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = flip_switch(df)\nprint(df.tail(8))",
+        "detail": "pipeline.pandas.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "flip_switch",
+        "kind": 5,
+        "importPath": "pipeline.pandas.6-main",
+        "description": "pipeline.pandas.6-main",
+        "peekOfCode": "flip_switch = __import__('6-flip_switch').flip_switch\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = flip_switch(df)\nprint(df.tail(8))",
+        "detail": "pipeline.pandas.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.6-main",
+        "description": "pipeline.pandas.6-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = flip_switch(df)\nprint(df.tail(8))",
+        "detail": "pipeline.pandas.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.6-main",
+        "description": "pipeline.pandas.6-main",
+        "peekOfCode": "df = flip_switch(df)\nprint(df.tail(8))",
+        "detail": "pipeline.pandas.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "high",
+        "kind": 2,
+        "importPath": "pipeline.pandas.7-high",
+        "description": "pipeline.pandas.7-high",
+        "peekOfCode": "def high(df):\n    '''\n    A function that sorts a DataFrame by the High column in descending order\n    '''\n    sorted_df = df.sort_values(by='High', ascending=False)\n    return sorted_df",
+        "detail": "pipeline.pandas.7-high",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.7-main",
+        "description": "pipeline.pandas.7-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nhigh = __import__('7-high').high\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = high(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "high",
+        "kind": 5,
+        "importPath": "pipeline.pandas.7-main",
+        "description": "pipeline.pandas.7-main",
+        "peekOfCode": "high = __import__('7-high').high\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = high(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.7-main",
+        "description": "pipeline.pandas.7-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = high(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.7-main",
+        "description": "pipeline.pandas.7-main",
+        "peekOfCode": "df = high(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.8-main",
+        "description": "pipeline.pandas.8-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nprune = __import__('8-prune').prune\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = prune(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "prune",
+        "kind": 5,
+        "importPath": "pipeline.pandas.8-main",
+        "description": "pipeline.pandas.8-main",
+        "peekOfCode": "prune = __import__('8-prune').prune\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = prune(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.8-main",
+        "description": "pipeline.pandas.8-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = prune(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.8-main",
+        "description": "pipeline.pandas.8-main",
+        "peekOfCode": "df = prune(df)\nprint(df.head())",
+        "detail": "pipeline.pandas.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "prune",
+        "kind": 2,
+        "importPath": "pipeline.pandas.8-prune",
+        "description": "pipeline.pandas.8-prune",
+        "peekOfCode": "def prune(df):\n    '''\n    A function that removes any entries where Close has NaN values\n    and returns DataFrame\n    '''\n    cleaned_df = df[df['Close'].notna()]\n    return cleaned_df",
+        "detail": "pipeline.pandas.8-prune",
+        "documentation": {}
+    },
+    {
+        "label": "fill",
+        "kind": 2,
+        "importPath": "pipeline.pandas.9-fill",
+        "description": "pipeline.pandas.9-fill",
+        "peekOfCode": "def fill(df):\n    '''\n    A function that fill NaN values in a pandas data frame.\n    '''\n    df = df.drop(columns='Weighted_Price')\n    df['Close'] = df['Close'].ffill(axis=0)\n    df['High'] = df['High'].fillna(df['Close'])\n    df['Low'] = df['Low'].fillna(df['Close'])\n    df['Open'] = df['Open'].fillna(df['Close'])\n    df['Volume_(BTC)'] = df['Volume_(BTC)'].fillna(0)",
+        "detail": "pipeline.pandas.9-fill",
+        "documentation": {}
+    },
+    {
+        "label": "from_file",
+        "kind": 5,
+        "importPath": "pipeline.pandas.9-main",
+        "description": "pipeline.pandas.9-main",
+        "peekOfCode": "from_file = __import__('2-from_file').from_file\nfill = __import__('9-fill').fill\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = fill(df)\nprint(df.head())\nprint(df.tail())",
+        "detail": "pipeline.pandas.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "fill",
+        "kind": 5,
+        "importPath": "pipeline.pandas.9-main",
+        "description": "pipeline.pandas.9-main",
+        "peekOfCode": "fill = __import__('9-fill').fill\ndf = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = fill(df)\nprint(df.head())\nprint(df.tail())",
+        "detail": "pipeline.pandas.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.9-main",
+        "description": "pipeline.pandas.9-main",
+        "peekOfCode": "df = from_file('coinbaseUSD_1-min_data_2014-12-01_to_2019-01-09.csv', ',')\ndf = fill(df)\nprint(df.head())\nprint(df.tail())",
+        "detail": "pipeline.pandas.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "pipeline.pandas.9-main",
+        "description": "pipeline.pandas.9-main",
+        "peekOfCode": "df = fill(df)\nprint(df.head())\nprint(df.tail())",
+        "detail": "pipeline.pandas.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.0-neuron",
+        "description": "supervised_learning.classification.0-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"\n    A class that defines a neuron for binary classification.\n    \"\"\"\n    def __init__(self, nx):\n        \"\"\"\n        A function that initializes weights, bias, and output for the neuron.\n        \"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")",
+        "detail": "supervised_learning.classification.0-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.1-neuron",
+        "description": "supervised_learning.classification.1-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"A class that defines a neuron for binary classification.\"\"\"\n    def __init__(self, nx):\n        \"\"\"A function that initializes weights, bias, and output.\"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")\n        if nx < 1:\n            raise ValueError(\"nx must be a positive integer\")\n        self.__W = np.random.randn(1, nx)\n        self.__b = 0",
+        "detail": "supervised_learning.classification.1-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.10-neural_network",
+        "description": "supervised_learning.classification.10-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.10-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.11-neural_network",
+        "description": "supervised_learning.classification.11-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.11-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.12-neural_network",
+        "description": "supervised_learning.classification.12-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.12-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.13-neural_network",
+        "description": "supervised_learning.classification.13-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.13-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.14-neural_network",
+        "description": "supervised_learning.classification.14-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.14-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.15-neural_network",
+        "description": "supervised_learning.classification.15-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.15-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.16-deep_neural_network",
+        "description": "supervised_learning.classification.16-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.16-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.17-deep_neural_network",
+        "description": "supervised_learning.classification.17-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.17-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.18-deep_neural_network",
+        "description": "supervised_learning.classification.18-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.18-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.19-deep_neural_network",
+        "description": "supervised_learning.classification.19-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.19-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.2-neuron",
+        "description": "supervised_learning.classification.2-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"A class that defines a neuron for binary classification.\"\"\"\n    def __init__(self, nx):\n        \"\"\"A function that initializes weights, bias, and output.\"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")\n        if nx < 1:\n            raise ValueError(\"nx must be a positive integer\")\n        self.__W = np.random.randn(1, nx)\n        self.__b = 0",
+        "detail": "supervised_learning.classification.2-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.20-deep_neural_network",
+        "description": "supervised_learning.classification.20-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.20-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.21-deep_neural_network",
+        "description": "supervised_learning.classification.21-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.21-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.22-deep_neural_network",
+        "description": "supervised_learning.classification.22-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.22-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.23-deep_neural_network",
+        "description": "supervised_learning.classification.23-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.23-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "one_hot_encode",
+        "kind": 2,
+        "importPath": "supervised_learning.classification.24-one_hot_encode",
+        "description": "supervised_learning.classification.24-one_hot_encode",
+        "peekOfCode": "def one_hot_encode(Y, classes):\n    \"\"\"\n    A function that converts a numeric label vector into a one-hot matrix\n    \"\"\"\n    if type(Y) is not np.ndarray or len(Y.shape) != 1:\n        return None\n    if type(classes) is not int or classes <= 0:\n        return None\n    m = Y.shape[0]\n    one_hot = np.zeros((classes, m))",
+        "detail": "supervised_learning.classification.24-one_hot_encode",
+        "documentation": {}
+    },
+    {
+        "label": "one_hot_decode",
+        "kind": 2,
+        "importPath": "supervised_learning.classification.25-one_hot_decode",
+        "description": "supervised_learning.classification.25-one_hot_decode",
+        "peekOfCode": "def one_hot_decode(one_hot):\n    \"\"\"\n    A function that returns a converted one-hot matrix into a vector of labels\n    \"\"\"\n    if type(one_hot) is not np.ndarray or len(one_hot.shape) != 2:\n        return None\n    return np.argmax(one_hot, axis=0)",
+        "detail": "supervised_learning.classification.25-one_hot_decode",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.26-deep_neural_network",
+        "description": "supervised_learning.classification.26-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.26-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.27-deep_neural_network",
+        "description": "supervised_learning.classification.27-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.27-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "DeepNeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.28-deep_neural_network",
+        "description": "supervised_learning.classification.28-deep_neural_network",
+        "peekOfCode": "class DeepNeuralNetwork:\n    \"\"\"\n    A class that implements a deep neural network for binary classification.\n    \"\"\"\n    def __init__(self, nx, layers, activation='sig'):\n        \"\"\"\n        A constructor that takes number of input as nx and\n        layers is a list representing the number of nodes\n        in each layer of the network\n        \"\"\"",
+        "detail": "supervised_learning.classification.28-deep_neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.3-neuron",
+        "description": "supervised_learning.classification.3-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"A class that defines a neuron for binary classification.\"\"\"\n    def __init__(self, nx):\n        \"\"\"A function that initializes weights, bias, and output.\"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")\n        if nx < 1:\n            raise ValueError(\"nx must be a positive integer\")\n        self.__W = np.random.randn(1, nx)\n        self.__b = 0",
+        "detail": "supervised_learning.classification.3-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.4-neuron",
+        "description": "supervised_learning.classification.4-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"A class that defines a neuron for binary classification.\"\"\"\n    def __init__(self, nx):\n        \"\"\"A function that initializes weights, bias, and output.\"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")\n        if nx < 1:\n            raise ValueError(\"nx must be a positive integer\")\n        self.__W = np.random.randn(1, nx)\n        self.__b = 0",
+        "detail": "supervised_learning.classification.4-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.5-neuron",
+        "description": "supervised_learning.classification.5-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"A class that defines a neuron for binary classification.\"\"\"\n    def __init__(self, nx):\n        \"\"\"A function that initializes weights, bias, and output.\"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")\n        if nx < 1:\n            raise ValueError(\"nx must be a positive integer\")\n        self.__W = np.random.randn(1, nx)\n        self.__b = 0",
+        "detail": "supervised_learning.classification.5-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.6-neuron",
+        "description": "supervised_learning.classification.6-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"A class that defines a neuron for binary classification.\"\"\"\n    def __init__(self, nx):\n        \"\"\"A function that initializes weights, bias, and output.\"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")\n        if nx < 1:\n            raise ValueError(\"nx must be a positive integer\")\n        self.__W = np.random.randn(1, nx)\n        self.__b = 0",
+        "detail": "supervised_learning.classification.6-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "Neuron",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.7-neuron",
+        "description": "supervised_learning.classification.7-neuron",
+        "peekOfCode": "class Neuron:\n    \"\"\"A class that defines a neuron for binary classification.\"\"\"\n    def __init__(self, nx):\n        \"\"\"A function that initializes weights, bias, and output.\"\"\"\n        if type(nx) is not int:\n            raise TypeError(\"nx must be an integer\")\n        if nx < 1:\n            raise ValueError(\"nx must be a positive integer\")\n        self.__W = np.random.randn(1, nx)\n        self.__b = 0",
+        "detail": "supervised_learning.classification.7-neuron",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.8-neural_network",
+        "description": "supervised_learning.classification.8-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.8-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "NeuralNetwork",
+        "kind": 6,
+        "importPath": "supervised_learning.classification.9-neural_network",
+        "description": "supervised_learning.classification.9-neural_network",
+        "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
+        "detail": "supervised_learning.classification.9-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "build_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.0-sequential",
+        "description": "supervised_learning.keras.0-sequential",
+        "peekOfCode": "def build_model(nx, layers, activations, lambtha, keep_prob):\n    \"\"\"\n        A function that builds a neural network with the Keras library\n        :param nx: number of input features to the network\n        :param layers: list, number nodes in each layer\n        :param activations: list, activation functions for each layer\n        :param lambtha: L2 regularization parameter\n        :param keep_prob: proba node kept for dropout\n        :return: keras model\n    \"\"\"",
+        "detail": "supervised_learning.keras.0-sequential",
+        "documentation": {}
+    },
+    {
+        "label": "build_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.1-input",
+        "description": "supervised_learning.keras.1-input",
+        "peekOfCode": "def build_model(nx, layers, activations, lambtha, keep_prob):\n    \"\"\"\n        A function that builds a neural network with the Keras library\n        :param nx: number of input features to the network\n        :param layers: list, number nodes in each layer\n        :param activations: list, activation functions for each layer\n        :param lambtha: L2 regularization parameter\n        :param keep_prob: proba node kept for dropout\n        :return: keras model\n    \"\"\"",
+        "detail": "supervised_learning.keras.1-input",
+        "documentation": {}
+    },
+    {
+        "label": "optimize_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.2-optimize",
+        "description": "supervised_learning.keras.2-optimize",
+        "peekOfCode": "def optimize_model(network, alpha, beta1, beta2):\n    \"\"\"\n        A function that sets up Adam optimization for a keras model\n        with categorical crossentropy loss and accuracy metrics\n        :param network: model to optimize\n        :param alpha: learning rate\n        :param beta1: first Adam optimization param\n        :param beta2: second Adam optimization param\n        :return: None\n    \"\"\"",
+        "detail": "supervised_learning.keras.2-optimize",
+        "documentation": {}
+    },
+    {
+        "label": "one_hot",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.3-one_hot",
+        "description": "supervised_learning.keras.3-one_hot",
+        "peekOfCode": "def one_hot(labels, classes=None):\n    \"\"\"\n        A function that converts a label vector into a one-hot matrix\n        :param labels: labels\n        :param classes: nbr of classes\n        :return: one-hot matrix, shape(labels,classes)\n    \"\"\"\n    return K.utils.to_categorical(labels, classes)",
+        "detail": "supervised_learning.keras.3-one_hot",
+        "documentation": {}
+    },
+    {
+        "label": "train_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.4-train",
+        "description": "supervised_learning.keras.4-train",
+        "peekOfCode": "def train_model(network, data, labels, batch_size,\n                epochs, verbose=True, shuffle=False):\n    \"\"\"\n        A function that trains a model using mini-batch gradient descent\n        :param network: model to train\n        :param data: ndarray, shape(m, nx), input data\n        :param labels: ndarray, shape(m,classes), labels\n        :param batch_size: size of the batch\n        :param epochs: number of passes through data for mini-bath\n        :param verbose: boolean, print or not during training",
+        "detail": "supervised_learning.keras.4-train",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.0-initialize",
+        "description": "unsupervised_learning.clustering.0-initialize",
+        "peekOfCode": "def initialize(X, k):\n    \"\"\"\n    A function that initializes cluster centroids for K-means.\n    \"\"\"\n    if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n        return None\n    _, d = X.shape\n    if not isinstance(k, int) or k <= 0:\n        return None\n    centroids = np.random.uniform(low=np.min(",
+        "detail": "unsupervised_learning.clustering.0-initialize",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.0-main",
+        "description": "unsupervised_learning.clustering.0-main",
+        "peekOfCode": "initialize = __import__('0-initialize').initialize\nif __name__ == \"__main__\":\n    np.random.seed(0)\n    a = np.random.multivariate_normal([30, 40], [[16, 0], [0, 16]], size=50)\n    b = np.random.multivariate_normal([10, 25], [[16, 0], [0, 16]], size=50)\n    c = np.random.multivariate_normal([40, 20], [[16, 0], [0, 16]], size=50)\n    d = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=50)\n    e = np.random.multivariate_normal([20, 70], [[16, 0], [0, 16]], size=50)\n    X = np.concatenate((a, b, c, d, e), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.1-kmeans",
+        "description": "unsupervised_learning.clustering.1-kmeans",
+        "peekOfCode": "def initialize(X, k):\n    \"\"\"\n    A function that initializes cluster centroids for K-means.\n    \"\"\"\n    _, d = X.shape\n    centroids = np.random.uniform(low=np.min(\n        X, axis=0), high=np.max(X, axis=0), size=(k, d))\n    return centroids\ndef kmeans(X, k, iterations=1000):\n    \"\"\"",
+        "detail": "unsupervised_learning.clustering.1-kmeans",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.1-kmeans",
+        "description": "unsupervised_learning.clustering.1-kmeans",
+        "peekOfCode": "def kmeans(X, k, iterations=1000):\n    \"\"\"\n    A function that performs K-means on a dataset.\n    \"\"\"\n    if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n        return None, None\n    if not isinstance(k, int) or k <= 0:\n        return None, None\n    if not isinstance(iterations, int) or iterations <= 0:\n        return None, None",
+        "detail": "unsupervised_learning.clustering.1-kmeans",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.1-main",
+        "description": "unsupervised_learning.clustering.1-main",
+        "peekOfCode": "kmeans = __import__('1-kmeans').kmeans\nif __name__ == \"__main__\":\n    np.random.seed(0)\n    a = np.random.multivariate_normal([30, 40], [[16, 0], [0, 16]], size=50)\n    b = np.random.multivariate_normal([10, 25], [[16, 0], [0, 16]], size=50)\n    c = np.random.multivariate_normal([40, 20], [[16, 0], [0, 16]], size=50)\n    d = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=50)\n    e = np.random.multivariate_normal([20, 70], [[16, 0], [0, 16]], size=50)\n    X = np.concatenate((a, b, c, d, e), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.10-kmeans",
+        "description": "unsupervised_learning.clustering.10-kmeans",
+        "peekOfCode": "def kmeans(X, k):\n    \"\"\"A function that performs K-means on a dataset:\n    X is a numpy.ndarray of shape (n, d) containing the dataset\n    k is the number of clusters\n    Returns: C, clss\n    C is a numpy.ndarray of shape (k, d) containing the centroid means for\n    each cluster\n    clss is a numpy.ndarray of shape (n,) containing the index of the cluster\n    in C that each data point belongs to\n    \"\"\"",
+        "detail": "unsupervised_learning.clustering.10-kmeans",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.10-main",
+        "description": "unsupervised_learning.clustering.10-main",
+        "peekOfCode": "kmeans = __import__('10-kmeans').kmeans\nif __name__ == \"__main__\":\n    np.random.seed(0)\n    a = np.random.multivariate_normal([30, 40], [[16, 0], [0, 16]], size=50)\n    b = np.random.multivariate_normal([10, 25], [[16, 0], [0, 16]], size=50)\n    c = np.random.multivariate_normal([40, 20], [[16, 0], [0, 16]], size=50)\n    d = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=50)\n    e = np.random.multivariate_normal([20, 70], [[16, 0], [0, 16]], size=50)\n    X = np.concatenate((a, b, c, d, e), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.10-main",
+        "documentation": {}
+    },
+    {
+        "label": "gmm",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.11-gmm",
+        "description": "unsupervised_learning.clustering.11-gmm",
+        "peekOfCode": "def gmm(X, k):\n    \"\"\"A function that calculates a GMM from a dataset:\n    X is a numpy.ndarray of shape (n, d) containing the dataset\n    k is the number of clusters\n    Returns: pi, m, S, clss, bic\n    pi is a numpy.ndarray of shape (k,) containing the cluster priors\n    m is a numpy.ndarray of shape (k, d) containing the centroid means\n    S is a numpy.ndarray of shape (k, d, d) containing the covariance matrices\n    clss is a numpy.ndarray of shape (n,) containing the cluster indices for\n    each data point",
+        "detail": "unsupervised_learning.clustering.11-gmm",
+        "documentation": {}
+    },
+    {
+        "label": "gmm",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.11-main",
+        "description": "unsupervised_learning.clustering.11-main",
+        "peekOfCode": "gmm = __import__('11-gmm').gmm\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)\n    pi, m, S, clss, bic = gmm(X, 4)",
+        "detail": "unsupervised_learning.clustering.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "agglomerative",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.12-agglomerative",
+        "description": "unsupervised_learning.clustering.12-agglomerative",
+        "peekOfCode": "def agglomerative(X, dist):\n    \"\"\"A function that performs agglomerative clustering on a dataset:\n    X is a numpy.ndarray of shape (n, d) containing the dataset\n    dist is the maximum cophenetic distance for all clusters\n    Performs agglomerative clustering with Ward linkage\n    Displays the dendrogram with each cluster displayed in a different color\n    Returns: clss, a numpy.ndarray of shape (n,) containing the cluster indices\n    for each data point\n    \"\"\"\n    dendrogram = scipy.cluster.hierarchy.linkage(X, method='ward')",
+        "detail": "unsupervised_learning.clustering.12-agglomerative",
+        "documentation": {}
+    },
+    {
+        "label": "agglomerative",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.12-main",
+        "description": "unsupervised_learning.clustering.12-main",
+        "peekOfCode": "agglomerative = __import__('12-agglomerative').agglomerative\nif __name__ == '__main__':\n    np.random.seed(0)\n    a = np.random.multivariate_normal([30, 40], [[16, 0], [0, 16]], size=50)\n    b = np.random.multivariate_normal([10, 25], [[16, 0], [0, 16]], size=50)\n    c = np.random.multivariate_normal([40, 20], [[16, 0], [0, 16]], size=50)\n    d = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=100)\n    e = np.random.multivariate_normal([20, 70], [[16, 0], [0, 16]], size=100)\n    X = np.concatenate((a, b, c, d, e), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.12-main",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.2-main",
+        "description": "unsupervised_learning.clustering.2-main",
+        "peekOfCode": "kmeans = __import__('1-kmeans').kmeans\nvariance = __import__('2-variance').variance\nif __name__ == \"__main__\":\n    np.random.seed(0)\n    a = np.random.multivariate_normal([30, 40], [[16, 0], [0, 16]], size=50)\n    b = np.random.multivariate_normal([10, 25], [[16, 0], [0, 16]], size=50)\n    c = np.random.multivariate_normal([40, 20], [[16, 0], [0, 16]], size=50)\n    d = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=50)\n    e = np.random.multivariate_normal([20, 70], [[16, 0], [0, 16]], size=50)\n    X = np.concatenate((a, b, c, d, e), axis=0)",
+        "detail": "unsupervised_learning.clustering.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "variance",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.2-main",
+        "description": "unsupervised_learning.clustering.2-main",
+        "peekOfCode": "variance = __import__('2-variance').variance\nif __name__ == \"__main__\":\n    np.random.seed(0)\n    a = np.random.multivariate_normal([30, 40], [[16, 0], [0, 16]], size=50)\n    b = np.random.multivariate_normal([10, 25], [[16, 0], [0, 16]], size=50)\n    c = np.random.multivariate_normal([40, 20], [[16, 0], [0, 16]], size=50)\n    d = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=50)\n    e = np.random.multivariate_normal([20, 70], [[16, 0], [0, 16]], size=50)\n    X = np.concatenate((a, b, c, d, e), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "variance",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.2-variance",
+        "description": "unsupervised_learning.clustering.2-variance",
+        "peekOfCode": "def variance(X, C):\n    \"\"\"\n    A function that calculates the total variance for a dataset.\n    \"\"\"\n    if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n        return None\n    if not isinstance(C, np.ndarray) or len(C.shape) != 2:\n        return None\n    if C.shape[1] != X.shape[1]:\n        return None",
+        "detail": "unsupervised_learning.clustering.2-variance",
+        "documentation": {}
+    },
+    {
+        "label": "optimum_k",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.3-main",
+        "description": "unsupervised_learning.clustering.3-main",
+        "peekOfCode": "optimum_k = __import__('3-optimum').optimum_k\nif __name__ == \"__main__\":\n    np.random.seed(0)\n    a = np.random.multivariate_normal([30, 40], [[16, 0], [0, 16]], size=50)\n    b = np.random.multivariate_normal([10, 25], [[16, 0], [0, 16]], size=50)\n    c = np.random.multivariate_normal([40, 20], [[16, 0], [0, 16]], size=50)\n    d = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=50)\n    e = np.random.multivariate_normal([20, 70], [[16, 0], [0, 16]], size=50)\n    X = np.concatenate((a, b, c, d, e), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "optimum_k",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.3-optimum",
+        "description": "unsupervised_learning.clustering.3-optimum",
+        "peekOfCode": "def optimum_k(X, kmin=1, kmax=None, iterations=1000):\n    \"\"\"A function that determines the optimum number of clusters\"\"\"\n    try:\n        if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n            return None, None\n        if not isinstance(iterations, int) or iterations < 1:\n            return None, None\n        if kmax is not None:\n            if type(kmax) is not int or kmax < 1:\n                return None, None",
+        "detail": "unsupervised_learning.clustering.3-optimum",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.3-optimum",
+        "description": "unsupervised_learning.clustering.3-optimum",
+        "peekOfCode": "kmeans = __import__('1-kmeans').kmeans\nvariance = __import__('2-variance').variance\ndef optimum_k(X, kmin=1, kmax=None, iterations=1000):\n    \"\"\"A function that determines the optimum number of clusters\"\"\"\n    try:\n        if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n            return None, None\n        if not isinstance(iterations, int) or iterations < 1:\n            return None, None\n        if kmax is not None:",
+        "detail": "unsupervised_learning.clustering.3-optimum",
+        "documentation": {}
+    },
+    {
+        "label": "variance",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.3-optimum",
+        "description": "unsupervised_learning.clustering.3-optimum",
+        "peekOfCode": "variance = __import__('2-variance').variance\ndef optimum_k(X, kmin=1, kmax=None, iterations=1000):\n    \"\"\"A function that determines the optimum number of clusters\"\"\"\n    try:\n        if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n            return None, None\n        if not isinstance(iterations, int) or iterations < 1:\n            return None, None\n        if kmax is not None:\n            if type(kmax) is not int or kmax < 1:",
+        "detail": "unsupervised_learning.clustering.3-optimum",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.4-initialize",
+        "description": "unsupervised_learning.clustering.4-initialize",
+        "peekOfCode": "def initialize(X, k):\n    \"\"\"\n    A function that initializes the priors, means, and covariances for a GMM.\n    \"\"\"\n    if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n        return None, None, None\n    if not isinstance(k, int) or k <= 0:\n        return None, None, None\n    priors = np.repeat(1.0 / k, k)\n    cluster_means, _ = kmeans(X, k)",
+        "detail": "unsupervised_learning.clustering.4-initialize",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.4-initialize",
+        "description": "unsupervised_learning.clustering.4-initialize",
+        "peekOfCode": "kmeans = __import__('1-kmeans').kmeans\ndef initialize(X, k):\n    \"\"\"\n    A function that initializes the priors, means, and covariances for a GMM.\n    \"\"\"\n    if not isinstance(X, np.ndarray) or len(X.shape) != 2:\n        return None, None, None\n    if not isinstance(k, int) or k <= 0:\n        return None, None, None\n    priors = np.repeat(1.0 / k, k)",
+        "detail": "unsupervised_learning.clustering.4-initialize",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.4-main",
+        "description": "unsupervised_learning.clustering.4-main",
+        "peekOfCode": "initialize = __import__('4-initialize').initialize\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)\n    pi, m, S = initialize(X, 4)",
+        "detail": "unsupervised_learning.clustering.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "pdf",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.5-main",
+        "description": "unsupervised_learning.clustering.5-main",
+        "peekOfCode": "pdf = __import__('5-pdf').pdf\nif __name__ == '__main__':\n    np.random.seed(0)\n    m = np.array([12, 30, 10])\n    S = np.array([[36, -30, 15], [-30, 100, -20], [15, -20, 25]])\n    X = np.random.multivariate_normal(m, S, 10000)\n    P = pdf(X, m, S)\n    print(P)",
+        "detail": "unsupervised_learning.clustering.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "pdf",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.5-pdf",
+        "description": "unsupervised_learning.clustering.5-pdf",
+        "peekOfCode": "def pdf(data_points, mean, covariance):\n    \"\"\"\n    A function that calculates the probability density\n    function of a multivariate Gaussian distribution.\n    \"\"\"\n    if not isinstance(data_points, np.ndarray) or len(data_points.shape) != 2:\n        return None\n    num_features = data_points.shape[1]\n    if not isinstance(mean, np.ndarray) or len(mean.shape) != 1:\n        return None",
+        "detail": "unsupervised_learning.clustering.5-pdf",
+        "documentation": {}
+    },
+    {
+        "label": "expectation",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.6-expectation",
+        "description": "unsupervised_learning.clustering.6-expectation",
+        "peekOfCode": "def expectation(X, pi, m, S):\n    \"\"\"\n    A function that calculates the expectation step\n    in the EM algorithm for a GMM:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    pi is a numpy.ndarray of shape (k,) containing the priors for each cluster\n    m is a numpy.ndarray of shape (k, d) containing the centroid means for\n    each cluster\n    S is a numpy.ndarray of shape (k, d, d) containing the covariance matrices\n    for each cluster",
+        "detail": "unsupervised_learning.clustering.6-expectation",
+        "documentation": {}
+    },
+    {
+        "label": "pdf",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.6-expectation",
+        "description": "unsupervised_learning.clustering.6-expectation",
+        "peekOfCode": "pdf = __import__('5-pdf').pdf\ndef expectation(X, pi, m, S):\n    \"\"\"\n    A function that calculates the expectation step\n    in the EM algorithm for a GMM:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    pi is a numpy.ndarray of shape (k,) containing the priors for each cluster\n    m is a numpy.ndarray of shape (k, d) containing the centroid means for\n    each cluster\n    S is a numpy.ndarray of shape (k, d, d) containing the covariance matrices",
+        "detail": "unsupervised_learning.clustering.6-expectation",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.6-main",
+        "description": "unsupervised_learning.clustering.6-main",
+        "peekOfCode": "initialize = __import__('4-initialize').initialize\nexpectation = __import__('6-expectation').expectation\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "expectation",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.6-main",
+        "description": "unsupervised_learning.clustering.6-main",
+        "peekOfCode": "expectation = __import__('6-expectation').expectation\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)\n    pi, m, S = initialize(X, 4)",
+        "detail": "unsupervised_learning.clustering.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.7-main",
+        "description": "unsupervised_learning.clustering.7-main",
+        "peekOfCode": "initialize = __import__('4-initialize').initialize\nexpectation = __import__('6-expectation').expectation\nmaximization = __import__('7-maximization').maximization\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)",
+        "detail": "unsupervised_learning.clustering.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "expectation",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.7-main",
+        "description": "unsupervised_learning.clustering.7-main",
+        "peekOfCode": "expectation = __import__('6-expectation').expectation\nmaximization = __import__('7-maximization').maximization\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)",
+        "detail": "unsupervised_learning.clustering.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "maximization",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.7-main",
+        "description": "unsupervised_learning.clustering.7-main",
+        "peekOfCode": "maximization = __import__('7-maximization').maximization\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)\n    pi, m, S = initialize(X, 4)",
+        "detail": "unsupervised_learning.clustering.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "maximization",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.7-maximization",
+        "description": "unsupervised_learning.clustering.7-maximization",
+        "peekOfCode": "def maximization(X, g):\n    \"\"\"A function that calculates the maximization step in the EM algorithm\"\"\"\n    if not isinstance(X, np.ndarray) or len(X.shape) != 2\\\n            or not isinstance(g, np.ndarray) or len(g.shape) != 2\\\n            or X.shape[0] != g.shape[1]:\n        return None, None, None\n    n, d = X.shape\n    k = g.shape[0]\n    probs = np.sum(g, axis=0)\n    validation = np.ones((n,))",
+        "detail": "unsupervised_learning.clustering.7-maximization",
+        "documentation": {}
+    },
+    {
+        "label": "expectation_maximization",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.8-EM",
+        "description": "unsupervised_learning.clustering.8-EM",
+        "peekOfCode": "def expectation_maximization(X, k, iterations=1000, tol=1e-5, verbose=False):\n    \"\"\"\n    A function that performs the expectation maximization for a GMM:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    k is a positive integer containing the number of clusters\n    iterations is a positive integer containing the maximum number of\n    iterations for the algorithm\n    tol is a non-negative float containing tolerance of the log likelihood,\n    used to determine early stopping i.e. if the difference is less than or\n    equal to tol you should stop the algorithm",
+        "detail": "unsupervised_learning.clustering.8-EM",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.8-EM",
+        "description": "unsupervised_learning.clustering.8-EM",
+        "peekOfCode": "initialize = __import__('4-initialize').initialize\nexpectation = __import__('6-expectation').expectation\nmaximization = __import__('7-maximization').maximization\ndef expectation_maximization(X, k, iterations=1000, tol=1e-5, verbose=False):\n    \"\"\"\n    A function that performs the expectation maximization for a GMM:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    k is a positive integer containing the number of clusters\n    iterations is a positive integer containing the maximum number of\n    iterations for the algorithm",
+        "detail": "unsupervised_learning.clustering.8-EM",
+        "documentation": {}
+    },
+    {
+        "label": "expectation",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.8-EM",
+        "description": "unsupervised_learning.clustering.8-EM",
+        "peekOfCode": "expectation = __import__('6-expectation').expectation\nmaximization = __import__('7-maximization').maximization\ndef expectation_maximization(X, k, iterations=1000, tol=1e-5, verbose=False):\n    \"\"\"\n    A function that performs the expectation maximization for a GMM:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    k is a positive integer containing the number of clusters\n    iterations is a positive integer containing the maximum number of\n    iterations for the algorithm\n    tol is a non-negative float containing tolerance of the log likelihood,",
+        "detail": "unsupervised_learning.clustering.8-EM",
+        "documentation": {}
+    },
+    {
+        "label": "maximization",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.8-EM",
+        "description": "unsupervised_learning.clustering.8-EM",
+        "peekOfCode": "maximization = __import__('7-maximization').maximization\ndef expectation_maximization(X, k, iterations=1000, tol=1e-5, verbose=False):\n    \"\"\"\n    A function that performs the expectation maximization for a GMM:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    k is a positive integer containing the number of clusters\n    iterations is a positive integer containing the maximum number of\n    iterations for the algorithm\n    tol is a non-negative float containing tolerance of the log likelihood,\n    used to determine early stopping i.e. if the difference is less than or",
+        "detail": "unsupervised_learning.clustering.8-EM",
+        "documentation": {}
+    },
+    {
+        "label": "expectation_maximization",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.8-main",
+        "description": "unsupervised_learning.clustering.8-main",
+        "peekOfCode": "expectation_maximization = __import__('8-EM').expectation_maximization\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)\n    k = 4",
+        "detail": "unsupervised_learning.clustering.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "BIC",
+        "kind": 2,
+        "importPath": "unsupervised_learning.clustering.9-BIC",
+        "description": "unsupervised_learning.clustering.9-BIC",
+        "peekOfCode": "def BIC(X, kmin=1, kmax=None, iterations=1000, tol=1e-5, verbose=False):\n    \"\"\"A function that finds the best number of clusters for\n    a GMM using the Bayesian Information Criterion:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    kmin is a positive integer containing the minimum number of clusters to\n    check for (inclusive)\n    kmax is a positive integer containing the maximum number of clusters to\n    check for (inclusive)\n    If kmax is None, kmax should be set to the maximum number of clusters\n    possible",
+        "detail": "unsupervised_learning.clustering.9-BIC",
+        "documentation": {}
+    },
+    {
+        "label": "expectation_maximization",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.9-BIC",
+        "description": "unsupervised_learning.clustering.9-BIC",
+        "peekOfCode": "expectation_maximization = __import__('8-EM').expectation_maximization\ndef BIC(X, kmin=1, kmax=None, iterations=1000, tol=1e-5, verbose=False):\n    \"\"\"A function that finds the best number of clusters for\n    a GMM using the Bayesian Information Criterion:\n    X is a numpy.ndarray of shape (n, d) containing the data set\n    kmin is a positive integer containing the minimum number of clusters to\n    check for (inclusive)\n    kmax is a positive integer containing the maximum number of clusters to\n    check for (inclusive)\n    If kmax is None, kmax should be set to the maximum number of clusters",
+        "detail": "unsupervised_learning.clustering.9-BIC",
+        "documentation": {}
+    },
+    {
+        "label": "BIC",
+        "kind": 5,
+        "importPath": "unsupervised_learning.clustering.9-main",
+        "description": "unsupervised_learning.clustering.9-main",
+        "peekOfCode": "BIC = __import__('9-BIC').BIC\nif __name__ == '__main__':\n    np.random.seed(11)\n    a = np.random.multivariate_normal([30, 40], [[75, 5], [5, 75]], size=10000)\n    b = np.random.multivariate_normal([5, 25], [[16, 10], [10, 16]], size=750)\n    c = np.random.multivariate_normal([60, 30], [[16, 0], [0, 16]], size=750)\n    d = np.random.multivariate_normal([20, 70], [[35, 10], [10, 35]], size=1000)\n    X = np.concatenate((a, b, c, d), axis=0)\n    np.random.shuffle(X)\n    best_k, best_result, l, b = BIC(X, kmin=1, kmax=10)",
+        "detail": "unsupervised_learning.clustering.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 2,
+        "importPath": "unsupervised_learning.dimensionality_reduction.0-pca",
+        "description": "unsupervised_learning.dimensionality_reduction.0-pca",
+        "peekOfCode": "def pca(X, var=0.95):\n    \"\"\"\n    A function that performs principal components\n    analysis (PCA) on a dataset\n    \"\"\"\n    u, s, v = np.linalg.svd(X)\n    ratios = list(x / np.sum(s) for x in s)\n    variance = np.cumsum(ratios)\n    nd = np.argwhere(variance >= var)[0, 0]\n    W = v.T[:, :(nd + 1)]",
+        "detail": "unsupervised_learning.dimensionality_reduction.0-pca",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 2,
+        "importPath": "unsupervised_learning.dimensionality_reduction.1-pca",
+        "description": "unsupervised_learning.dimensionality_reduction.1-pca",
+        "peekOfCode": "def pca(X, ndim):\n    \"\"\"\n    A function that performs principal components analysis\n    (PCA) on a dataset\n    \"\"\"\n    mean = np.mean(X, axis=0, keepdims=True)\n    A = X - mean\n    u, s, v = np.linalg.svd(A)\n    W = v.T[:, :ndim]\n    T = np.matmul(A, W)",
+        "detail": "unsupervised_learning.dimensionality_reduction.1-pca",
+        "documentation": {}
+    }
+]
