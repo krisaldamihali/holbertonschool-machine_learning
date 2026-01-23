@@ -5,6 +5,7 @@ A script that implements a deep neural network for binary classification.
 
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 class DeepNeuralNetwork:
