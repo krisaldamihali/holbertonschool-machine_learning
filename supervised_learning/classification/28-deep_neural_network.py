@@ -72,7 +72,7 @@ class DeepNeuralNetwork:
         all weights and biases of the network.
         """
         return self.__weights
-    
+
     @property
     def activation(self):
         """
