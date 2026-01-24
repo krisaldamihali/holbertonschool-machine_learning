@@ -80,43 +80,12 @@
         "documentation": {}
     },
     {
-        "label": "keras",
-        "importPath": "tensorflow",
-        "description": "tensorflow",
+        "label": "tensorflow.keras",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "tensorflow",
-        "documentation": {}
-    },
-    {
-        "label": "keras",
-        "importPath": "tensorflow",
-        "description": "tensorflow",
-        "isExtraImport": true,
-        "detail": "tensorflow",
-        "documentation": {}
-    },
-    {
-        "label": "keras",
-        "importPath": "tensorflow",
-        "description": "tensorflow",
-        "isExtraImport": true,
-        "detail": "tensorflow",
-        "documentation": {}
-    },
-    {
-        "label": "keras",
-        "importPath": "tensorflow",
-        "description": "tensorflow",
-        "isExtraImport": true,
-        "detail": "tensorflow",
-        "documentation": {}
-    },
-    {
-        "label": "keras",
-        "importPath": "tensorflow",
-        "description": "tensorflow",
-        "isExtraImport": true,
-        "detail": "tensorflow",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "detail": "tensorflow.keras",
         "documentation": {}
     },
     {
@@ -2950,7 +2919,7 @@
         "kind": 2,
         "importPath": "supervised_learning.keras.0-sequential",
         "description": "supervised_learning.keras.0-sequential",
-        "peekOfCode": "def build_model(nx, layers, activations, lambtha, keep_prob):\n    \"\"\"\n        A function that builds a neural network with the Keras library\n        :param nx: number of input features to the network\n        :param layers: list, number nodes in each layer\n        :param activations: list, activation functions for each layer\n        :param lambtha: L2 regularization parameter\n        :param keep_prob: proba node kept for dropout\n        :return: keras model\n    \"\"\"",
+        "peekOfCode": "def build_model(nx, layers, activations, lambtha, keep_prob):\n    \"\"\"\n    A function that constructs a neural network with the Keras library,\n    incorporating L2 regularization and dropout\n    to enhance generalization and prevent overfitting.\n    \"\"\"\n    model = K.Sequential()\n    for i in range(len(layers)):\n        if i == 0:\n            model.add(K.layers.Dense(layers[i],",
         "detail": "supervised_learning.keras.0-sequential",
         "documentation": {}
     },
@@ -2959,8 +2928,62 @@
         "kind": 2,
         "importPath": "supervised_learning.keras.1-input",
         "description": "supervised_learning.keras.1-input",
-        "peekOfCode": "def build_model(nx, layers, activations, lambtha, keep_prob):\n    \"\"\"\n        A function that builds a neural network with the Keras library\n        :param nx: number of input features to the network\n        :param layers: list, number nodes in each layer\n        :param activations: list, activation functions for each layer\n        :param lambtha: L2 regularization parameter\n        :param keep_prob: proba node kept for dropout\n        :return: keras model\n    \"\"\"",
+        "peekOfCode": "def build_model(nx, layers, activations, lambtha, keep_prob):\n    \"\"\"\n    A function that constructs a neural network using the Keras library.\n    The model is built with configurable layers, activation functions,\n    L2 regularization, and dropout for improved generalization.\n    \"\"\"\n    inputs = K.Input(shape=(nx,))\n    x = inputs\n    for i in range(len(layers)):\n        x = K.layers.Dense(layers[i],",
         "detail": "supervised_learning.keras.1-input",
+        "documentation": {}
+    },
+    {
+        "label": "save_weights",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.10-weights",
+        "description": "supervised_learning.keras.10-weights",
+        "peekOfCode": "def save_weights(network, filename, save_format='h5'):\n    \"\"\"\n        A function that saves a model's weights\n    \"\"\"\n    network.save_weights(filepath=filename,\n                         save_format=save_format)\ndef load_weights(network, filename):\n    \"\"\"\n        A function that loads a model's weights\n    \"\"\"",
+        "detail": "supervised_learning.keras.10-weights",
+        "documentation": {}
+    },
+    {
+        "label": "load_weights",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.10-weights",
+        "description": "supervised_learning.keras.10-weights",
+        "peekOfCode": "def load_weights(network, filename):\n    \"\"\"\n        A function that loads a model's weights\n    \"\"\"\n    network.load_weights(filepath=filename)",
+        "detail": "supervised_learning.keras.10-weights",
+        "documentation": {}
+    },
+    {
+        "label": "save_config",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.11-config",
+        "description": "supervised_learning.keras.11-config",
+        "peekOfCode": "def save_config(network, filename):\n    \"\"\"\n        A function that saves a model's configuration in JSON format\n    \"\"\"\n    network_config = network.to_json()\n    with open(filename, \"w\") as f:\n        f.write(network_config)\ndef load_config(filename):\n    \"\"\"\n        A function that loads a model with a specific configuration",
+        "detail": "supervised_learning.keras.11-config",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.11-config",
+        "description": "supervised_learning.keras.11-config",
+        "peekOfCode": "def load_config(filename):\n    \"\"\"\n        A function that loads a model with a specific configuration\n    \"\"\"\n    with open(filename, \"r\") as f:\n        load_network_config = f.read()\n    return K.models.model_from_json(load_network_config)",
+        "detail": "supervised_learning.keras.11-config",
+        "documentation": {}
+    },
+    {
+        "label": "test_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.12-test",
+        "description": "supervised_learning.keras.12-test",
+        "peekOfCode": "def test_model(network, data, labels, verbose=True):\n    \"\"\"\n        A function that tests a neural network\n    \"\"\"\n    return network.evaluate(x=data,\n                            y=labels,\n                            verbose=verbose)",
+        "detail": "supervised_learning.keras.12-test",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.13-predict",
+        "description": "supervised_learning.keras.13-predict",
+        "peekOfCode": "def predict(network, data, verbose=False):\n    \"\"\"\n        A function that makes prediction using a neural network\n    \"\"\"\n    return network.predict(x=data,\n                           verbose=verbose)",
+        "detail": "supervised_learning.keras.13-predict",
         "documentation": {}
     },
     {
@@ -2968,7 +2991,7 @@
         "kind": 2,
         "importPath": "supervised_learning.keras.2-optimize",
         "description": "supervised_learning.keras.2-optimize",
-        "peekOfCode": "def optimize_model(network, alpha, beta1, beta2):\n    \"\"\"\n        A function that sets up Adam optimization for a keras model\n        with categorical crossentropy loss and accuracy metrics\n        :param network: model to optimize\n        :param alpha: learning rate\n        :param beta1: first Adam optimization param\n        :param beta2: second Adam optimization param\n        :return: None\n    \"\"\"",
+        "peekOfCode": "def optimize_model(network, alpha, beta1, beta2):\n    \"\"\"\n    A function that configures the Adam optimizer for a Keras model\n    using categorical cross-entropy loss and accuracy metrics,\n    with adjustable learning rate and beta parameters.\n    \"\"\"\n    Adam_optimizer = K.optimizers.Adam(learning_rate=alpha,\n                                       beta_1=beta1,\n                                       beta_2=beta2)\n    network.compile(optimizer=Adam_optimizer,",
         "detail": "supervised_learning.keras.2-optimize",
         "documentation": {}
     },
@@ -2977,7 +3000,7 @@
         "kind": 2,
         "importPath": "supervised_learning.keras.3-one_hot",
         "description": "supervised_learning.keras.3-one_hot",
-        "peekOfCode": "def one_hot(labels, classes=None):\n    \"\"\"\n        A function that converts a label vector into a one-hot matrix\n        :param labels: labels\n        :param classes: nbr of classes\n        :return: one-hot matrix, shape(labels,classes)\n    \"\"\"\n    return K.utils.to_categorical(labels, classes)",
+        "peekOfCode": "def one_hot(labels, classes=None):\n    \"\"\"\n    A function that converts a label vector into a one-hot encoded matrix.\n    Returns a matrix of shape (labels, classes).\n    \"\"\"\n    return K.utils.to_categorical(labels, classes)",
         "detail": "supervised_learning.keras.3-one_hot",
         "documentation": {}
     },
@@ -2986,8 +3009,62 @@
         "kind": 2,
         "importPath": "supervised_learning.keras.4-train",
         "description": "supervised_learning.keras.4-train",
-        "peekOfCode": "def train_model(network, data, labels, batch_size,\n                epochs, verbose=True, shuffle=False):\n    \"\"\"\n        A function that trains a model using mini-batch gradient descent\n        :param network: model to train\n        :param data: ndarray, shape(m, nx), input data\n        :param labels: ndarray, shape(m,classes), labels\n        :param batch_size: size of the batch\n        :param epochs: number of passes through data for mini-bath\n        :param verbose: boolean, print or not during training",
+        "peekOfCode": "def train_model(network, data, labels, batch_size,\n                epochs, verbose=True, shuffle=False):\n    \"\"\"\n    A function that trains a model using mini-batch gradient descent.\n    Returns the training history of the model.\n    \"\"\"\n    history = network.fit(x=data,\n                          y=labels,\n                          epochs=epochs,\n                          batch_size=batch_size,",
         "detail": "supervised_learning.keras.4-train",
+        "documentation": {}
+    },
+    {
+        "label": "train_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.5-train",
+        "description": "supervised_learning.keras.5-train",
+        "peekOfCode": "def train_model(network, data, labels, batch_size,\n                epochs, validation_data=None, verbose=True, shuffle=False):\n    \"\"\"\n    A function that trains a model using mini-batch gradient descent\n    with optional validation data. Returns the training history.\n    \"\"\"\n    history = network.fit(x=data,\n                          y=labels,\n                          epochs=epochs,\n                          batch_size=batch_size,",
+        "detail": "supervised_learning.keras.5-train",
+        "documentation": {}
+    },
+    {
+        "label": "train_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.6-train",
+        "description": "supervised_learning.keras.6-train",
+        "peekOfCode": "def train_model(network, data, labels, batch_size,\n                epochs, validation_data=None, early_stopping=False,\n                patience=0, verbose=True, shuffle=False):\n    \"\"\"\n    A function that trains a model using mini-batch gradient descent,\n    supporting early stopping and optional validation data.\n    \"\"\"\n    callback = []\n    if early_stopping is True and validation_data is not None:\n        callback = K.callbacks.EarlyStopping(monitor='val_loss',",
+        "detail": "supervised_learning.keras.6-train",
+        "documentation": {}
+    },
+    {
+        "label": "train_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.7-train",
+        "description": "supervised_learning.keras.7-train",
+        "peekOfCode": "def train_model(network, data, labels, batch_size,\n                epochs, validation_data=None, early_stopping=False,\n                patience=0, learning_rate_decay=False, alpha=0.1,\n                decay_rate=1, verbose=True, shuffle=False):\n    \"\"\"\n    A function that trains a model using mini-batch gradient descent\n    with support for early stopping, learning rate decay,\n    and optional validation data.\n    \"\"\"\n    callback = []",
+        "detail": "supervised_learning.keras.7-train",
+        "documentation": {}
+    },
+    {
+        "label": "train_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.8-train",
+        "description": "supervised_learning.keras.8-train",
+        "peekOfCode": "def train_model(network, data, labels, batch_size,\n                epochs, validation_data=None, early_stopping=False,\n                patience=0, learning_rate_decay=False, alpha=0.1,\n                decay_rate=1, save_best=False, filepath=None,\n                verbose=True, shuffle=False):\n    \"\"\"\n    A function that trains a model using mini-batch\n    gradient descent with optional early stopping,\n    learning rate decay, and model checkpointing for the best weights.\n    \"\"\"",
+        "detail": "supervised_learning.keras.8-train",
+        "documentation": {}
+    },
+    {
+        "label": "save_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.9-model",
+        "description": "supervised_learning.keras.9-model",
+        "peekOfCode": "def save_model(network, filename):\n    \"\"\"\n    A function that saves a complete Keras model to the specified file path.\n    \"\"\"\n    network.save(filename)\ndef load_model(filename):\n    \"\"\"\n    A function that loads a complete Keras model from the specified file path.\n    Returns the loaded model.\n    \"\"\"",
+        "detail": "supervised_learning.keras.9-model",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "supervised_learning.keras.9-model",
+        "description": "supervised_learning.keras.9-model",
+        "peekOfCode": "def load_model(filename):\n    \"\"\"\n    A function that loads a complete Keras model from the specified file path.\n    Returns the loaded model.\n    \"\"\"\n    return K.models.load_model(filename)",
+        "detail": "supervised_learning.keras.9-model",
         "documentation": {}
     },
     {
