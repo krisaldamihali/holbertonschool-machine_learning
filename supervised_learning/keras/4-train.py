@@ -3,8 +3,7 @@
     A script that trains a Keras model using mini-batch gradient descent.
 """
 
-from tensorflow import keras as K
-
+import tensorflow.keras as K
 
 def train_model(network, data, labels, batch_size,
                 epochs, verbose=True, shuffle=False):

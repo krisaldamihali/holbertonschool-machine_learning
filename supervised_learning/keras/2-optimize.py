@@ -3,7 +3,7 @@
 A script that optimizes a Keras model.
 """
 
-from tensorflow import keras as K
+import tensorflow.keras as K
 
 
 def optimize_model(network, alpha, beta1, beta2):

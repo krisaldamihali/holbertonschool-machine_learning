@@ -3,8 +3,7 @@
 A script that converts label vectors into one-hot encoded matrices.
 """
 
-from tensorflow import keras as K
-
+import tensorflow.keras as K
 
 def one_hot(labels, classes=None):
     """

@@ -3,7 +3,7 @@
     A script that defines a Keras model using Input layers.
 """
 
-from tensorflow import keras as K
+import tensorflow.keras as K
 
 
 def build_model(nx, layers, activations, lambtha, keep_prob):
