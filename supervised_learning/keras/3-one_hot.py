@@ -8,11 +8,7 @@ import tensorflow.keras as K
 
 def one_hot(labels, classes=None):
     """
-        A function that converts a label vector into a one-hot matrix
-
-        :param labels: labels
-        :param classes: nbr of classes
-
-        :return: one-hot matrix, shape(labels,classes)
+    A function that converts a label vector into a one-hot encoded matrix.
+    Returns a matrix of shape (labels, classes).
     """
     return K.utils.to_categorical(labels, classes)

@@ -8,15 +8,9 @@ import tensorflow.keras as K
 
 def build_model(nx, layers, activations, lambtha, keep_prob):
     """
-        A function that builds a neural network with the Keras library
-
-        :param nx: number of input features to the network
-        :param layers: list, number nodes in each layer
-        :param activations: list, activation functions for each layer
-        :param lambtha: L2 regularization parameter
-        :param keep_prob: proba node kept for dropout
-
-        :return: keras model
+    A function that constructs a neural network with the Keras library,
+    incorporating L2 regularization and dropout
+    to enhance generalization and prevent overfitting.
     """
     model = K.Sequential()
 

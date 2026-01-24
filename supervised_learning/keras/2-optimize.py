@@ -8,15 +8,9 @@ import tensorflow.keras as K
 
 def optimize_model(network, alpha, beta1, beta2):
     """
-        A function that sets up Adam optimization for a keras model
-        with categorical crossentropy loss and accuracy metrics
-
-        :param network: model to optimize
-        :param alpha: learning rate
-        :param beta1: first Adam optimization param
-        :param beta2: second Adam optimization param
-
-        :return: None
+    A function that configures the Adam optimizer for a Keras model
+    using categorical cross-entropy loss and accuracy metrics,
+    with adjustable learning rate and beta parameters.
     """
     Adam_optimizer = K.optimizers.Adam(learning_rate=alpha,
                                        beta_1=beta1,
