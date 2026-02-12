@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    A script that creates layer with L2 regularization
+    A script that create layer with L2 regularization
 """
 
 import tensorflow.compat.v1 as tf
