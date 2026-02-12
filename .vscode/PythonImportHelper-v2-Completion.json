@@ -89,6 +89,24 @@
         "documentation": {}
     },
     {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "tensorflow.compat.v1",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow.compat.v1",
+        "description": "tensorflow.compat.v1",
+        "detail": "tensorflow.compat.v1",
+        "documentation": {}
+    },
+    {
         "label": "sklearn.cluster",
         "kind": 6,
         "isExtraImport": true,
@@ -2915,6 +2933,114 @@
         "documentation": {}
     },
     {
+        "label": "create_confusion_matrix",
+        "kind": 2,
+        "importPath": "supervised_learning.error_analysis.0-create_confusion",
+        "description": "supervised_learning.error_analysis.0-create_confusion",
+        "peekOfCode": "def create_confusion_matrix(labels, logits):\n    \"\"\"\n        A function that creates a confusion matrix\n        :param labels: ndarray, shape(m,classes), correct labels\n        :param logits: ndarray, shape(m,classes), predicted labels\n        :return: ndarray, shape(classes,classes),\n                row indices = correct labels,\n                columns indices = predicted labels\n    \"\"\"\n    # number of example",
+        "detail": "supervised_learning.error_analysis.0-create_confusion",
+        "documentation": {}
+    },
+    {
+        "label": "create_confusion_matrix",
+        "kind": 5,
+        "importPath": "supervised_learning.error_analysis.0-main",
+        "description": "supervised_learning.error_analysis.0-main",
+        "peekOfCode": "create_confusion_matrix = \\\n    __import__('0-create_confusion').create_confusion_matrix\nif __name__ == '__main__':\n    lib = np.load('labels_logits.npz')\n    labels = lib['labels']\n    logits = lib['logits']\n    np.set_printoptions(suppress=True)\n    confusion = create_confusion_matrix(labels, logits)\n    print(confusion)\n    np.savez_compressed('confusion.npz', confusion=confusion)",
+        "detail": "supervised_learning.error_analysis.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "sensitivity",
+        "kind": 5,
+        "importPath": "supervised_learning.error_analysis.1-main",
+        "description": "supervised_learning.error_analysis.1-main",
+        "peekOfCode": "sensitivity = __import__('1-sensitivity').sensitivity\nif __name__ == '__main__':\n    confusion = np.load('confusion.npz')['confusion']\n    np.set_printoptions(suppress=True)\n    print(sensitivity(confusion))",
+        "detail": "supervised_learning.error_analysis.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "sensitivity",
+        "kind": 2,
+        "importPath": "supervised_learning.error_analysis.1-sensitivity",
+        "description": "supervised_learning.error_analysis.1-sensitivity",
+        "peekOfCode": "def sensitivity(confusion):\n    \"\"\"\n        A function that calculates the sensitivity for each class in a confusion matrix\n        :param confusion: ndarray, shape(classes,classes), matrix confusion\n        :return: ndarray, shape(classes,) containing sensitivity of each class\n    \"\"\"\n    # number of classes\n    classes = confusion.shape[0]\n    # initialize sensitivity\n    sensitivity_matrix = np.zeros((classes,))",
+        "detail": "supervised_learning.error_analysis.1-sensitivity",
+        "documentation": {}
+    },
+    {
+        "label": "precision",
+        "kind": 5,
+        "importPath": "supervised_learning.error_analysis.2-main",
+        "description": "supervised_learning.error_analysis.2-main",
+        "peekOfCode": "precision = __import__('2-precision').precision\nif __name__ == '__main__':\n    confusion = np.load('confusion.npz')['confusion']\n    np.set_printoptions(suppress=True)\n    print(precision(confusion))",
+        "detail": "supervised_learning.error_analysis.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "precision",
+        "kind": 2,
+        "importPath": "supervised_learning.error_analysis.2-precision",
+        "description": "supervised_learning.error_analysis.2-precision",
+        "peekOfCode": "def precision(confusion):\n    \"\"\"\n        A function that calculates the precision for each class\n        in a confusion matrix\n        :param confusion: ndarray, shape(classes,classes), confusion matrix\n        :return: ndarray, shape(classes,), precision for each class\n    \"\"\"\n    # number of classes\n    classes = confusion.shape[0]\n    # initialize sensitivity",
+        "detail": "supervised_learning.error_analysis.2-precision",
+        "documentation": {}
+    },
+    {
+        "label": "specificity",
+        "kind": 5,
+        "importPath": "supervised_learning.error_analysis.3-main",
+        "description": "supervised_learning.error_analysis.3-main",
+        "peekOfCode": "specificity = __import__('3-specificity').specificity\nif __name__ == '__main__':\n    confusion = np.load('confusion.npz')['confusion']\n    np.set_printoptions(suppress=True)\n    print(specificity(confusion))",
+        "detail": "supervised_learning.error_analysis.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "specificity",
+        "kind": 2,
+        "importPath": "supervised_learning.error_analysis.3-specificity",
+        "description": "supervised_learning.error_analysis.3-specificity",
+        "peekOfCode": "def specificity(confusion):\n    \"\"\"\n        A function that calculates specificity of each class\n        in a confusion matrix\n        :param confusion: ndarray, shape(classes,classes) confusion matrix\n        :return: ndarray, shape(classes,), specificity of each class\n    \"\"\"\n    # number of classes\n    classes = confusion.shape[0]\n    # initialize specificity",
+        "detail": "supervised_learning.error_analysis.3-specificity",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "kind": 2,
+        "importPath": "supervised_learning.error_analysis.4-f1_score",
+        "description": "supervised_learning.error_analysis.4-f1_score",
+        "peekOfCode": "def f1_score(confusion):\n    \"\"\"\n        A function that calculates F1 score of a confusion matrix\n        :param confusion: ndarray, shape(classes, classes)\n        :return: ndarray, shape(classes,) F1 score of each class\n    \"\"\"\n    # number of classes\n    classes = confusion.shape[0]\n    # initialize f1 score matrix\n    f_one = np.zeros((classes,))",
+        "detail": "supervised_learning.error_analysis.4-f1_score",
+        "documentation": {}
+    },
+    {
+        "label": "sensitivity",
+        "kind": 5,
+        "importPath": "supervised_learning.error_analysis.4-f1_score",
+        "description": "supervised_learning.error_analysis.4-f1_score",
+        "peekOfCode": "sensitivity = __import__('1-sensitivity').sensitivity\nprecision = __import__('2-precision').precision\ndef f1_score(confusion):\n    \"\"\"\n        A function that calculates F1 score of a confusion matrix\n        :param confusion: ndarray, shape(classes, classes)\n        :return: ndarray, shape(classes,) F1 score of each class\n    \"\"\"\n    # number of classes\n    classes = confusion.shape[0]",
+        "detail": "supervised_learning.error_analysis.4-f1_score",
+        "documentation": {}
+    },
+    {
+        "label": "precision",
+        "kind": 5,
+        "importPath": "supervised_learning.error_analysis.4-f1_score",
+        "description": "supervised_learning.error_analysis.4-f1_score",
+        "peekOfCode": "precision = __import__('2-precision').precision\ndef f1_score(confusion):\n    \"\"\"\n        A function that calculates F1 score of a confusion matrix\n        :param confusion: ndarray, shape(classes, classes)\n        :return: ndarray, shape(classes,) F1 score of each class\n    \"\"\"\n    # number of classes\n    classes = confusion.shape[0]\n    # initialize f1 score matrix",
+        "detail": "supervised_learning.error_analysis.4-f1_score",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "kind": 5,
+        "importPath": "supervised_learning.error_analysis.4-main",
+        "description": "supervised_learning.error_analysis.4-main",
+        "peekOfCode": "f1_score = __import__('4-f1_score').f1_score\nif __name__ == '__main__':\n    confusion = np.load('confusion.npz')['confusion']\n    np.set_printoptions(suppress=True)\n    print(f1_score(confusion))",
+        "detail": "supervised_learning.error_analysis.4-main",
+        "documentation": {}
+    },
+    {
         "label": "build_model",
         "kind": 2,
         "importPath": "supervised_learning.keras.0-sequential",
@@ -3065,6 +3191,222 @@
         "description": "supervised_learning.keras.9-model",
         "peekOfCode": "def load_model(filename):\n    \"\"\"\n    A function that loads a complete Keras model from the specified file path.\n    Returns the loaded model.\n    \"\"\"\n    return K.models.load_model(filename)",
         "detail": "supervised_learning.keras.9-model",
+        "documentation": {}
+    },
+    {
+        "label": "normalization_constants",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.0-norm_constants",
+        "description": "supervised_learning.optimization.0-norm_constants",
+        "peekOfCode": "def normalization_constants(X):\n    \"\"\"\n        A function that calculates the normalization constants\n    \"\"\"\n    return np.mean(X, axis=0), np.std(X, axis=0)",
+        "detail": "supervised_learning.optimization.0-norm_constants",
+        "documentation": {}
+    },
+    {
+        "label": "normalize",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.1-normalize",
+        "description": "supervised_learning.optimization.1-normalize",
+        "peekOfCode": "def normalize(X, m, s):\n    \"\"\"\n        A function that calculates the normalization of a matrix\n    \"\"\"\n    # formula of normalisation Z = (X - mean) / std\n    Z = (X - m) / s\n    return Z",
+        "detail": "supervised_learning.optimization.1-normalize",
+        "documentation": {}
+    },
+    {
+        "label": "create_Adam_op",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.10-Adam",
+        "description": "supervised_learning.optimization.10-Adam",
+        "peekOfCode": "def create_Adam_op(alpha, beta1, beta2, epsilon):\n    \"\"\"\n    A function that sets up the Adam\n    optimization algorithm in TensorFlow.\n    Args:\n        alpha (float): The learning rate.\n        beta1 (float): The weight used for the first moment.\n        beta2 (float): The weight used for the second moment.\n        epsilon (float): A small number to avoid division by zero.\n    Returns:",
+        "detail": "supervised_learning.optimization.10-Adam",
+        "documentation": {}
+    },
+    {
+        "label": "learning_rate_decay",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.11-learning_rate_decay",
+        "description": "supervised_learning.optimization.11-learning_rate_decay",
+        "peekOfCode": "def learning_rate_decay(alpha, decay_rate, global_step, decay_step):\n    \"\"\"\n        A function that updates the learning rate using\n        inverse time decay in numpy\n    \"\"\"\n    # calculate factor that increases over time\n    factor = (1 + decay_rate * (global_step//decay_step))\n    # scale original learning rate by inverse of the factor\n    alpha = alpha / factor\n    return alpha",
+        "detail": "supervised_learning.optimization.11-learning_rate_decay",
+        "documentation": {}
+    },
+    {
+        "label": "learning_rate_decay",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.12-learning_rate_decay",
+        "description": "supervised_learning.optimization.12-learning_rate_decay",
+        "peekOfCode": "def learning_rate_decay(alpha, decay_rate, decay_step):\n    \"\"\"\n    A function that creates a learning rate decay operation\n    in TensorFlow using inverse time decay.\n    Args:\n        alpha (float): The original learning rate.\n        decay_rate (float): The weight\n            used to determine the rate at which alpha will decay.\n        decay_step (int): The number of passes of\n            gradient descent that should occur before alpha is decayed further.",
+        "detail": "supervised_learning.optimization.12-learning_rate_decay",
+        "documentation": {}
+    },
+    {
+        "label": "batch_norm",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.13-batch_norm",
+        "description": "supervised_learning.optimization.13-batch_norm",
+        "peekOfCode": "def batch_norm(Z, gamma, beta, epsilon):\n    \"\"\"\n        A function that normalizes an unactivated output of a NN\n        using batch normalization\n    \"\"\"\n    # compute mean and variance\n    mean = np.mean(Z, axis=0)\n    variance = np.var(Z, axis=0)\n    std_dev = np.sqrt(variance + epsilon)\n    # normalize : - mean / root square variance",
+        "detail": "supervised_learning.optimization.13-batch_norm",
+        "documentation": {}
+    },
+    {
+        "label": "create_batch_norm_layer",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.14-batch_norm",
+        "description": "supervised_learning.optimization.14-batch_norm",
+        "peekOfCode": "def create_batch_norm_layer(prev, n, activation):\n    \"\"\"\n    A function that creates a batch normalization layer\n    for a neural network in TensorFlow.\n    Args:\n        prev (tensor): The activated output of the previous layer.\n        n (int): The number of nodes in the layer to be created.\n        activation (function): The activation function\n            that should be used on the output of the layer.\n    Returns:",
+        "detail": "supervised_learning.optimization.14-batch_norm",
+        "documentation": {}
+    },
+    {
+        "label": "shuffle_data",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.2-shuffle_data",
+        "description": "supervised_learning.optimization.2-shuffle_data",
+        "peekOfCode": "def shuffle_data(X, Y):\n    \"\"\"\n        A function that shuffles the data points in two matrices the same way\n    \"\"\"\n    m = X.shape[0]\n    permutted_index = np.random.permutation(m)\n    X_shuffled = X[permutted_index]\n    Y_shuffled = Y[permutted_index]\n    return X_shuffled, Y_shuffled",
+        "detail": "supervised_learning.optimization.2-shuffle_data",
+        "documentation": {}
+    },
+    {
+        "label": "create_mini_batches",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.3-mini_batch",
+        "description": "supervised_learning.optimization.3-mini_batch",
+        "peekOfCode": "def create_mini_batches(X, Y, batch_size):\n    \"\"\"\n    A function that creates mini-batches to be used for training\n    a neural network using mini-batch gradient descent.\n    Args:\n        X (numpy.ndarray): Input data of shape (m, nx).\n        Y (numpy.ndarray): Labels of shape (m, ny).\n        batch_size (int): Number of data points in a batch.\n    Returns:\n        list: List of mini-batches containing tuples (X_batch, Y_batch).",
+        "detail": "supervised_learning.optimization.3-mini_batch",
+        "documentation": {}
+    },
+    {
+        "label": "shuffle_data",
+        "kind": 5,
+        "importPath": "supervised_learning.optimization.3-mini_batch",
+        "description": "supervised_learning.optimization.3-mini_batch",
+        "peekOfCode": "shuffle_data = __import__('2-shuffle_data').shuffle_data\ndef create_mini_batches(X, Y, batch_size):\n    \"\"\"\n    A function that creates mini-batches to be used for training\n    a neural network using mini-batch gradient descent.\n    Args:\n        X (numpy.ndarray): Input data of shape (m, nx).\n        Y (numpy.ndarray): Labels of shape (m, ny).\n        batch_size (int): Number of data points in a batch.\n    Returns:",
+        "detail": "supervised_learning.optimization.3-mini_batch",
+        "documentation": {}
+    },
+    {
+        "label": "moving_average",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.4-moving_average",
+        "description": "supervised_learning.optimization.4-moving_average",
+        "peekOfCode": "def moving_average(data, beta):\n    \"\"\"\n        A function that calculates the weighted moving average of\n        a data set\n        Formul:\n        MA = (val1 + val2 +val3 + ... + valN) / N\n        :param data: list of data to calculate moving average\n        :param beta: weight used for moving average\n        :return: list containing the moving averages of data\n    \"\"\"",
+        "detail": "supervised_learning.optimization.4-moving_average",
+        "documentation": {}
+    },
+    {
+        "label": "update_variables_momentum",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.5-momentum",
+        "description": "supervised_learning.optimization.5-momentum",
+        "peekOfCode": "def update_variables_momentum(alpha, beta1, var, grad, v):\n    \"\"\"\n        A function that updates a variable using the gradient descent\n        with momentum optimization algorithm\n        :param alpha: learning rate\n        :param beta1: momentum weight\n        :param var: ndarray, variable to be updated\n        :param grad: ndarray, gradient of var\n        :param v: previous first moment of var\n        :return: updated variable and the new moment",
+        "detail": "supervised_learning.optimization.5-momentum",
+        "documentation": {}
+    },
+    {
+        "label": "create_momentum_op",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.6-momentum",
+        "description": "supervised_learning.optimization.6-momentum",
+        "peekOfCode": "def create_momentum_op(alpha, beta1):\n    \"\"\"\n    A function that sets up gradient descent with momentum\n    Args:\n        alpha (float): The learning rate.\n        beta1 (float): The momentum weight.\n    Returns:\n        optimizer: Optimizer object for gradient descent with momentum.\n    \"\"\"\n    optimizer = tf.keras.optimizers.SGD(",
+        "detail": "supervised_learning.optimization.6-momentum",
+        "documentation": {}
+    },
+    {
+        "label": "update_variables_RMSProp",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.7-RMSProp",
+        "description": "supervised_learning.optimization.7-RMSProp",
+        "peekOfCode": "def update_variables_RMSProp(alpha, beta2, epsilon, var, grad, s):\n    \"\"\"\n        A function that updates a variable\n        using the RMSProp optimization algorithm\n        :param alpha: learning rate\n        :param beta2: RMSProp weight\n        :param epsilon: small number to avoid division by zero\n        :param var: ndarray, variable to be updated\n        :param grad: ndarray, gradient of var\n        :param s: previous second moment of var",
+        "detail": "supervised_learning.optimization.7-RMSProp",
+        "documentation": {}
+    },
+    {
+        "label": "create_RMSProp_op",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.8-RMSProp",
+        "description": "supervised_learning.optimization.8-RMSProp",
+        "peekOfCode": "def create_RMSProp_op(alpha, beta2, epsilon):\n    \"\"\"\n    A function that sets up the RMSProp optimization algorithm in TensorFlow\n    Args:\n        alpha (float): The learning rate.\n        beta2 (float): The RMSProp weight (Discounting factor).\n        epsilon (float): A small number to avoid division by zero.\n    Returns:\n        optimizer: Optimizer object for RMSProp.\n    \"\"\"",
+        "detail": "supervised_learning.optimization.8-RMSProp",
+        "documentation": {}
+    },
+    {
+        "label": "update_variables_Adam",
+        "kind": 2,
+        "importPath": "supervised_learning.optimization.9-Adam",
+        "description": "supervised_learning.optimization.9-Adam",
+        "peekOfCode": "def update_variables_Adam(alpha, beta1, beta2, epsilon, var, grad, v, s, t):\n    \"\"\"\n        A function that updates variable in place using\n        Adam optimizer algorithm\n        :param alpha: learning rate\n        :param beta1: weight for first moment\n        :param beta2: weight for second moment\n        :param epsilon: small number to avoid division by zero\n        :param var: ndarray, variable to be updated\n        :param grad: ndarray, gradient of var",
+        "detail": "supervised_learning.optimization.9-Adam",
+        "documentation": {}
+    },
+    {
+        "label": "l2_reg_cost",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.0-l2_reg_cost",
+        "description": "supervised_learning.regularization.0-l2_reg_cost",
+        "peekOfCode": "def l2_reg_cost(cost, lambtha, weights, L, m):\n    \"\"\"\n        A function that calculates the cost of a network with L2 Regularization\n        formula = loss + lamda/2m * sum||w||**2\n    \"\"\"\n    reg_term = 0\n    for i in range(1, L + 1):\n        # construct key\n        weights_key = 'W' + str(i)\n        # extract weight matrix",
+        "detail": "supervised_learning.regularization.0-l2_reg_cost",
+        "documentation": {}
+    },
+    {
+        "label": "l2_reg_gradient_descent",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.1-l2_reg_gradient_descent",
+        "description": "supervised_learning.regularization.1-l2_reg_gradient_descent",
+        "peekOfCode": "def l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L):\n    \"\"\"\n        A function that updates the weights and biases of NN\n        using gradient descent with L2 regularization\n        Formula:\n        W = W - alpha * (dW + (lambtha/m) * W)\n    \"\"\"\n    # store m number training examples\n    m = Y.shape[1]\n    # derivative of final layer",
+        "detail": "supervised_learning.regularization.1-l2_reg_gradient_descent",
+        "documentation": {}
+    },
+    {
+        "label": "l2_reg_cost",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.2-l2_reg_cost",
+        "description": "supervised_learning.regularization.2-l2_reg_cost",
+        "peekOfCode": "def l2_reg_cost(cost, model):\n    \"\"\"\n    A function that calculates the cost of a neural\n    \"\"\"\n    regularization_loss = model.losses\n    return cost + regularization_loss",
+        "detail": "supervised_learning.regularization.2-l2_reg_cost",
+        "documentation": {}
+    },
+    {
+        "label": "l2_reg_create_layer",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.3-l2_reg_create_layer",
+        "description": "supervised_learning.regularization.3-l2_reg_create_layer",
+        "peekOfCode": "def l2_reg_create_layer(prev, n, activation, lambtha):\n    \"\"\"\n        A function that creates a tensorflow layer includes L2 regularization\n    \"\"\"\n    # set initialization to He et. al\n    initializer = tf.keras.initializers.VarianceScaling(scale=2.0,\n                                                        mode='fan_avg')\n    # create layer Dense with parameters\n    new_layer = (\n        tf.layers.Dense(n,",
+        "detail": "supervised_learning.regularization.3-l2_reg_create_layer",
+        "documentation": {}
+    },
+    {
+        "label": "dropout_forward_prop",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.4-dropout_forward_prop",
+        "description": "supervised_learning.regularization.4-dropout_forward_prop",
+        "peekOfCode": "def dropout_forward_prop(X, weights, L, keep_prob):\n    \"\"\"\n        A function that conduct forward prop using dropout\n    \"\"\"\n    cache = {'A0': X}\n    for layer in range(1, L):\n        Z = (np.matmul(weights[\"W\" + str(layer)],\n                       cache['A' + str(layer - 1)]) +\n             weights['b' + str(layer)])\n        A = np.tanh(Z)",
+        "detail": "supervised_learning.regularization.4-dropout_forward_prop",
+        "documentation": {}
+    },
+    {
+        "label": "dropout_gradient_descent",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.5-dropout_gradient_descent",
+        "description": "supervised_learning.regularization.5-dropout_gradient_descent",
+        "peekOfCode": "def dropout_gradient_descent(Y, weights, cache, alpha, keep_prob, L):\n    \"\"\"\n        A function that updates weights of NN with Dropout reg\n        using gradient descent\n        :param Y: ndarray, shape(classes,m) correct labels\n        :param weights: dict, weights and biases of NN\n        :param cache: dict, output and dropout mask of each layer\n        :param alpha: learning rate\n        :param keep_prob: proba a node will be kept\n        :param L: number of layer of network",
+        "detail": "supervised_learning.regularization.5-dropout_gradient_descent",
+        "documentation": {}
+    },
+    {
+        "label": "dropout_create_layer",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.6-dropout_create_layer",
+        "description": "supervised_learning.regularization.6-dropout_create_layer",
+        "peekOfCode": "def dropout_create_layer(prev, n, activation, keep_prob, training=True):\n    \"\"\"\n    A function that creates a layer of a neural network using dropout\n    regularization.\n    \"\"\"\n    # Initialize layer weights using He initialization\n    init = tf.keras.initializers.VarianceScaling(scale=2.0, mode='fan_avg')\n    # Create dense layer\n    dense_layer = tf.keras.layers.Dense(units=n, activation=activation,\n                                        kernel_initializer=init)",
+        "detail": "supervised_learning.regularization.6-dropout_create_layer",
+        "documentation": {}
+    },
+    {
+        "label": "early_stopping",
+        "kind": 2,
+        "importPath": "supervised_learning.regularization.7-early_stopping",
+        "description": "supervised_learning.regularization.7-early_stopping",
+        "peekOfCode": "def early_stopping(cost, opt_cost, threshold, patience, count):\n    \"\"\"\n        A function that determines if should stop gradient descent early\n    \"\"\"\n    if opt_cost - cost > threshold:\n        count = 0\n    else:\n        count += 1\n    return count == patience, count",
+        "detail": "supervised_learning.regularization.7-early_stopping",
         "documentation": {}
     },
     {
