@@ -1,28 +1,34 @@
 #!/usr/bin/env python3
-"""
-    A script that create layer with L2 regularization
-"""
+"""A script that creates a layer with L2 regularization."""
 
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 
 
 def l2_reg_create_layer(prev, n, activation, lambtha):
     """
-        A function that creates a tensorflow layer includes L2 regularization
+    A function that creates a neural network layer with L2 regularization.
+
+    Args:
+        prev: tensor containing the output of the previous layer
+        n: number of nodes the new layer should contain
+        activation: activation function for the layer
+        lambtha: L2 regularization parameter
+
+    Returns:
+        Output of the new layer
     """
-    # set initialization to He et. al
-    initializer = tf.keras.initializers.VarianceScaling(scale=2.0,
-                                                        mode='fan_avg')
+    initializer = tf.keras.initializers.VarianceScaling(
+        scale=2.0,
+        mode=('fan_avg')
+    )
 
-    # create layer Dense with parameters
-    new_layer = (
-        tf.layers.Dense(n,
-                        activation=activation,
-                        kernel_initializer=initializer,
-                        kernel_regularizer=tf.keras.regularizers.l2(lambtha),
-                        name="layer"))
+    regularizer = tf.keras.regularizers.L2(lambtha)
 
-    # apply layer to input
-    output = new_layer(prev)
+    layer = tf.keras.layers.Dense(
+        units=n,
+        activation=activation,
+        kernel_initializer=initializer,
+        kernel_regularizer=regularizer
+    )
 
-    return output
+    return layer(prev)
