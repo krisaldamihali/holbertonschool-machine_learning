@@ -8,7 +8,8 @@ import numpy as np
 
 def sensitivity(confusion):
     """
-        A function that calculates the sensitivity for each class in a confusion matrix
+        A function that calculates the sensitivity for each class
+        in a confusion matrix
 
         :param confusion: ndarray, shape(classes,classes), matrix confusion
 
