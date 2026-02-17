@@ -35,15 +35,6 @@
         "documentation": {}
     },
     {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -53,21 +44,36 @@
         "documentation": {}
     },
     {
-        "label": "pandas",
+        "label": "tensorflow",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
         "documentation": {}
     },
     {
-        "label": "pickle",
-        "kind": 6,
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
         "isExtraImport": true,
-        "importPath": "pickle",
-        "description": "pickle",
-        "detail": "pickle",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
         "documentation": {}
     },
     {
@@ -80,21 +86,192 @@
         "documentation": {}
     },
     {
+        "label": "load_images_as_numpy",
+        "importPath": "src.data",
+        "description": "src.data",
+        "isExtraImport": true,
+        "detail": "src.data",
+        "documentation": {}
+    },
+    {
+        "label": "build_mlp_model",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "build_cnn_model",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "build_transfer_model",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "augment_dataset",
+        "importPath": "src.features",
+        "description": "src.features",
+        "isExtraImport": true,
+        "detail": "src.features",
+        "documentation": {}
+    },
+    {
+        "label": "extract_hog_features",
+        "importPath": "src.features",
+        "description": "src.features",
+        "isExtraImport": true,
+        "detail": "src.features",
+        "documentation": {}
+    },
+    {
+        "label": "apply_standard_scaler",
+        "importPath": "src.features",
+        "description": "src.features",
+        "isExtraImport": true,
+        "detail": "src.features",
+        "documentation": {}
+    },
+    {
+        "label": "compile_model",
+        "importPath": "src.train",
+        "description": "src.train",
+        "isExtraImport": true,
+        "detail": "src.train",
+        "documentation": {}
+    },
+    {
+        "label": "get_callbacks",
+        "importPath": "src.train",
+        "description": "src.train",
+        "isExtraImport": true,
+        "detail": "src.train",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "importPath": "src.eval",
+        "description": "src.eval",
+        "isExtraImport": true,
+        "detail": "src.eval",
+        "documentation": {}
+    },
+    {
+        "label": "plot_history",
+        "importPath": "src.eval",
+        "description": "src.eval",
+        "isExtraImport": true,
+        "detail": "src.eval",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
         "label": "tensorflow.keras",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "tensorflow.keras",
         "description": "tensorflow.keras",
         "detail": "tensorflow.keras",
-        "documentation": {}
-    },
-    {
-        "label": "tensorflow",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tensorflow",
-        "description": "tensorflow",
-        "detail": "tensorflow",
         "documentation": {}
     },
     {
@@ -2030,6 +2207,492 @@
         "description": "math.probability.poisson",
         "peekOfCode": "class Poisson:\n    \"\"\"class that represents Poisson distribution\"\"\"\n    def __init__(self, data=None, lambtha=1.):\n        \"\"\"class constructor\"\"\"\n        if data is None:\n            if lambtha < 1:\n                raise ValueError(\"lambtha must be a positive value\")\n            else:\n                self.lambtha = float(lambtha)\n        else:",
         "detail": "math.probability.poisson",
+        "documentation": {}
+    },
+    {
+        "label": "add_row",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "def add_row(name, model, Xv, yv, Xt, yt, val_acc):\n    # Silence reports/plots so the cell doesn't spam output\n    s = evaluate_model(\n        model,\n        Xv, yv,\n        Xt, yt,\n        class_names,\n        show_plots=False,\n        print_reports=False\n    )",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "DATA_ROOT",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "DATA_ROOT = \"../data/rps\"\nIMG_H, IMG_W = 224, 224\nBATCH_SIZE = 16\nEPOCHS = 90\nCLASSES = ['paper', 'rock', 'scissor']\nNUM_CLASSES = len(CLASSES)\nprint(f\"Data root: {DATA_ROOT}\")\nprint(f\"Image size: {IMG_H}x{IMG_W}\")\nprint(f\"Classes: {CLASSES}\")\n# %% [markdown]",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "BATCH_SIZE",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "BATCH_SIZE = 16\nEPOCHS = 90\nCLASSES = ['paper', 'rock', 'scissor']\nNUM_CLASSES = len(CLASSES)\nprint(f\"Data root: {DATA_ROOT}\")\nprint(f\"Image size: {IMG_H}x{IMG_W}\")\nprint(f\"Classes: {CLASSES}\")\n# %% [markdown]\n# ## 2. Load Data as NumPy Arrays\n# %%",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "EPOCHS",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "EPOCHS = 90\nCLASSES = ['paper', 'rock', 'scissor']\nNUM_CLASSES = len(CLASSES)\nprint(f\"Data root: {DATA_ROOT}\")\nprint(f\"Image size: {IMG_H}x{IMG_W}\")\nprint(f\"Classes: {CLASSES}\")\n# %% [markdown]\n# ## 2. Load Data as NumPy Arrays\n# %%\nprint(\"Loading training data...\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSES",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "CLASSES = ['paper', 'rock', 'scissor']\nNUM_CLASSES = len(CLASSES)\nprint(f\"Data root: {DATA_ROOT}\")\nprint(f\"Image size: {IMG_H}x{IMG_W}\")\nprint(f\"Classes: {CLASSES}\")\n# %% [markdown]\n# ## 2. Load Data as NumPy Arrays\n# %%\nprint(\"Loading training data...\")\nX_train, y_train, class_names = load_images_as_numpy(",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "NUM_CLASSES",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "NUM_CLASSES = len(CLASSES)\nprint(f\"Data root: {DATA_ROOT}\")\nprint(f\"Image size: {IMG_H}x{IMG_W}\")\nprint(f\"Classes: {CLASSES}\")\n# %% [markdown]\n# ## 2. Load Data as NumPy Arrays\n# %%\nprint(\"Loading training data...\")\nX_train, y_train, class_names = load_images_as_numpy(\n    os.path.join(DATA_ROOT, 'train')",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train_flat",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "X_train_flat = X_train.reshape(X_train.shape[0], -1)\nX_val_flat = X_val.reshape(X_val.shape[0], -1)\nX_test_flat = X_test.reshape(X_test.shape[0], -1)\nprint(f\"Original shape: {X_train.shape}\")\nprint(f\"Flattened shape: {X_train_flat.shape}\")\nprint(f\"Each image is now a vector of {X_train_flat.shape[1]:,} features\")\n# %%\n# Apply StandardScaler for better MLP performance\nprint(\"Applying StandardScaler (zero mean, unit variance)...\")\nX_train_scaled, X_val_scaled, X_test_scaled, scaler = apply_standard_scaler(",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_val_flat",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "X_val_flat = X_val.reshape(X_val.shape[0], -1)\nX_test_flat = X_test.reshape(X_test.shape[0], -1)\nprint(f\"Original shape: {X_train.shape}\")\nprint(f\"Flattened shape: {X_train_flat.shape}\")\nprint(f\"Each image is now a vector of {X_train_flat.shape[1]:,} features\")\n# %%\n# Apply StandardScaler for better MLP performance\nprint(\"Applying StandardScaler (zero mean, unit variance)...\")\nX_train_scaled, X_val_scaled, X_test_scaled, scaler = apply_standard_scaler(\n    X_train_flat, X_val_flat, X_test_flat",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test_flat",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "X_test_flat = X_test.reshape(X_test.shape[0], -1)\nprint(f\"Original shape: {X_train.shape}\")\nprint(f\"Flattened shape: {X_train_flat.shape}\")\nprint(f\"Each image is now a vector of {X_train_flat.shape[1]:,} features\")\n# %%\n# Apply StandardScaler for better MLP performance\nprint(\"Applying StandardScaler (zero mean, unit variance)...\")\nX_train_scaled, X_val_scaled, X_test_scaled, scaler = apply_standard_scaler(\n    X_train_flat, X_val_flat, X_test_flat\n)",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "dt_model",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "dt_model = DecisionTreeClassifier(max_depth=15, random_state=42)\ndt_model.fit(X_train_flat, y_train)\ny_val_pred_dt = dt_model.predict(X_val_flat)\ndt_acc = accuracy_score(y_val, y_val_pred_dt)\nprint(f\"Decision Tree Validation Accuracy: {dt_acc:.2%}\")\n# %%\nprint(\"Training Logistic Regression...\")\nlr_model = LogisticRegression(max_iter=1000, random_state=42, C=0.1)\nlr_model.fit(X_train_flat, y_train)\ny_val_pred_lr = lr_model.predict(X_val_flat)",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_val_pred_dt",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "y_val_pred_dt = dt_model.predict(X_val_flat)\ndt_acc = accuracy_score(y_val, y_val_pred_dt)\nprint(f\"Decision Tree Validation Accuracy: {dt_acc:.2%}\")\n# %%\nprint(\"Training Logistic Regression...\")\nlr_model = LogisticRegression(max_iter=1000, random_state=42, C=0.1)\nlr_model.fit(X_train_flat, y_train)\ny_val_pred_lr = lr_model.predict(X_val_flat)\nlr_acc = accuracy_score(y_val, y_val_pred_lr)\nprint(f\"Logistic Regression Validation Accuracy: {lr_acc:.2%}\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "dt_acc",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "dt_acc = accuracy_score(y_val, y_val_pred_dt)\nprint(f\"Decision Tree Validation Accuracy: {dt_acc:.2%}\")\n# %%\nprint(\"Training Logistic Regression...\")\nlr_model = LogisticRegression(max_iter=1000, random_state=42, C=0.1)\nlr_model.fit(X_train_flat, y_train)\ny_val_pred_lr = lr_model.predict(X_val_flat)\nlr_acc = accuracy_score(y_val, y_val_pred_lr)\nprint(f\"Logistic Regression Validation Accuracy: {lr_acc:.2%}\")\n# %% [markdown]",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "lr_model",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "lr_model = LogisticRegression(max_iter=1000, random_state=42, C=0.1)\nlr_model.fit(X_train_flat, y_train)\ny_val_pred_lr = lr_model.predict(X_val_flat)\nlr_acc = accuracy_score(y_val, y_val_pred_lr)\nprint(f\"Logistic Regression Validation Accuracy: {lr_acc:.2%}\")\n# %% [markdown]\n# ## 6. Baseline MLP Model (with StandardScaler)\n# %%\nmlp_model = build_mlp_model(X_train_scaled.shape[1], NUM_CLASSES)\nmlp_model.summary()",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_val_pred_lr",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "y_val_pred_lr = lr_model.predict(X_val_flat)\nlr_acc = accuracy_score(y_val, y_val_pred_lr)\nprint(f\"Logistic Regression Validation Accuracy: {lr_acc:.2%}\")\n# %% [markdown]\n# ## 6. Baseline MLP Model (with StandardScaler)\n# %%\nmlp_model = build_mlp_model(X_train_scaled.shape[1], NUM_CLASSES)\nmlp_model.summary()\n# %%\ncompile_model(mlp_model)",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "lr_acc",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "lr_acc = accuracy_score(y_val, y_val_pred_lr)\nprint(f\"Logistic Regression Validation Accuracy: {lr_acc:.2%}\")\n# %% [markdown]\n# ## 6. Baseline MLP Model (with StandardScaler)\n# %%\nmlp_model = build_mlp_model(X_train_scaled.shape[1], NUM_CLASSES)\nmlp_model.summary()\n# %%\ncompile_model(mlp_model)\ncallbacks = get_callbacks()",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "mlp_model",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "mlp_model = build_mlp_model(X_train_scaled.shape[1], NUM_CLASSES)\nmlp_model.summary()\n# %%\ncompile_model(mlp_model)\ncallbacks = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING BASELINE MLP (with StandardScaler)\")\nprint(\"=\"*70)\nhistory_mlp = mlp_model.fit(\n    X_train_scaled, y_train,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "callbacks",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "callbacks = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING BASELINE MLP (with StandardScaler)\")\nprint(\"=\"*70)\nhistory_mlp = mlp_model.fit(\n    X_train_scaled, y_train,\n    validation_data=(X_val_scaled, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "history_mlp",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "history_mlp = mlp_model.fit(\n    X_train_scaled, y_train,\n    validation_data=(X_val_scaled, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks,\n    verbose=1\n)\nmlp_val_loss, mlp_val_acc = mlp_model.evaluate(X_val_scaled, y_val, verbose=0)\nprint(f\"\\nBaseline MLP Validation Accuracy: {mlp_val_acc:.2%}\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train_aug_flat",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "X_train_aug_flat = X_train_aug.reshape(X_train_aug.shape[0], -1)\n# Apply StandardScaler to augmented data\nprint(\"\\nApplying StandardScaler to augmented data...\")\nX_train_aug_scaled, X_val_aug_scaled, X_test_aug_scaled, scaler_aug = apply_standard_scaler(\n    X_train_aug_flat, X_val_flat, X_test_flat\n)\n# %%\nmlp_aug_model = build_mlp_model(X_train_aug_scaled.shape[1], NUM_CLASSES)\ncompile_model(mlp_aug_model)\ncallbacks_aug = get_callbacks()",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "mlp_aug_model",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "mlp_aug_model = build_mlp_model(X_train_aug_scaled.shape[1], NUM_CLASSES)\ncompile_model(mlp_aug_model)\ncallbacks_aug = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING MLP + DATA AUGMENTATION (with StandardScaler)\")\nprint(\"=\"*70)\nhistory_mlp_aug = mlp_aug_model.fit(\n    X_train_aug_scaled, y_train_aug,\n    validation_data=(X_val_aug_scaled, y_val),\n    epochs=EPOCHS,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "callbacks_aug",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "callbacks_aug = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING MLP + DATA AUGMENTATION (with StandardScaler)\")\nprint(\"=\"*70)\nhistory_mlp_aug = mlp_aug_model.fit(\n    X_train_aug_scaled, y_train_aug,\n    validation_data=(X_val_aug_scaled, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_aug,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "history_mlp_aug",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "history_mlp_aug = mlp_aug_model.fit(\n    X_train_aug_scaled, y_train_aug,\n    validation_data=(X_val_aug_scaled, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_aug,\n    verbose=1\n)\n_, mlp_aug_val_acc = mlp_aug_model.evaluate(X_val_aug_scaled, y_val, verbose=0)\nprint(f\"\\nMLP + Augmentation Validation Accuracy: {mlp_aug_val_acc:.2%}\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train_hog",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "X_train_hog = extract_hog_features(X_train)\nX_val_hog = extract_hog_features(X_val)\nX_test_hog = extract_hog_features(X_test)\nprint(f\"Original features: {X_train_flat.shape[1]:,}\")\nprint(f\"HOG features: {X_train_hog.shape[1]:,}\")\n# Apply StandardScaler to HOG features\nprint(\"\\nApplying StandardScaler to HOG features...\")\nX_train_hog_scaled, X_val_hog_scaled, X_test_hog_scaled, scaler_hog = apply_standard_scaler(\n    X_train_hog, X_val_hog, X_test_hog\n)",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_val_hog",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "X_val_hog = extract_hog_features(X_val)\nX_test_hog = extract_hog_features(X_test)\nprint(f\"Original features: {X_train_flat.shape[1]:,}\")\nprint(f\"HOG features: {X_train_hog.shape[1]:,}\")\n# Apply StandardScaler to HOG features\nprint(\"\\nApplying StandardScaler to HOG features...\")\nX_train_hog_scaled, X_val_hog_scaled, X_test_hog_scaled, scaler_hog = apply_standard_scaler(\n    X_train_hog, X_val_hog, X_test_hog\n)\n# %%",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test_hog",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "X_test_hog = extract_hog_features(X_test)\nprint(f\"Original features: {X_train_flat.shape[1]:,}\")\nprint(f\"HOG features: {X_train_hog.shape[1]:,}\")\n# Apply StandardScaler to HOG features\nprint(\"\\nApplying StandardScaler to HOG features...\")\nX_train_hog_scaled, X_val_hog_scaled, X_test_hog_scaled, scaler_hog = apply_standard_scaler(\n    X_train_hog, X_val_hog, X_test_hog\n)\n# %%\nmlp_hog_model = build_mlp_model(X_train_hog_scaled.shape[1], NUM_CLASSES)",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "mlp_hog_model",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "mlp_hog_model = build_mlp_model(X_train_hog_scaled.shape[1], NUM_CLASSES)\ncompile_model(mlp_hog_model)\ncallbacks_hog = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING MLP + HOG FEATURES (with StandardScaler)\")\nprint(\"=\"*70)\nhistory_mlp_hog = mlp_hog_model.fit(\n    X_train_hog_scaled, y_train,\n    validation_data=(X_val_hog_scaled, y_val),\n    epochs=EPOCHS,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "callbacks_hog",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "callbacks_hog = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING MLP + HOG FEATURES (with StandardScaler)\")\nprint(\"=\"*70)\nhistory_mlp_hog = mlp_hog_model.fit(\n    X_train_hog_scaled, y_train,\n    validation_data=(X_val_hog_scaled, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_hog,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "history_mlp_hog",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "history_mlp_hog = mlp_hog_model.fit(\n    X_train_hog_scaled, y_train,\n    validation_data=(X_val_hog_scaled, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_hog,\n    verbose=1\n)\n_, mlp_hog_val_acc = mlp_hog_model.evaluate(X_val_hog_scaled, y_val, verbose=0)\nprint(f\"\\nMLP + HOG Validation Accuracy: {mlp_hog_val_acc:.2%}\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "cnn_model",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "cnn_model = build_cnn_model((IMG_H, IMG_W, 3), NUM_CLASSES)\ncnn_model.summary()\n# %%\ncompile_model(cnn_model)\ncallbacks_cnn = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING CNN\")\nprint(\"=\"*70)\nhistory_cnn = cnn_model.fit(\n    X_train, y_train,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "callbacks_cnn",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "callbacks_cnn = get_callbacks()\nprint(\"=\"*70)\nprint(\"TRAINING CNN\")\nprint(\"=\"*70)\nhistory_cnn = cnn_model.fit(\n    X_train, y_train,\n    validation_data=(X_val, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_cnn,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "history_cnn",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "history_cnn = cnn_model.fit(\n    X_train, y_train,\n    validation_data=(X_val, y_val),\n    epochs=EPOCHS,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_cnn,\n    verbose=1\n)\n_, cnn_val_acc = cnn_model.evaluate(X_val, y_val, verbose=0)\nprint(f\"\\nCNN Validation Accuracy: {cnn_val_acc:.2%}\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "transfer_model",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "transfer_model = build_transfer_model(NUM_CLASSES, input_shape=(IMG_H, IMG_W, 3))\ntransfer_model.summary()\n# %%\ncompile_model(transfer_model, learning_rate=0.0001)\ncallbacks_transfer = get_callbacks(patience=15)\nprint(\"=\"*70)\nprint(\"TRAINING TRANSFER LEARNING (MobileNetV2)\")\nprint(\"=\"*70)\nhistory_transfer = transfer_model.fit(\n    X_train, y_train,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "callbacks_transfer",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "callbacks_transfer = get_callbacks(patience=15)\nprint(\"=\"*70)\nprint(\"TRAINING TRANSFER LEARNING (MobileNetV2)\")\nprint(\"=\"*70)\nhistory_transfer = transfer_model.fit(\n    X_train, y_train,\n    validation_data=(X_val, y_val),\n    epochs=50,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_transfer,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "history_transfer",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "history_transfer = transfer_model.fit(\n    X_train, y_train,\n    validation_data=(X_val, y_val),\n    epochs=50,\n    batch_size=BATCH_SIZE,\n    callbacks=callbacks_transfer,\n    verbose=1\n)\n_, transfer_val_acc = transfer_model.evaluate(X_val, y_val, verbose=0)\nprint(f\"\\nTransfer Learning Validation Accuracy: {transfer_val_acc:.2%}\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "class_names",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "class_names = [\"rock\", \"paper\", \"scissors\"]\nrows = []\ndef add_row(name, model, Xv, yv, Xt, yt, val_acc):\n    # Silence reports/plots so the cell doesn't spam output\n    s = evaluate_model(\n        model,\n        Xv, yv,\n        Xt, yt,\n        class_names,\n        show_plots=False,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "rows",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "rows = []\ndef add_row(name, model, Xv, yv, Xt, yt, val_acc):\n    # Silence reports/plots so the cell doesn't spam output\n    s = evaluate_model(\n        model,\n        Xv, yv,\n        Xt, yt,\n        class_names,\n        show_plots=False,\n        print_reports=False",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "results = pd.DataFrame(rows).sort_values(\n    \"Val F1 Macro (%)\", ascending=False, na_position=\"last\"\n).reset_index(drop=True)\nprint(\"\\n\" + \"=\"*70)\nprint(\"FINAL MODEL COMPARISON\")\nprint(\"=\"*70)\nprint(results.to_string(index=False))\nprint(\"=\"*70)\n# Plot Val F1 Macro (%)\nfig, ax = plt.subplots(figsize=(12, 6))",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "colors = plt.cm.RdYlGn(np.linspace(0.2, 0.9, len(results)))\nbars = ax.barh(results[\"Model\"], results[\"Val F1 Macro (%)\"], color=colors)\nax.set_xlabel(\"Validation F1 Macro (%)\", fontsize=12, fontweight=\"bold\")\nax.set_title(\"Model Comparison - Validation Macro F1\", fontsize=14, fontweight=\"bold\")\nax.grid(axis=\"x\", alpha=0.3)\nax.set_xlim(0, 105)\nfor bar, val in zip(bars, results[\"Val F1 Macro (%)\"]):\n    ax.text(\n        bar.get_width() + 0.5,\n        bar.get_y() + bar.get_height()/2,",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "bars",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "bars = ax.barh(results[\"Model\"], results[\"Val F1 Macro (%)\"], color=colors)\nax.set_xlabel(\"Validation F1 Macro (%)\", fontsize=12, fontweight=\"bold\")\nax.set_title(\"Model Comparison - Validation Macro F1\", fontsize=14, fontweight=\"bold\")\nax.grid(axis=\"x\", alpha=0.3)\nax.set_xlim(0, 105)\nfor bar, val in zip(bars, results[\"Val F1 Macro (%)\"]):\n    ax.text(\n        bar.get_width() + 0.5,\n        bar.get_y() + bar.get_height()/2,\n        f\"{val:.1f}%\",",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "results = results.sort_values(\n    \"Val F1 Macro (%)\",\n    ascending=False,\n    na_position=\"last\"\n).reset_index(drop=True)\n# Select best model AFTER sorting\nbest_model_name = results.iloc[0][\"Model\"]\nprint(f\"Best model: {best_model_name}\")\n# Map model name to model object and correct inputs\nif best_model_name == \"Transfer Learning\":",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "best_model_name",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "best_model_name = results.iloc[0][\"Model\"]\nprint(f\"Best model: {best_model_name}\")\n# Map model name to model object and correct inputs\nif best_model_name == \"Transfer Learning\":\n    best_model = transfer_model\n    X_val_input, X_test_input = X_val, X_test\nelif best_model_name == \"CNN\":\n    best_model = cnn_model\n    X_val_input, X_test_input = X_val, X_test\nelif best_model_name == \"MLP + HOG\":",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "best_scores",
+        "kind": 5,
+        "importPath": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "description": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "peekOfCode": "best_scores = evaluate_model(\n    best_model,\n    X_val_input, y_val,\n    X_test_input, y_test,\n    CLASSES\n)\n# Explicit macro F1 print (clear for graders)\nprint(\"\\nBest model metrics:\")\nprint(f\"  Val F1 Macro (%):  {best_scores['val']['f1_macro'] * 100:.2f}\")\nprint(f\"  Test F1 Macro (%): {best_scores['test']['f1_macro'] * 100:.2f}\")",
+        "detail": "notebooks.rps-project.notebooks.RockPaperScissors_FFNN",
+        "documentation": {}
+    },
+    {
+        "label": "load_images_as_numpy",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.data",
+        "description": "notebooks.rps-project.src.data",
+        "peekOfCode": "def load_images_as_numpy(directory, img_size=(224, 224), verbose=True):\n    \"\"\"Load all images from directory structure into numpy arrays.\n    Expects: directory/class_name/*.png|jpg|jpeg\n    Returns: (X, y, class_names)\n    \"\"\"\n    images = []\n    labels = []\n    class_names = sorted(os.listdir(directory))\n    class_to_idx = {name: idx for idx, name in enumerate(class_names)}\n    for class_name in class_names:",
+        "detail": "notebooks.rps-project.src.data",
+        "documentation": {}
+    },
+    {
+        "label": "plot_history",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.eval",
+        "description": "notebooks.rps-project.src.eval",
+        "peekOfCode": "def plot_history(history, title: str = \"Model\"):\n    \"\"\"Plot training/validation accuracy and loss curves.\"\"\"\n    fig, axes = plt.subplots(1, 2, figsize=(14, 5))\n    axes[0].plot(history.history[\"accuracy\"], label=\"Training\", linewidth=2)\n    axes[0].plot(history.history[\"val_accuracy\"], label=\"Validation\", linewidth=2)\n    axes[0].axhline(y=0.74, color=\"r\", linestyle=\"--\", label=\"Target (74%)\", linewidth=1.5)\n    axes[0].set_title(f\"{title} - Accuracy\", fontsize=14, fontweight=\"bold\")\n    axes[0].set_xlabel(\"Epoch\")\n    axes[0].set_ylabel(\"Accuracy\")\n    axes[0].legend()",
+        "detail": "notebooks.rps-project.src.eval",
+        "documentation": {}
+    },
+    {
+        "label": "plot_confusion_matrix",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.eval",
+        "description": "notebooks.rps-project.src.eval",
+        "peekOfCode": "def plot_confusion_matrix(y_true, y_pred, class_names, title: str = \"\"):\n    \"\"\"Plot a confusion matrix heatmap.\"\"\"\n    cm = confusion_matrix(y_true, y_pred)\n    plt.figure(figsize=(7, 6))\n    sns.heatmap(cm, annot=True, fmt=\"d\", cmap=\"Blues\",\n                xticklabels=class_names, yticklabels=class_names)\n    plt.title(title or \"Confusion Matrix\", fontsize=13, fontweight=\"bold\")\n    plt.ylabel(\"True Label\")\n    plt.xlabel(\"Predicted Label\")\n    plt.tight_layout()",
+        "detail": "notebooks.rps-project.src.eval",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.eval",
+        "description": "notebooks.rps-project.src.eval",
+        "peekOfCode": "def evaluate_model(\n    model,\n    X_val,\n    y_val,\n    X_test,\n    y_test,\n    class_names,\n    show_plots: bool = True,\n    print_reports: bool = True,\n):",
+        "detail": "notebooks.rps-project.src.eval",
+        "documentation": {}
+    },
+    {
+        "label": "augment_dataset",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.features",
+        "description": "notebooks.rps-project.src.features",
+        "peekOfCode": "def augment_dataset(X, y, augment_factor=2, seed=42):\n    \"\"\"\n    Augment image dataset using random flips, rotations, and zooms.\n    Args:\n        X: numpy array of images (N, H, W, C), values in [0, 1]\n        y: numpy array of labels (N,)\n        augment_factor: number of augmented copies to add per original image\n        seed: random seed for reproducibility\n    Returns:\n        X_aug: concatenation of original + augmented images",
+        "detail": "notebooks.rps-project.src.features",
+        "documentation": {}
+    },
+    {
+        "label": "extract_hog_features",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.features",
+        "description": "notebooks.rps-project.src.features",
+        "peekOfCode": "def extract_hog_features(X, pixels_per_cell=16, cells_per_block=2, orientations=9):\n    \"\"\"\n    Extract HOG (Histogram of Oriented Gradients) features from images.\n    Reduces dimensionality from raw pixels to meaningful gradient/shape features.\n    For 224x224 images with default params: ~1,764 features per image.\n    Args:\n        X: numpy array of images (N, H, W, C), values in [0, 1]\n        pixels_per_cell: size of each HOG cell in pixels\n        cells_per_block: number of cells per block for normalization\n        orientations: number of gradient orientation bins",
+        "detail": "notebooks.rps-project.src.features",
+        "documentation": {}
+    },
+    {
+        "label": "apply_standard_scaler",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.features",
+        "description": "notebooks.rps-project.src.features",
+        "peekOfCode": "def apply_standard_scaler(X_train, X_val, X_test):\n    \"\"\"\n    Apply StandardScaler to normalize features (zero mean, unit variance).\n    Critical for MLP: normalized features lead to faster convergence and better accuracy.\n    Fit scaler on training data only, then transform all sets.\n    Args:\n        X_train: training features (2D array)\n        X_val: validation features (2D array)\n        X_test: test features (2D array)\n    Returns:",
+        "detail": "notebooks.rps-project.src.features",
+        "documentation": {}
+    },
+    {
+        "label": "build_mlp_model",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.models",
+        "description": "notebooks.rps-project.src.models",
+        "peekOfCode": "def build_mlp_model(input_dim: int, num_classes: int):\n    \"\"\"\n    MLP (FFNN) for flattened image vectors.\n    input_dim: number of features per image after flatten\n    num_classes: number of output classes\n    \"\"\"\n    model = keras.Sequential([\n        keras.layers.Input(shape=(input_dim,)),\n        keras.layers.Dense(512),\n        keras.layers.BatchNormalization(),",
+        "detail": "notebooks.rps-project.src.models",
+        "documentation": {}
+    },
+    {
+        "label": "build_cnn_model",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.models",
+        "description": "notebooks.rps-project.src.models",
+        "peekOfCode": "def build_cnn_model(\n    input_shape: tuple,\n    num_classes: int,\n    head_dropout: float = 0.5,\n    conv_l2: float = 0.0,\n    seed: int = 42,\n):\n    \"\"\"\n    CNN for 2D image classification with inline data augmentation.\n    Augmentation layers are active only during training.",
+        "detail": "notebooks.rps-project.src.models",
+        "documentation": {}
+    },
+    {
+        "label": "build_transfer_model",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.models",
+        "description": "notebooks.rps-project.src.models",
+        "peekOfCode": "def build_transfer_model(num_classes: int, input_shape: tuple = (224, 224, 3)):\n    \"\"\"\n    Transfer learning model using MobileNetV2 pre-trained on ImageNet.\n    The base model weights are frozen; only the custom head is trained.\n    \"\"\"\n    base_model = keras.applications.MobileNetV2(\n        input_shape=input_shape,\n        include_top=False,\n        weights=\"imagenet\",\n    )",
+        "detail": "notebooks.rps-project.src.models",
+        "documentation": {}
+    },
+    {
+        "label": "compile_model",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.train",
+        "description": "notebooks.rps-project.src.train",
+        "peekOfCode": "def compile_model(model, learning_rate: float = 0.0005):\n    \"\"\"Compile model with Adam optimizer and sparse categorical crossentropy.\"\"\"\n    model.compile(\n        optimizer=keras.optimizers.Adam(learning_rate=learning_rate),\n        loss='sparse_categorical_crossentropy',\n        metrics=['accuracy'],\n    )\ndef get_callbacks(patience: int = 10, min_lr: float = 1e-6):\n    \"\"\"\n    Return standard training callbacks:",
+        "detail": "notebooks.rps-project.src.train",
+        "documentation": {}
+    },
+    {
+        "label": "get_callbacks",
+        "kind": 2,
+        "importPath": "notebooks.rps-project.src.train",
+        "description": "notebooks.rps-project.src.train",
+        "peekOfCode": "def get_callbacks(patience: int = 10, min_lr: float = 1e-6):\n    \"\"\"\n    Return standard training callbacks:\n    - EarlyStopping: stops when val_accuracy stops improving\n    - ReduceLROnPlateau: halves learning rate when val_loss plateaus\n    \"\"\"\n    early_stopping = keras.callbacks.EarlyStopping(\n        monitor='val_accuracy',\n        patience=patience,\n        restore_best_weights=True,",
+        "detail": "notebooks.rps-project.src.train",
         "documentation": {}
     },
     {
