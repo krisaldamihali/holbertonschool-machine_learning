@@ -6,3 +6,4 @@ data/
 *.pkl
 *.log
 .DS_Store
+miniconda3/
