@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    A script that performs forward propagation over a conv layer of CNN
+    A script that performs forward propagation over a conv layer of NN
 """
 
 import numpy as np
@@ -8,7 +8,7 @@ import numpy as np
 
 def conv_forward(A_prev, W, b, activation, padding="same", stride=(1, 1)):
     """
-        A function that performs forward propagation over a conv layer of CNN
+        A function that performs forward propagation over a conv layer of NN
 
         :param A_prev: ndarray, shape(m,h_prev,w_prev,c_prev) output layer
         :param W: ndarray, shape(kh,kw,c_prev,c_new) kernel
