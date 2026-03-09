@@ -8,46 +8,85 @@ def inception_block(A_prev, filters):
     """
     A function that builds an Inception block from a previous layer
     using multiple convolutional and pooling branches.
+
+    Args:
+    A_prev: Output tensor from the previous layer.
+
+    filters (tuple or list): Contains the number of filters for each
+    convolutional branch in the Inception block in the following order:
+        F1: Number of filters in the 1x1 convolution.
+        F3R: Number of filters in the 1x1 convolution before
+             the 3x3 convolution.
+        F3: Number of filters in the 3x3 convolution.
+        F5R: Number of filters in the 1x1 convolution before
+             the 5x5 convolution.
+        F5: Number of filters in the 5x5 convolution.
+        FPP: Number of filters in the 1x1 convolution after
+             the max pooling layer.
+
+    Notes:
+        All convolution layers inside the Inception block use ReLU activation.
+
+    Returns:
+        Tensor: Concatenated output of all branches of the Inception block.
     """
+    # Unpack filter sizes for each branch of the Inception module
     F1, F3R, F3, F5R, F5, FPP = filters
+
+    # Branch 1: 1x1 convolution for direct feature extraction
     layer_1 = K.layers.Conv2D(filters=F1,
                               kernel_size=(1, 1),
                               padding='same',
                               activation=K.activations.relu,
                               kernel_initializer=K.initializers.he_normal())
     output_1 = layer_1(A_prev)
+
+    # Branch 2: 1x1 convolution followed by 3x3 convolution
+    # The 1x1 layer reduces dimensionality before the 3x3 operation
     layer_2 = K.layers.Conv2D(filters=F3R,
                               kernel_size=(1, 1),
                               padding='same',
                               activation=K.activations.relu,
                               kernel_initializer=K.initializers.he_normal())
     output_2 = layer_2(A_prev)
+
     layer_3 = K.layers.Conv2D(filters=F3,
                               kernel_size=(3, 3),
                               padding='same',
                               activation=K.activations.relu,
                               kernel_initializer=K.initializers.he_normal())
     output_3 = layer_3(output_2)
+
+    # Branch 3: 1x1 convolution followed by 5x5 convolution
+    # The 1x1 layer reduces computational cost before the larger kernel
     layer_4 = K.layers.Conv2D(filters=F5R,
                               kernel_size=(1, 1),
                               padding='same',
                               activation=K.activations.relu,
                               kernel_initializer=K.initializers.he_normal())
     output_4 = layer_4(A_prev)
+
     layer_5 = K.layers.Conv2D(filters=F5,
                               kernel_size=(5, 5),
                               padding='same',
                               activation=K.activations.relu,
                               kernel_initializer=K.initializers.he_normal())
     output_5 = layer_5(output_4)
+
+    # Branch 4: Max pooling followed by 1x1 convolution
+    # Pooling captures spatial context while the 1x1 convolution
+    # projects features into a suitable dimensional space
     layer_6 = K.layers.MaxPooling2D(pool_size=(3, 3),
                                     strides=(1, 1),
                                     padding='same')
     output_6 = layer_6(A_prev)
+
     layer_7 = K.layers.Conv2D(filters=FPP,
                               kernel_size=(1, 1),
                               padding='same',
                               activation=K.activations.relu,
                               kernel_initializer=K.initializers.he_normal())
     output_7 = layer_7(output_6)
-    return (K.layers.concatenate([output_1, output_3, output_5, output_7]))
+
+    # Concatenate outputs from all branches along the channel axis
+    return K.layers.concatenate([output_1, output_3, output_5, output_7])
