@@ -9,7 +9,7 @@ def transition_layer(X, nb_filters, compression):
     A function that builds a Transition Layer.
     """
 
-    init = K.initializers.he_normal
+    init = K.initializers.he_normal(seed=0)
     compressed_filters = int(nb_filters * compression)
 
     X = K.layers.BatchNormalization()(X)

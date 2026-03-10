@@ -14,7 +14,7 @@ def resnet50():
     A function that builds a ResNet-50 network using Keras model
     """
 
-    init = K.initializers.he_normal()
+    init = K.initializers.he_normal(seed=0)
     activation = K.activations.relu
     img_input = K.Input(shape=(224, 224, 3))
 

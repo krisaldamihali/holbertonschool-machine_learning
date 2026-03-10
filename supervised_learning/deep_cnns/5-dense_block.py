@@ -11,7 +11,7 @@ def dense_block(X, nb_filters, growth_rate, layers):
 
     concatenated_layers = [X]
     current_filters = nb_filters
-    init = K.initializers.he_normal
+    init = K.initializers.he_normal(seed=0)
 
     for _ in range(layers):
         X = K.layers.BatchNormalization()(X)
