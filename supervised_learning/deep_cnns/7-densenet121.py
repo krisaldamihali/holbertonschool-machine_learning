@@ -1,78 +1,55 @@
 #!/usr/bin/env python3
-"""A script that builds DenseNet-121 Module"""
-
+"""
+A script that builds the DenseNet-121 architecture 
+"""
 from tensorflow import keras as K
-
+dense_block = __import__('5-dense_block').dense_block
 transition_layer = __import__('6-transition_layer').transition_layer
-
-
-def dense_block_relu(X, nb_filters, growth_rate, layers):
-    """
-    Dense block variant that uses explicit ReLU layers for naming parity.
-    """
-    concatenated_layers = [X]
-    current_filters = nb_filters
-    init = K.initializers.he_normal(seed=0)
-
-    for _ in range(layers):
-        X = K.layers.BatchNormalization()(X)
-        X = K.layers.ReLU()(X)
-        X = K.layers.Conv2D(
-            4 * growth_rate, 1, padding="same", kernel_initializer=init)(X)
-
-        X = K.layers.BatchNormalization()(X)
-        X = K.layers.ReLU()(X)
-        X = K.layers.Conv2D(
-            growth_rate, 3, padding="same", kernel_initializer=init)(X)
-
-        concatenated_layers.append(X)
-        X = K.layers.Concatenate()(concatenated_layers)
-        concatenated_layers.pop(0)
-        concatenated_layers.pop(0)
-        concatenated_layers.append(X)
-
-        current_filters += growth_rate
-
-    return X, current_filters
 
 
 def densenet121(growth_rate=32, compression=1.0):
     """
-    A function that builds a Transition Layer.
+    A function that builds the DenseNet-121 architecture 
     """
+    he_normal = K.initializers.he_normal(seed=0)
+    inputs = K.Input(shape=(224, 224, 3))
 
-    X = K.Input(shape=(224, 224, 3))
     nb_filters = 2 * growth_rate
-    init = K.initializers.he_normal(seed=0)
 
-    batch_norm = K.layers.BatchNormalization()(X)
-    activation = K.layers.ReLU()(batch_norm)
-    conv2d = K.layers.Conv2D(nb_filters, 7, strides=2,
-                             padding="same",
-                             kernel_initializer=init)(activation)
-    max_pool = K.layers.MaxPool2D(3, 2, padding="same")(conv2d)
+    # 7x7 conv, stride 2
+    X = K.layers.BatchNormalization(axis=3)(inputs)
+    X = K.layers.Activation('relu')(X)
+    X = K.layers.Conv2D(nb_filters, (7, 7), strides=2,
+                        padding='same',
+                        kernel_initializer=he_normal)(X)
 
-    dense_block_0, nb_filters = dense_block_relu(
-        max_pool, nb_filters, growth_rate, 6)
-    transition_layer_0, nb_filters = transition_layer(
-        dense_block_0, nb_filters, compression)
+    # 3x3 max pool, stride 2
+    X = K.layers.MaxPool2D((3, 3), strides=(2, 2), padding='same')(X)
 
-    dense_block_1, nb_filters = dense_block_relu(
-        transition_layer_0, nb_filters, growth_rate, 12)
-    transition_layer_1, nb_filters = transition_layer(
-        dense_block_1, nb_filters, compression)
+    # Dense Block, 6 layers
+    X, nb_filters = dense_block(X, nb_filters, growth_rate, 6)
 
-    dense_block_2, nb_filters = dense_block_relu(
-        transition_layer_1, nb_filters, growth_rate, 24)
-    transition_layer_2, nb_filters = transition_layer(
-        dense_block_2, nb_filters, compression)
+    # Transition
+    X, nb_filters = transition_layer(X, nb_filters, compression)
 
-    dense_block_3, nb_filters = dense_block_relu(
-        transition_layer_2, nb_filters, growth_rate, 16)
+    # Dense Block, 12 layers
+    X, nb_filters = dense_block(X, nb_filters, growth_rate, 12)
 
-    average_pool = K.layers.AveragePooling2D(
-        7, padding="same")(dense_block_3)
-    Y = K.layers.Dense(
-        1000, "softmax", kernel_initializer=init)(average_pool)
+    # Transition
+    X, nb_filters = transition_layer(X, nb_filters, compression)
 
-    return K.Model(inputs=X, outputs=Y)
+    # Dense Block, 24 layers
+    X, nb_filters = dense_block(X, nb_filters, growth_rate, 24)
+
+    # Transition
+    X, nb_filters = transition_layer(X, nb_filters, compression)
+
+    # Dense Block, 16 layers
+    X, nb_filters = dense_block(X, nb_filters, growth_rate, 16)
+
+    # 7x7 global average pool
+    X = K.layers.AveragePooling2D(pool_size=(7, 7), strides=(1, 1))(X)
+    Y = K.layers.Dense(1000, activation='softmax',
+                       kernel_initializer=he_normal)(X)
+
+    return K.models.Model(inputs=inputs, outputs=Y)
