@@ -1,35 +1,41 @@
 #!/usr/bin/env python3
-""" A script that builds a Dense Block Module"""
-
+"""A script that builds a Dense block module for DenseNet architecture."""
 from tensorflow import keras as K
 
 
 def dense_block(X, nb_filters, growth_rate, layers):
-    """
-    A function that builds a Dense Block.
-    """
+    """A function that builds a dense block
 
-    concatenated_layers = [X]
-    current_filters = nb_filters
-    init = K.initializers.he_normal(seed=0)
+    Uses DenseNet-B bottleneck layers. Each layer applies BN -> ReLU -> 1x1
+    Conv (producing 4*growth_rate feature maps) -> BN -> ReLU -> 3x3 Conv,
+    then concatenates its output with all previous feature maps.
+
+    Args:
+        X: output from the previous layer
+        nb_filters: number of filters in X
+        growth_rate: growth rate for the dense block
+        layers: number of layers in the dense block
+
+    Returns:
+        concatenated output of each layer within the Dense Block and the
+        number of filters within the concatenated outputs
+    """
+    init = K.initializers.HeNormal(seed=0)
 
     for _ in range(layers):
-        X = K.layers.BatchNormalization()(X)
-        X = K.layers.Activation("relu")(X)
-        X = K.layers.Conv2D(4 * growth_rate, 1,
-                            padding="same", kernel_initializer=init)(X)
+        x = K.layers.BatchNormalization(axis=3)(X)
+        x = K.layers.Activation('relu')(x)
+        x = K.layers.Conv2D(
+            4 * growth_rate, (1, 1), padding='same', kernel_initializer=init
+        )(x)
 
-        X = K.layers.BatchNormalization()(X)
-        X = K.layers.Activation("relu")(X)
-        X = K.layers.Conv2D(growth_rate, 3, padding="same",
-                            kernel_initializer=init)(X)
+        x = K.layers.BatchNormalization(axis=3)(x)
+        x = K.layers.Activation('relu')(x)
+        x = K.layers.Conv2D(
+            growth_rate, (3, 3), padding='same', kernel_initializer=init
+        )(x)
 
-        concatenated_layers.append(X)
-        X = K.layers.Concatenate()(concatenated_layers)
-        concatenated_layers.pop(0)
-        concatenated_layers.pop(0)
-        concatenated_layers.append(X)
+        X = K.layers.concatenate([X, x])
+        nb_filters += growth_rate
 
-        current_filters += growth_rate
-
-    return X, current_filters
+    return X, nb_filters
