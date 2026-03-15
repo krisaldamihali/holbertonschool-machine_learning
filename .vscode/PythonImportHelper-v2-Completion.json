@@ -77,6 +77,78 @@
         "documentation": {}
     },
     {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -2750,6 +2822,60 @@
         "documentation": {}
     },
     {
+        "label": "flip_image",
+        "kind": 2,
+        "importPath": "pipeline.data_augmentation.0-flip",
+        "description": "pipeline.data_augmentation.0-flip",
+        "peekOfCode": "def flip_image(image):\n    \"\"\"A function that flips an image horizontally.\"\"\"\n    return tf.image.flip_left_right(image)",
+        "detail": "pipeline.data_augmentation.0-flip",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "kind": 2,
+        "importPath": "pipeline.data_augmentation.1-crop",
+        "description": "pipeline.data_augmentation.1-crop",
+        "peekOfCode": "def crop_image(image, size):\n    \"\"\"A function that randomly crops an image\"\"\"\n    return tf.image.random_crop(image, size)",
+        "detail": "pipeline.data_augmentation.1-crop",
+        "documentation": {}
+    },
+    {
+        "label": "rotate_image",
+        "kind": 2,
+        "importPath": "pipeline.data_augmentation.2-rotate",
+        "description": "pipeline.data_augmentation.2-rotate",
+        "peekOfCode": "def rotate_image(image):\n    \"\"\"A function that rotates an image 90 degrees counter-clockwise.\"\"\"\n    return tf.image.rot90(image)",
+        "detail": "pipeline.data_augmentation.2-rotate",
+        "documentation": {}
+    },
+    {
+        "label": "change_contrast",
+        "kind": 2,
+        "importPath": "pipeline.data_augmentation.3-contrast",
+        "description": "pipeline.data_augmentation.3-contrast",
+        "peekOfCode": "def change_contrast(image, lower, upper):\n    \"\"\"A function that changes the contrast of an image.\"\"\"\n    return tf.image.random_contrast(image, lower, upper)",
+        "detail": "pipeline.data_augmentation.3-contrast",
+        "documentation": {}
+    },
+    {
+        "label": "change_brightness",
+        "kind": 2,
+        "importPath": "pipeline.data_augmentation.4-brightness",
+        "description": "pipeline.data_augmentation.4-brightness",
+        "peekOfCode": "def change_brightness(image, max_delta):\n    \"\"\"A function that changes the brightness of an image.\"\"\"\n    return tf.image.random_brightness(image, max_delta)",
+        "detail": "pipeline.data_augmentation.4-brightness",
+        "documentation": {}
+    },
+    {
+        "label": "change_hue",
+        "kind": 2,
+        "importPath": "pipeline.data_augmentation.5-hue",
+        "description": "pipeline.data_augmentation.5-hue",
+        "peekOfCode": "def change_hue(image, delta):\n    \"\"\"A function that changes the hue of an image.\"\"\"\n    return tf.image.adjust_hue(image, delta)",
+        "detail": "pipeline.data_augmentation.5-hue",
+        "documentation": {}
+    },
+    {
         "label": "from_numpy",
         "kind": 2,
         "importPath": "pipeline.pandas.0-from_numpy",
@@ -3656,6 +3782,168 @@
         "description": "supervised_learning.classification.9-neural_network",
         "peekOfCode": "class NeuralNetwork:\n    \"\"\"\n    A class that represents a neural network used for binary classification.\n    \"\"\"\n    def __init__(self, nx, nodes):\n        \"\"\"\n        A constructor function that initializes a NeuralNetwork object\n        using `nx` as the number of input features and `nodes` as the\n        number of neurons in the hidden layer.\n        \"\"\"",
         "detail": "supervised_learning.classification.9-neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "conv_forward",
+        "kind": 2,
+        "importPath": "supervised_learning.cnn.0-conv_forward",
+        "description": "supervised_learning.cnn.0-conv_forward",
+        "peekOfCode": "def conv_forward(A_prev, W, b, activation, padding=\"same\", stride=(1, 1)):\n    \"\"\"\n        A function that performs forward propagation over a conv layer of NN\n        :param A_prev: ndarray, shape(m,h_prev,w_prev,c_prev) output layer\n        :param W: ndarray, shape(kh,kw,c_prev,c_new) kernel\n        :param b: ndarray, shape(1,1,1,c_new) biases\n        :param activation: activation function\n        :param padding: string 'same' or 'valid'\n        :param stride: tuple (sh,sw)\n        :return: output of the convolutional layer",
+        "detail": "supervised_learning.cnn.0-conv_forward",
+        "documentation": {}
+    },
+    {
+        "label": "pool_forward",
+        "kind": 2,
+        "importPath": "supervised_learning.cnn.1-pool_forward",
+        "description": "supervised_learning.cnn.1-pool_forward",
+        "peekOfCode": "def pool_forward(A_prev, kernel_shape, stride=(1, 1), mode='max'):\n    \"\"\"\n        A function that performs forward propagation over a pooling layer\n        of a NN\n        :param A_prev: ndarray, shape(m,h_prev,w_prev,c_prev) output prev layer\n        :param kernel_shape: tuple(kh,kw), size kernel for pooling\n        :param stride: tuple(sh, sw) stride for pooling\n        :param mode: string 'max' or 'avg' type of pooling\n        :return: output pooling layer\n    \"\"\"",
+        "detail": "supervised_learning.cnn.1-pool_forward",
+        "documentation": {}
+    },
+    {
+        "label": "conv_backward",
+        "kind": 2,
+        "importPath": "supervised_learning.cnn.2-conv_backward",
+        "description": "supervised_learning.cnn.2-conv_backward",
+        "peekOfCode": "def conv_backward(dZ, A_prev, W, b, padding=\"same\", stride=(1, 1)):\n    \"\"\"\n        A function that performs back propagation over a convolutional\n        layer of NN\n        :param dZ: ndarray, shape(m,h_new,w_new_c_new) partial derivatives\n        with respect\n         to the unactivated output of the convolutional layer\n        :param A_prev: ndarray, shape(m,h_prev,w_prev,c_prev) output of\n        prev layer\n        :param W: ndarray, shape(kh,kw,c_prev,c_new) kernel convolution",
+        "detail": "supervised_learning.cnn.2-conv_backward",
+        "documentation": {}
+    },
+    {
+        "label": "pool_backward",
+        "kind": 2,
+        "importPath": "supervised_learning.cnn.3-pool_backward",
+        "description": "supervised_learning.cnn.3-pool_backward",
+        "peekOfCode": "def pool_backward(dA, A_prev, kernel_shape, stride=(1, 1), mode='max'):\n    \"\"\"\n        A function that performs back propagation over a pooling layer of NN\n        :param dA: ndarray, shape(m,h_new,w_new,c_new) partial derivatives\n        with respect to the output of the pooling layer\n        :param A_prev: ndarray, shape(m,h_prev,w_prev,c) output of previous\n        layer\n        :param kernel_shape: tuple(kh,kw) size kernel for pooling\n        :param stride: tuple(sh,sw) stride for the pooling\n        :param mode: string 'max' or 'avg' indicating mode of pooling",
+        "detail": "supervised_learning.cnn.3-pool_backward",
+        "documentation": {}
+    },
+    {
+        "label": "lenet5",
+        "kind": 2,
+        "importPath": "supervised_learning.cnn.5-lenet5",
+        "description": "supervised_learning.cnn.5-lenet5",
+        "peekOfCode": "def lenet5(X):\n    \"\"\"\n    A function that builds a modified version of the LeNet-5 architecture\n    \"\"\"\n    he_normal = K.initializers.HeNormal(seed=0)\n    A1 = K.layers.Conv2D(6, 5, activation='relu',\n                         kernel_initializer=he_normal, padding='same')(X)\n    A2 = K.layers.MaxPooling2D()(A1)\n    A3 = K.layers.Conv2D(16, 5, activation='relu',\n                         kernel_initializer=he_normal)(A2)",
+        "detail": "supervised_learning.cnn.5-lenet5",
+        "documentation": {}
+    },
+    {
+        "label": "inception_block",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.0-inception_block",
+        "description": "supervised_learning.deep_cnns.0-inception_block",
+        "peekOfCode": "def inception_block(A_prev, filters):\n    \"\"\"\n    A function that builds an Inception block from a previous layer\n    using multiple convolutional and pooling branches.\n    Args:\n    A_prev: Output tensor from the previous layer.\n    filters (tuple or list): Contains the number of filters for each\n    convolutional branch in the Inception block in the following order:\n        F1: Number of filters in the 1x1 convolution.\n        F3R: Number of filters in the 1x1 convolution before",
+        "detail": "supervised_learning.deep_cnns.0-inception_block",
+        "documentation": {}
+    },
+    {
+        "label": "inception_network",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.1-inception_network",
+        "description": "supervised_learning.deep_cnns.1-inception_network",
+        "peekOfCode": "def inception_network():\n    \"\"\"\n    A function that builds an inception network using Keras model\n    \"\"\"\n    # Weight initializer suitable for layers using ReLU activation\n    init = K.initializers.he_normal()\n    # Activation function used throughout the network\n    activation = K.activations.relu\n    # Input tensor for ImageNet-sized images\n    img_input = K.Input(shape=(224, 224, 3))",
+        "detail": "supervised_learning.deep_cnns.1-inception_network",
+        "documentation": {}
+    },
+    {
+        "label": "inception_block",
+        "kind": 5,
+        "importPath": "supervised_learning.deep_cnns.1-inception_network",
+        "description": "supervised_learning.deep_cnns.1-inception_network",
+        "peekOfCode": "inception_block = __import__('0-inception_block').inception_block\ndef inception_network():\n    \"\"\"\n    A function that builds an inception network using Keras model\n    \"\"\"\n    # Weight initializer suitable for layers using ReLU activation\n    init = K.initializers.he_normal()\n    # Activation function used throughout the network\n    activation = K.activations.relu\n    # Input tensor for ImageNet-sized images",
+        "detail": "supervised_learning.deep_cnns.1-inception_network",
+        "documentation": {}
+    },
+    {
+        "label": "identity_block",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.2-identity_block",
+        "description": "supervised_learning.deep_cnns.2-identity_block",
+        "peekOfCode": "def identity_block(A_prev, filters):\n    \"\"\"\n    A function that builds an identity block using Keras\n    \"\"\"\n    F11, F3, F12 = filters\n    init = K.initializers.he_normal(seed=0)\n    activation = K.activations.relu\n    C11 = K.layers.Conv2D(filters=F11,\n                          kernel_size=(1, 1),\n                          padding='same',",
+        "detail": "supervised_learning.deep_cnns.2-identity_block",
+        "documentation": {}
+    },
+    {
+        "label": "projection_block",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.3-projection_block",
+        "description": "supervised_learning.deep_cnns.3-projection_block",
+        "peekOfCode": "def projection_block(A_prev, filters, s=2):\n    \"\"\"\n    A function that builds a projection block using Keras\n    \"\"\"\n    F11, F3, F12 = filters\n    init = K.initializers.he_normal(seed=0)\n    activation = K.activations.relu\n    C11 = K.layers.Conv2D(filters=F11,\n                          kernel_size=(1, 1),\n                          padding='same',",
+        "detail": "supervised_learning.deep_cnns.3-projection_block",
+        "documentation": {}
+    },
+    {
+        "label": "resnet50",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.4-resnet50",
+        "description": "supervised_learning.deep_cnns.4-resnet50",
+        "peekOfCode": "def resnet50():\n    \"\"\"\n    A function that builds a ResNet-50 network using Keras model\n    \"\"\"\n    init = K.initializers.he_normal(seed=0)\n    activation = K.activations.relu\n    img_input = K.Input(shape=(224, 224, 3))\n    C0 = K.layers.Conv2D(filters=64,\n                         kernel_size=(7, 7),\n                         padding='same',",
+        "detail": "supervised_learning.deep_cnns.4-resnet50",
+        "documentation": {}
+    },
+    {
+        "label": "identity_block",
+        "kind": 5,
+        "importPath": "supervised_learning.deep_cnns.4-resnet50",
+        "description": "supervised_learning.deep_cnns.4-resnet50",
+        "peekOfCode": "identity_block = __import__('2-identity_block').identity_block\nprojection_block = __import__('3-projection_block').projection_block\ndef resnet50():\n    \"\"\"\n    A function that builds a ResNet-50 network using Keras model\n    \"\"\"\n    init = K.initializers.he_normal(seed=0)\n    activation = K.activations.relu\n    img_input = K.Input(shape=(224, 224, 3))\n    C0 = K.layers.Conv2D(filters=64,",
+        "detail": "supervised_learning.deep_cnns.4-resnet50",
+        "documentation": {}
+    },
+    {
+        "label": "projection_block",
+        "kind": 5,
+        "importPath": "supervised_learning.deep_cnns.4-resnet50",
+        "description": "supervised_learning.deep_cnns.4-resnet50",
+        "peekOfCode": "projection_block = __import__('3-projection_block').projection_block\ndef resnet50():\n    \"\"\"\n    A function that builds a ResNet-50 network using Keras model\n    \"\"\"\n    init = K.initializers.he_normal(seed=0)\n    activation = K.activations.relu\n    img_input = K.Input(shape=(224, 224, 3))\n    C0 = K.layers.Conv2D(filters=64,\n                         kernel_size=(7, 7),",
+        "detail": "supervised_learning.deep_cnns.4-resnet50",
+        "documentation": {}
+    },
+    {
+        "label": "dense_block",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.5-dense_block",
+        "description": "supervised_learning.deep_cnns.5-dense_block",
+        "peekOfCode": "def dense_block(X, nb_filters, growth_rate, layers):\n    \"\"\"A function that builds a dense block\n    Uses DenseNet-B bottleneck layers. Each layer applies BN -> ReLU -> 1x1\n    Conv (producing 4*growth_rate feature maps) -> BN -> ReLU -> 3x3 Conv,\n    then concatenates its output with all previous feature maps.\n    Args:\n        X: output from the previous layer\n        nb_filters: number of filters in X\n        growth_rate: growth rate for the dense block\n        layers: number of layers in the dense block",
+        "detail": "supervised_learning.deep_cnns.5-dense_block",
+        "documentation": {}
+    },
+    {
+        "label": "transition_layer",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.6-transition_layer",
+        "description": "supervised_learning.deep_cnns.6-transition_layer",
+        "peekOfCode": "def transition_layer(X, nb_filters, compression):\n    \"\"\"\n    A function that builds a Transition Layer.\n    \"\"\"\n    init = K.initializers.he_normal(seed=0)\n    compressed_filters = int(nb_filters * compression)\n    X = K.layers.BatchNormalization()(X)\n    X = K.layers.ReLU()(X)\n    X = K.layers.Conv2D(compressed_filters, 1,\n                        padding=\"same\", kernel_initializer=init)(X)",
+        "detail": "supervised_learning.deep_cnns.6-transition_layer",
+        "documentation": {}
+    },
+    {
+        "label": "densenet121",
+        "kind": 2,
+        "importPath": "supervised_learning.deep_cnns.7-densenet121",
+        "description": "supervised_learning.deep_cnns.7-densenet121",
+        "peekOfCode": "def densenet121(growth_rate=32, compression=1.0):\n    \"\"\"\n    A function that builds the DenseNet-121 architecture\n    \"\"\"\n    he_normal = K.initializers.he_normal(seed=0)\n    inputs = K.Input(shape=(224, 224, 3))\n    nb_filters = 2 * growth_rate\n    # 7x7 conv, stride 2\n    X = K.layers.BatchNormalization(axis=3)(inputs)\n    X = K.layers.Activation('relu')(X)",
+        "detail": "supervised_learning.deep_cnns.7-densenet121",
+        "documentation": {}
+    },
+    {
+        "label": "dense_block",
+        "kind": 5,
+        "importPath": "supervised_learning.deep_cnns.7-densenet121",
+        "description": "supervised_learning.deep_cnns.7-densenet121",
+        "peekOfCode": "dense_block = __import__('5-dense_block').dense_block\ntransition_layer = __import__('6-transition_layer').transition_layer\ndef densenet121(growth_rate=32, compression=1.0):\n    \"\"\"\n    A function that builds the DenseNet-121 architecture\n    \"\"\"\n    he_normal = K.initializers.he_normal(seed=0)\n    inputs = K.Input(shape=(224, 224, 3))\n    nb_filters = 2 * growth_rate\n    # 7x7 conv, stride 2",
+        "detail": "supervised_learning.deep_cnns.7-densenet121",
+        "documentation": {}
+    },
+    {
+        "label": "transition_layer",
+        "kind": 5,
+        "importPath": "supervised_learning.deep_cnns.7-densenet121",
+        "description": "supervised_learning.deep_cnns.7-densenet121",
+        "peekOfCode": "transition_layer = __import__('6-transition_layer').transition_layer\ndef densenet121(growth_rate=32, compression=1.0):\n    \"\"\"\n    A function that builds the DenseNet-121 architecture\n    \"\"\"\n    he_normal = K.initializers.he_normal(seed=0)\n    inputs = K.Input(shape=(224, 224, 3))\n    nb_filters = 2 * growth_rate\n    # 7x7 conv, stride 2\n    X = K.layers.BatchNormalization(axis=3)(inputs)",
+        "detail": "supervised_learning.deep_cnns.7-densenet121",
         "documentation": {}
     },
     {
