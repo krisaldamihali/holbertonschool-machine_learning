@@ -4875,7 +4875,7 @@
         "kind": 2,
         "importPath": "supervised_learning.word_embeddings.3-gensim_to_keras",
         "description": "supervised_learning.word_embeddings.3-gensim_to_keras",
-        "peekOfCode": "def gensim_to_keras(model):\n    \"\"\"\n    A function that converts a gensim Word2Vec model to a Keras Embedding layer:\n    \"\"\"\n    keys = model.wv\n    weights = keys.vectors\n    return tf.keras.layers.Embedding(input_dim=weights.shape[0],\n                                     output_dim=weights.shape[1],\n                                     weights=[weights],\n                                     trainable=True)",
+        "peekOfCode": "def gensim_to_keras(model):\n    \"\"\"\n    A function that converts a gensim Word2Vec\n    model to a Keras Embedding layer:\n    \"\"\"\n    keys = model.wv\n    weights = keys.vectors\n    return tf.keras.layers.Embedding(input_dim=weights.shape[0],\n                                     output_dim=weights.shape[1],\n                                     weights=[weights],",
         "detail": "supervised_learning.word_embeddings.3-gensim_to_keras",
         "documentation": {}
     },
