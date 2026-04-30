@@ -8,7 +8,8 @@ import tensorflow as tf
 
 def gensim_to_keras(model):
     """
-    A function that converts a gensim Word2Vec model to a Keras Embedding layer:
+    A function that converts a gensim Word2Vec
+    model to a Keras Embedding layer:
     """
     keys = model.wv
     weights = keys.vectors
