@@ -382,6 +382,40 @@
         "documentation": {}
     },
     {
+        "label": "CountVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.cluster.hierarchy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "gensim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gensim",
+        "description": "gensim",
+        "detail": "gensim",
+        "documentation": {}
+    },
+    {
         "label": "sklearn.cluster",
         "kind": 6,
         "isExtraImport": true,
@@ -397,15 +431,6 @@
         "importPath": "sklearn.mixture",
         "description": "sklearn.mixture",
         "detail": "sklearn.mixture",
-        "documentation": {}
-    },
-    {
-        "label": "scipy.cluster.hierarchy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "scipy.cluster.hierarchy",
-        "description": "scipy.cluster.hierarchy",
-        "detail": "scipy.cluster.hierarchy",
         "documentation": {}
     },
     {
@@ -4816,6 +4841,51 @@
         "description": "supervised_learning.regularization.7-main",
         "peekOfCode": "early_stopping = __import__('7-early_stopping').early_stopping\nif __name__ == '__main__':\n    print(early_stopping(1.0, 1.9, 0.5, 15, 5))\n    print(early_stopping(1.1, 1.5, 0.5, 15, 2))\n    print(early_stopping(1.0, 1.5, 0.5, 15, 8))",
         "detail": "supervised_learning.regularization.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "bag_of_words",
+        "kind": 2,
+        "importPath": "supervised_learning.word_embeddings.0-bag_of_words",
+        "description": "supervised_learning.word_embeddings.0-bag_of_words",
+        "peekOfCode": "def bag_of_words(sentences, vocab=None):\n    \"\"\"\n    A function that creates a bag of words embedding matrix:\n    \"\"\"\n    vectorizer = CountVectorizer(vocabulary=vocab)\n    E = vectorizer.fit_transform(sentences)\n    F = vectorizer.get_feature_names_out()\n    return E.toarray(), F",
+        "detail": "supervised_learning.word_embeddings.0-bag_of_words",
+        "documentation": {}
+    },
+    {
+        "label": "tf_idf",
+        "kind": 2,
+        "importPath": "supervised_learning.word_embeddings.1-tf_idf",
+        "description": "supervised_learning.word_embeddings.1-tf_idf",
+        "peekOfCode": "def tf_idf(sentences, vocab=None):\n    \"\"\"\n    A function that creates a TF-IDF embedding matrix:\n    \"\"\"\n    vectorizer = TfidfVectorizer(vocabulary=vocab)\n    E = vectorizer.fit_transform(sentences)\n    F = vectorizer.get_feature_names_out()\n    return E.toarray(), F",
+        "detail": "supervised_learning.word_embeddings.1-tf_idf",
+        "documentation": {}
+    },
+    {
+        "label": "word2vec_model",
+        "kind": 2,
+        "importPath": "supervised_learning.word_embeddings.2-word2vec",
+        "description": "supervised_learning.word_embeddings.2-word2vec",
+        "peekOfCode": "def word2vec_model(sentences, vector_size=100, min_count=5,\n                   window=5, negative=5, cbow=True,\n                   epochs=5, seed=0, workers=1):\n    \"\"\"\n    A function that creates and trains a gensim Word2Vec model:\n    \"\"\"\n    # Set the training algorithm based on cbow parameter\n    sg = 0 if cbow else 1\n    # Create the Word2Vec model\n    model = gensim.models.Word2Vec(",
+        "detail": "supervised_learning.word_embeddings.2-word2vec",
+        "documentation": {}
+    },
+    {
+        "label": "gensim_to_keras",
+        "kind": 2,
+        "importPath": "supervised_learning.word_embeddings.3-gensim_to_keras",
+        "description": "supervised_learning.word_embeddings.3-gensim_to_keras",
+        "peekOfCode": "def gensim_to_keras(model):\n    \"\"\"\n    A function that converts a gensim Word2Vec model to a Keras Embedding layer:\n    \"\"\"\n    keys = model.wv\n    weights = keys.vectors\n    return tf.keras.layers.Embedding(input_dim=weights.shape[0],\n                                     output_dim=weights.shape[1],\n                                     weights=[weights],\n                                     trainable=True)",
+        "detail": "supervised_learning.word_embeddings.3-gensim_to_keras",
+        "documentation": {}
+    },
+    {
+        "label": "fasttext_model",
+        "kind": 2,
+        "importPath": "supervised_learning.word_embeddings.4-fasttext",
+        "description": "supervised_learning.word_embeddings.4-fasttext",
+        "peekOfCode": "def fasttext_model(sentences, vector_size=100, min_count=5,\n                   window=5, negative=5, cbow=True,\n                   epochs=5, seed=0, workers=1):\n    \"\"\"\n    A function that creates and trains a gensim FastText model:\n    \"\"\"\n    # Set the training algorithm based on cbow parameter\n    sg = 0 if cbow else 1\n    # Create the FastText model\n    model = gensim.models.FastText(",
+        "detail": "supervised_learning.word_embeddings.4-fasttext",
         "documentation": {}
     },
     {
