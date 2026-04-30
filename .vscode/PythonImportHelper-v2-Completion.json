@@ -149,6 +149,14 @@
         "documentation": {}
     },
     {
+        "label": "keras",
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "isExtraImport": true,
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -344,6 +352,24 @@
         "importPath": "tensorflow.keras",
         "description": "tensorflow.keras",
         "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
         "documentation": {}
     },
     {
@@ -3524,6 +3550,51 @@
         "documentation": {}
     },
     {
+        "label": "RNNCell",
+        "kind": 6,
+        "importPath": "supervised_learning.RNNs.0-rnn_cell",
+        "description": "supervised_learning.RNNs.0-rnn_cell",
+        "peekOfCode": "class RNNCell:\n    \"\"\"A class that represents a cell of a simple RNN:\n    class constructor def __init__(self, i, h, o):\n    i is the dimensionality of the data\n    h is the dimensionality of the hidden state\n    o is the dimensionality of the outputs\n    Creates the public instance attributes Wh, Wy, bh, by that represent the\n    weights and biases of the cell\n    Wh and bh are for the concatenated hidden state and input data\n    Wy and by are for the output",
+        "detail": "supervised_learning.RNNs.0-rnn_cell",
+        "documentation": {}
+    },
+    {
+        "label": "rnn",
+        "kind": 2,
+        "importPath": "supervised_learning.RNNs.1-rnn",
+        "description": "supervised_learning.RNNs.1-rnn",
+        "peekOfCode": "def rnn(rnn_cell, X, h_0):\n    \"\"\"A function that performs forward propagation for a simple RNN:\n    rnn_cell is an instance of RNNCell that will be used for the forward\n    propagation\n    X is the data to be used, given as a numpy.ndarray of shape (t, m, i)\n    t is the maximum number of time steps\n    m is the batch size\n    i is the dimensionality of the data\n    h_0 is the initial hidden state, given as a numpy.ndarray of shape (m, h)\n    h is the dimensionality of the hidden state",
+        "detail": "supervised_learning.RNNs.1-rnn",
+        "documentation": {}
+    },
+    {
+        "label": "GRUCell",
+        "kind": 6,
+        "importPath": "supervised_learning.RNNs.2-gru_cell",
+        "description": "supervised_learning.RNNs.2-gru_cell",
+        "peekOfCode": "class GRUCell:\n    \"\"\"A class that represents a gated recurrent unit:\n    class constructor def __init__(self, i, h, o):\n    i is the dimensionality of the data\n    h is the dimensionality of the hidden state\n    o is the dimensionality of the outputs\n    Creates the public instance attributes Wz, Wr, Wh, Wy, bz, br, bh, by that\n    represent the weights and biases of the cell\n    Wzand bz are for the update gate\n    Wrand br are for the reset gate",
+        "detail": "supervised_learning.RNNs.2-gru_cell",
+        "documentation": {}
+    },
+    {
+        "label": "LSTMCell",
+        "kind": 6,
+        "importPath": "supervised_learning.RNNs.3-lstm_cell",
+        "description": "supervised_learning.RNNs.3-lstm_cell",
+        "peekOfCode": "class LSTMCell:\n    \"\"\"A class that represents an LSTM unit:\n    class constructor def __init__(self, i, h, o):\n    i is the dimensionality of the data\n    h is the dimensionality of the hidden state\n    o is the dimensionality of the outputs\n    Creates the public instance attributes Wf, Wu, Wc, Wo, Wy, bf, bu, bc, bo,\n    by that represent the weights and biases of the cell\n    Wf and bf are for the forget gate\n    Wu and bu are for the update gate",
+        "detail": "supervised_learning.RNNs.3-lstm_cell",
+        "documentation": {}
+    },
+    {
+        "label": "deep_rnn",
+        "kind": 2,
+        "importPath": "supervised_learning.RNNs.4-deep_rnn",
+        "description": "supervised_learning.RNNs.4-deep_rnn",
+        "peekOfCode": "def deep_rnn(rnn_cells, X, h_0):\n    \"\"\"A function that performs forward propagation for a simple RNN:\n    rnn_cells is a list of RNNCell instances of length l that will be used for\n    the forward propagation\n        l is the number of layers\n    X is the data to be used, given as a numpy.ndarray of shape (t, m, i)\n        t is the maximum number of time steps\n        m is the batch size\n        i is the dimensionality of the data\n    h_0 is the initial hidden state, given as a numpy.ndarray",
+        "detail": "supervised_learning.RNNs.4-deep_rnn",
+        "documentation": {}
+    },
+    {
         "label": "Neuron",
         "kind": 6,
         "importPath": "supervised_learning.classification.0-neuron",
@@ -4205,6 +4276,78 @@
         "description": "supervised_learning.keras.9-model",
         "peekOfCode": "def load_model(filename):\n    \"\"\"\n    A function that loads a complete Keras model from the specified file path.\n    Returns the loaded model.\n    \"\"\"\n    return K.models.load_model(filename)",
         "detail": "supervised_learning.keras.9-model",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.0-yolo",
+        "description": "supervised_learning.object_detection.0-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n    Yolo class\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        self.model = K.models.load_model(model_path)\n        with open(classes_path, 'r') as classes_file:\n            self.class_names = [\n                line.strip() for line in classes_file.readlines()\n                ]",
+        "detail": "supervised_learning.object_detection.0-yolo",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.1-yolo",
+        "description": "supervised_learning.object_detection.1-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n        A class Yolo uses the Yolo v3 algorithm to perform object detection\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        \"\"\"\n            Class constructor of Yolo class\n            :param model_path: path where Darknet Keras model is stored\n            :param classes_path:path where list of class names,\n                in order of index",
+        "detail": "supervised_learning.object_detection.1-yolo",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.2-yolo",
+        "description": "supervised_learning.object_detection.2-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n        Class Yolo uses the Yolo v3 algorithm to perform object detection\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        \"\"\"\n            Class constructor of Yolo class\n            :param model_path: path where Darknet Keras model is stored\n            :param classes_path:path where list of class names,\n                in order of index",
+        "detail": "supervised_learning.object_detection.2-yolo",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.3-yolo",
+        "description": "supervised_learning.object_detection.3-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n        Class Yolo uses the Yolo v3 algorithm to perform object detection\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        \"\"\"\n            Class constructor of Yolo class\n            :param model_path: path where Darknet Keras model is stored\n            :param classes_path:path where list of class names,\n                in order of index",
+        "detail": "supervised_learning.object_detection.3-yolo",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.4-yolo",
+        "description": "supervised_learning.object_detection.4-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n        Class Yolo uses the Yolo v3 algorithm to perform object detection\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        \"\"\"\n            Class constructor of Yolo class\n            :param model_path: path where Darknet Keras model is stored\n            :param classes_path:path where list of class names,\n                in order of index",
+        "detail": "supervised_learning.object_detection.4-yolo",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.5-yolo",
+        "description": "supervised_learning.object_detection.5-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n        Class Yolo uses the Yolo v3 algorithm to perform object detection\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        \"\"\"\n            Class constructor of Yolo class\n            :param model_path: path where Darknet Keras model is stored\n            :param classes_path:path where list of class names,\n                in order of index",
+        "detail": "supervised_learning.object_detection.5-yolo",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.6-yolo",
+        "description": "supervised_learning.object_detection.6-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n    Class to use Yolo v3 algorithm to perform object detection\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        \"\"\"\n        model_path is the path to where a Darknet Keras model is stored\n        classes_path is the path to where the list of class names used for the\n            Darknet model, listed in order of index, can be found\n        class_t is a float representing the box score threshold for the initial",
+        "detail": "supervised_learning.object_detection.6-yolo",
+        "documentation": {}
+    },
+    {
+        "label": "Yolo",
+        "kind": 6,
+        "importPath": "supervised_learning.object_detection.7-yolo",
+        "description": "supervised_learning.object_detection.7-yolo",
+        "peekOfCode": "class Yolo:\n    \"\"\"\n    Class to use Yolo v3 algorithm to perform object detection\n    \"\"\"\n    def __init__(self, model_path, classes_path, class_t, nms_t, anchors):\n        \"\"\"\n        model_path is the path to where a Darknet Keras model is stored\n        classes_path is the path to where the list of class names used for the\n            Darknet model, listed in order of index, can be found\n        class_t is a float representing the box score threshold for the initial",
+        "detail": "supervised_learning.object_detection.7-yolo",
         "documentation": {}
     },
     {
