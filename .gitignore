@@ -3,6 +3,7 @@ venv/
 .venv/
 .env/
 supervised_learning/classification/data/
+.vscode/
 
 # Python cache
 __pycache__/

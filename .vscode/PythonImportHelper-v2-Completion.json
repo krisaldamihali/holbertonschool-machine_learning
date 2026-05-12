@@ -4304,6 +4304,33 @@
         "documentation": {}
     },
     {
+        "label": "uni_bleu",
+        "kind": 2,
+        "importPath": "supervised_learning.nlp_metrics.0-uni_bleu",
+        "description": "supervised_learning.nlp_metrics.0-uni_bleu",
+        "peekOfCode": "def uni_bleu(references, sentence):\n    \"\"\"\n    A function that calculates the unigram score of BLEU\n    Parameters:\n        references (list): list of reference translations\n            each reference is a list of words in the translation\n        sentence (list): list containing the translation model proposed\n    Returns:\n        unigram BLEU score\n    \"\"\"",
+        "detail": "supervised_learning.nlp_metrics.0-uni_bleu",
+        "documentation": {}
+    },
+    {
+        "label": "ngram_bleu",
+        "kind": 2,
+        "importPath": "supervised_learning.nlp_metrics.1-ngram_bleu",
+        "description": "supervised_learning.nlp_metrics.1-ngram_bleu",
+        "peekOfCode": "def ngram_bleu(references, sentence, n):\n    \"\"\"\n    A function that calculates the n-gram BLEU score for a sentence\n    Parameters:\n        references (list): list of reference translations\n            each reference translation is a list of the words in\n            the translation\n        sentence (list): list of words in the model proposed sentence\n        n: size of the n-gram to be used\n    Returns:",
+        "detail": "supervised_learning.nlp_metrics.1-ngram_bleu",
+        "documentation": {}
+    },
+    {
+        "label": "cumulative_bleu",
+        "kind": 2,
+        "importPath": "supervised_learning.nlp_metrics.2-cumulative_bleu",
+        "description": "supervised_learning.nlp_metrics.2-cumulative_bleu",
+        "peekOfCode": "def cumulative_bleu(references, sentence, n):\n    \"\"\"\n    A function that calculates the cumulative BLEU score for a sentence\n    \"\"\"\n    BP = min(1, np.exp(1 - len(min(references, key=len)) / len(sentence)))\n    precision = []\n    for m in range(1, n + 1):\n        n_grams = []\n        for reference in references:\n            n_grams_ref = []",
+        "detail": "supervised_learning.nlp_metrics.2-cumulative_bleu",
+        "documentation": {}
+    },
+    {
         "label": "Yolo",
         "kind": 6,
         "importPath": "supervised_learning.object_detection.0-yolo",
